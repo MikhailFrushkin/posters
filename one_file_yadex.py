@@ -15,6 +15,6 @@ def download_image(folder_path, file_path):
 
 
 folder_path = "/Downloads/POSTER-KOSMOS-GLOSS/1 Космос.jpg"  # Замените на фактический URL изображения на Яндекс.Диске
-save_path = "image.png"  # Путь, по которому нужно сохранить изображение
+save_path = "temp/image.png"  # Путь, по которому нужно сохранить изображение
 
 download_image(folder_path, save_path)
