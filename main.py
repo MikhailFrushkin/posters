@@ -26,12 +26,13 @@ def get_yandex_disk_files(folder_path, token):
                     size = file["size"]
                     size_mb = bytes_to_megabytes(size)
                     code = path.split('/')[-2] if '/' in path else ''  # Извлечение имени папки из пути
-                    if '-' in code and code.isupper():
-                        file_tuple = (name, path, code, size_mb)
-                        file_list.append(file_tuple)
+                    # if '-' in code and code.isupper():
+                    file_tuple = (name, path, code, size_mb)
+                    file_list.append(file_tuple)
                 elif file["type"] == "dir":
                     subfolder_files = get_yandex_disk_files(file["path"], token)
                     file_list.extend(subfolder_files)
+            print(file_list)
             return file_list
         except Exception as ex:
             print(ex)
@@ -41,8 +42,8 @@ def get_yandex_disk_files(folder_path, token):
         return []
 
 
-# Пример использования
-folder_path = "/Downloads"  # Путь к папке на Яндекс.Диске
+folder_path = "/Значки ANIKOYA  02 23/ОДИНОЧКИ/Мария"  # Путь к папке на Яндекс.Диске
+# folder_path = "/Downloads"  # Путь к папке на Яндекс.Диске
 
 file_list = get_yandex_disk_files(folder_path, token)
 # for file in file_list:
