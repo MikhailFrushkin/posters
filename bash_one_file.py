@@ -1,51 +1,56 @@
 import subprocess
+import os
 
-# Путь к исполняемому файлу GIMP
-GIMP_PATH = '/usr/bin/gimp'
 
-# Путь к изображениям, которые нужно добавить
-IMAGE1 = "C:\\Users\\A3_posters\\1.png"
-IMAGE2 = "C:\\Users\\A3_posters\\2.png"
-IMAGE3 = "C:\\Users\\A3_posters\\3.png"
+gimp_path = '/usr/bin/gimp'
 
-# Название и путь для сохранения результирующего изображения
-OUTPUT_IMAGE = "результирующему_изображению.png"
+# Имя файла, содержащего слои
 
-# Размер нового изображения А3 в пикселях (420 мм x 297 мм при 300 пикселей/дюйм)
-WIDTH = 4961
-HEIGHT = 3508
+# Папка для сохранения нового файла
+folder = '/home/mikhail/PycharmProjects/posters/temp'
 
-# Создание временного bash-скрипта
-bash_script = f"""#!/bin/bash
-gimp -i -b - <<EOF
-(let* (
-        (image-path "{OUTPUT_IMAGE}")
-        (image (car (gimp-file-load RUN-NONINTERACTIVE "{IMAGE1}" "{IMAGE1}")))
-        (drawable (car (gimp-image-get-active-layer image)))
-        (x 0)
-        (y 0)
-      )
-  (gimp-image-resize image 4961 3508 0 0)
-  (gimp-image-set-filename image image-path)
+def add_images_to_gimp(file_path, image_paths):
+    # Формируем команду для вызова GIMP с необходимыми параметрами
+    cmd = [f'{gimp_path}', '--no-interface', '-b',
+           '(python-fu-batch-add-layers RUN-NONINTERACTIVE "{}" "{}" "{}")'.format(file_path, *image_paths)]
 
-  (foreach layer-path '("{IMAGE2}" "{IMAGE3}")
-    (begin
-      (let (
-             (new-layer (car (gimp-file-load-layer image layer-path)))
-           )
-        (gimp-layer-set-offsets new-layer x y)
-        (gimp-image-add-layer image new-layer 0)
-      )
-      (set! x (if (> (+ x (/ (car (gimp-drawable-width drawable)) 2)) (car (gimp-image-width image))) 0 (+ x (/ (car (gimp-drawable-width drawable)) 2))))
-      (set! y (if (> (+ y (/ (car (gimp-drawable-height drawable)) 2)) (car (gimp-image-height image))) 0 (+ y (/ (car (gimp-drawable-height drawable)) 2))))
-    )
-  )
-  (gimp-file-save RUN-NONINTERACTIVE image drawable image-path image-path)
-  (gimp-image-delete image)
-)
+    # Вызываем GIMP с помощью subprocess
+    subprocess.run(cmd, check=True)
 
-(gimp-quit 0)
-EOF
-"""
 
-subprocess.run(bash_script, shell=False)
+# Пример использования
+file_path = '/home/mikhail/PycharmProjects/posters/temp/слоями.xcf'
+image_paths = ['/home/mikhail/PycharmProjects/posters/1 В.png',
+               '/home/mikhail/PycharmProjects/posters/2 В.png',
+               '/home/mikhail/PycharmProjects/posters/3 В.png']
+
+# add_images_to_gimp(file_path, image_paths)
+
+
+def qwerty(filename):
+    gimp_command = [
+        gimp_path,
+        '-i',
+        '-b',
+        f'(gimp-file-load RUN-NONINTERACTIVE "{filename}" "{filename}")',
+        '-b',
+        '(gimp-image-undo-group-start 1)',  # Начало группы отмены действий
+        '-b',
+        '(gimp-layer-new-from-visible (car (gimp-image-get-active-drawable (aref (cadr (gimp-image-list)) 0))))',  # Дублирование слоя
+        '-b',
+        '(gimp-image-add-layer (aref (cadr (gimp-image-list)) 0) (car (gimp-layer-new-from-visible (car (gimp-image-get-active-drawable (aref (cadr (gimp-image-list)) 0))))))',  # Добавление дублированного слоя
+        '-b',
+        '(gimp-image-add-layer (aref (cadr (gimp-image-list)) 0) (car (gimp-layer-new-from-visible (car (gimp-image-get-active-drawable (aref (cadr (gimp-image-list)) 0))))))',  # Добавление еще одного дублированного слоя
+        '-b',
+        '(gimp-image-undo-group-end 1)',  # Конец группы отмены действий
+        '-b',
+        f'(gimp-file-save RUN-NONINTERACTIVE 1 (car (gimp-image-merge-visible-layers (aref (cadr (gimp-image-list)) 0) 0)) '
+        f'"{os.path.join(folder, "new.xcf")}" "new.xcf")',
+        '-b',
+        '(gimp-quit 0)'
+    ]
+    subprocess.run(gimp_command, shell=False)
+
+
+qwerty('/home/mikhail/PycharmProjects/site_Yaroslav/main/files/SKZ-5NEW-NABORxPLYAZH37/SKZ-5NEW-NABORxPLYAZH37.xcf')
+

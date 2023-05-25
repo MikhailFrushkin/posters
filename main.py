@@ -46,18 +46,18 @@ folder_path = "/Значки ANIKOYA  02 23/ОДИНОЧКИ/Мария"  # Пу
 # folder_path = "/Downloads"  # Путь к папке на Яндекс.Диске
 
 file_list = get_yandex_disk_files(folder_path, token)
-# for file in file_list:
-#     print(f"Артикул: {file[2]} Имя: {file[0]}, Путь: {file[1]}, Размер: {file[3]} МБ")
+for file in file_list:
+    print(f"Артикул: {file[2]} Имя: {file[0]}, Путь: {file[1]}, Размер: {file[3]} МБ")
 
-result = {}
+# result = {}
+#
+# for item in file_list:
+#     name, path, code, size_mb = item
+#     if code in result:
+#         result[code].append([name, path, size_mb])
+#     else:
+#         result[code] = [[name, path, size_mb]]
 
-for item in file_list:
-    name, path, code, size_mb = item
-    if code in result:
-        result[code].append([name, path, size_mb])
-    else:
-        result[code] = [[name, path, size_mb]]
-
-with open('json.json', "w") as f:
-    json.dump(result, f, ensure_ascii=False, indent=4)
-print(result)
+# with open('json.json', "w") as f:
+#     json.dump(result, f, ensure_ascii=False, indent=4)
+# print(result)

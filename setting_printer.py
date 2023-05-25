@@ -1,6 +1,9 @@
 import win32api
 import win32print
 import win32con
+from loguru import logger
+
+logger.add("app.log", rotation="5 MB")
 
 
 def apply_print_settings(printer_name, dev_mode_parameters):
@@ -8,6 +11,7 @@ def apply_print_settings(printer_name, dev_mode_parameters):
     file = 'путь к файлу'
     print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
     printer_handle = win32print.OpenPrinter(printer_name, print_defaults)
+    logger.debug(f"параметры принтера: {printer_handle}")
     try:
         # Получаем текущую конфигурацию принтера
         printer_info = win32print.GetPrinter(printer_handle, 2)
@@ -42,7 +46,7 @@ def enum_printers():
     printers = win32print.EnumPrinters(flags, None, level)
     for printer in printers:
         name = printer
-        print("Printer Name:", name['pPrinterName'])
+        print("Доступный принтер: {}".format(name['pPrinterName']))
 
 
 enum_printers()
@@ -53,6 +57,7 @@ dev_mode_parameters = {
     "PaperSize": win32con.DMPAPER_A3,
     "Orientation": win32con.DMORIENT_PORTRAIT,
     "PrintQuality": win32con.DMRES_HIGH,
+
 }
 
 apply_print_settings(printer_name, dev_mode_parameters)
