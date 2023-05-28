@@ -3,12 +3,9 @@ import win32print
 import win32con
 from loguru import logger
 
-logger.add("app.log", rotation="5 MB")
 
-
-def apply_print_settings(printer_name, dev_mode_parameters):
-    """Найстройка выбранного принтера"""
-    file = 'путь к файлу'
+def apply_print_settings(printer_name: str, dev_mode_parameters: dict, file: str) -> None:
+    """Найстройка выбранного принтера и печать файла"""
     print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
     printer_handle = win32print.OpenPrinter(printer_name, print_defaults)
     logger.debug(f"параметры принтера: {printer_handle}")
@@ -38,26 +35,27 @@ def apply_print_settings(printer_name, dev_mode_parameters):
         win32print.ClosePrinter(printer_handle)
 
 
-def enum_printers():
+def enum_printers() -> list:
     """Получение имен доступных принтеров"""
     flags = win32print.PRINTER_ENUM_LOCAL
     level = 2
 
     printers = win32print.EnumPrinters(flags, None, level)
-    for printer in printers:
-        name = printer
-        print("Доступный принтер: {}".format(name['pPrinterName']))
+
+    printer_list_name = [printer['pPrinterName'] for printer in printers]
+    logger.info("Доступный принтер: {}".format(*printer_list_name))
+    return printer_list_name
 
 
-enum_printers()
+if __name__ == '__main__':
+    logger.add(sink="logs.log", level="DEBUG", format="{time} {level} {message}")
+    # размер, ориентация, качество
+    dev_mode_parameters = {
+        "PaperSize": win32con.DMPAPER_A3,
+        "Orientation": win32con.DMORIENT_PORTRAIT,
+        "PrintQuality": win32con.DMRES_HIGH,
+    }
 
-printer_name = "Отправить в OneNote 16"
-# размер, ориентация, качество
-dev_mode_parameters = {
-    "PaperSize": win32con.DMPAPER_A3,
-    "Orientation": win32con.DMORIENT_PORTRAIT,
-    "PrintQuality": win32con.DMRES_HIGH,
-
-}
-
-apply_print_settings(printer_name, dev_mode_parameters)
+    printer_name = enum_printers()[0]
+    file = 'temp/image.png'
+    apply_print_settings(printer_name, dev_mode_parameters, file)

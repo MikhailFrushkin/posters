@@ -1,3 +1,4 @@
+import datetime
 import json
 
 import requests
@@ -29,10 +30,10 @@ def get_yandex_disk_files(folder_path, token):
                     # if '-' in code and code.isupper():
                     file_tuple = (name, path, code, size_mb)
                     file_list.append(file_tuple)
+                    print(file)
                 elif file["type"] == "dir":
                     subfolder_files = get_yandex_disk_files(file["path"], token)
                     file_list.extend(subfolder_files)
-            print(file_list)
             return file_list
         except Exception as ex:
             print(ex)
@@ -42,22 +43,21 @@ def get_yandex_disk_files(folder_path, token):
         return []
 
 
-folder_path = "/Значки ANIKOYA  02 23/ОДИНОЧКИ/Мария"  # Путь к папке на Яндекс.Диске
-# folder_path = "/Downloads"  # Путь к папке на Яндекс.Диске
-
+folder_path = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/"  # Путь к папке на Яндекс.Диске
+time_start = datetime.datetime.now()
 file_list = get_yandex_disk_files(folder_path, token)
 for file in file_list:
     print(f"Артикул: {file[2]} Имя: {file[0]}, Путь: {file[1]}, Размер: {file[3]} МБ")
+print(f"Время поиска всех файлов: {datetime.datetime.now() - time_start}")
+result = {}
 
-# result = {}
-#
-# for item in file_list:
-#     name, path, code, size_mb = item
-#     if code in result:
-#         result[code].append([name, path, size_mb])
-#     else:
-#         result[code] = [[name, path, size_mb]]
+for item in file_list:
+    name, path, code, size_mb = item
+    if code in result:
+        result[code].append([name, path, size_mb])
+    else:
+        result[code] = [[name, path, size_mb]]
 
-# with open('json.json', "w") as f:
-#     json.dump(result, f, ensure_ascii=False, indent=4)
-# print(result)
+with open('json.json', "w") as f:
+    json.dump(result, f, ensure_ascii=False, indent=4)
+print(result)

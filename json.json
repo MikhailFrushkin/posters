@@ -1,328 +1,4444 @@
 {
+    "00 ШАБЛОНЫ": [
+        [
+            "Если у Вас возникли вопросы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Если у Вас возникли вопросы.png",
+            0.52
+        ],
+        [
+            "Исходник упаковка.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Исходник упаковка.jpg",
+            1.13
+        ],
+        [
+            "Лого 120 на 50.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Лого 120 на 50.png",
+            0.01
+        ],
+        [
+            "Лого POSUTA.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Лого POSUTA.png",
+            0.06
+        ],
+        [
+            "Лого маленькое.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Лого маленькое.png",
+            0.01
+        ],
+        [
+            "Лого.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Лого.png",
+            0.04
+        ],
+        [
+            "Набор стандарт.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Набор стандарт.png",
+            1.82
+        ],
+        [
+            "Подарочная упаковка.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Подарочная упаковка.png",
+            2.25
+        ],
+        [
+            "Спасибо, что выбрали нас!.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Спасибо, что выбрали нас!.png",
+            1.59
+        ],
+        [
+            "Фон титульный глянцевые.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Фон титульный глянцевые.png",
+            0.57
+        ],
+        [
+            "Фон титульный матовые.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Фон титульный матовые.png",
+            0.57
+        ],
+        [
+            "Фон титульный.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/00 ШАБЛОНЫ/Фон титульный.png",
+            0.57
+        ]
+    ],
+    "POSTER-NINETIES-GLOSS": [
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-GLOSS/1.jpg",
+            5.23
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-GLOSS/2.jpg",
+            7.07
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-GLOSS/3.jpg",
+            5.36
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-GLOSS/МОКАП.jpg",
+            1.73
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-GLOSS/Размер.jpg",
+            1.47
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-GLOSS/Титульник.jpg",
+            2.21
+        ]
+    ],
+    "POSTER-NINETIES-MAT": [
+        [
+            "С Жвачки.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-MAT/С Жвачки.jpg",
+            12.89
+        ],
+        [
+            "С Нашивки.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-MAT/С Нашивки.jpg",
+            11.53
+        ],
+        [
+            "С Фишки.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-MAT/С Фишки.jpg",
+            12.55
+        ],
+        [
+            "СМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-MAT/СМОКАП.jpg",
+            1.8
+        ],
+        [
+            "СРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-MAT/СРазмер.jpg",
+            1.72
+        ],
+        [
+            "СТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/90-е/POSTER-NINETIES-MAT/СТитульник.jpg",
+            2.46
+        ]
+    ],
+    "1Г": [
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Greenpeace/1Г/1.jpg",
+            2.0
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Greenpeace/1Г/2.jpg",
+            3.28
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Greenpeace/1Г/3.jpg",
+            6.15
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Greenpeace/1Г/МОКАП.jpg",
+            1.95
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Greenpeace/1Г/Размер.jpg",
+            0.9
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Greenpeace/1Г/Титульник.jpg",
+            1.26
+        ],
+        [
+            "С1 Maneskin.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Maneskin/1Г/С1 Maneskin.jpg",
+            12.86
+        ],
+        [
+            "С2 Maneskin.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Maneskin/1Г/С2 Maneskin.jpg",
+            10.02
+        ],
+        [
+            "С3 Maneskin.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Maneskin/1Г/С3 Maneskin.jpg",
+            11.3
+        ],
+        [
+            "СМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Maneskin/1Г/СМОКАП.jpg",
+            1.49
+        ],
+        [
+            "СРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Maneskin/1Г/СРазмер.jpg",
+            1.57
+        ],
+        [
+            "СТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Maneskin/1Г/СТитульник.jpg",
+            1.93
+        ],
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Mindless Self Indulgence/1Г/1.jpg",
+            6.89
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Mindless Self Indulgence/1Г/2.jpg",
+            8.07
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Mindless Self Indulgence/1Г/3.jpg",
+            1.84
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Mindless Self Indulgence/1Г/МОКАП.jpg",
+            1.3
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Mindless Self Indulgence/1Г/Размер.jpg",
+            1.46
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Mindless Self Indulgence/1Г/Титульник.jpg",
+            1.47
+        ],
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/RESIDENT EVIL/1Г/1.jpg",
+            5.71
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/RESIDENT EVIL/1Г/2.jpg",
+            6.98
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/RESIDENT EVIL/1Г/3.jpg",
+            6.48
+        ],
+        [
+            "4.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/RESIDENT EVIL/1Г/4.jpg",
+            6.31
+        ],
+        [
+            "5.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/RESIDENT EVIL/1Г/5.jpg",
+            7.97
+        ],
+        [
+            "6.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/RESIDENT EVIL/1Г/6.jpg",
+            6.96
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/RESIDENT EVIL/1Г/МОКАП.jpg",
+            1.76
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/RESIDENT EVIL/1Г/Размер.jpg",
+            1.3
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/RESIDENT EVIL/1Г/Титульник.jpg",
+            1.79
+        ],
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Smash/1Г/1.jpg",
+            5.03
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Smash/1Г/2.jpg",
+            5.83
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Smash/1Г/3.jpg",
+            5.56
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Smash/1Г/МОКАП.jpg",
+            1.33
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Smash/1Г/Размер.jpg",
+            1.18
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Smash/1Г/Титульник.jpg",
+            1.35
+        ],
+        [
+            "ЧБ1 radiohead.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/radiohead/1Г/ЧБ1 radiohead.jpg",
+            4.28
+        ],
+        [
+            "ЧБ2 radiohead.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/radiohead/1Г/ЧБ2 radiohead.jpg",
+            2.75
+        ],
+        [
+            "ЧБ3 radiohead.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/radiohead/1Г/ЧБ3 radiohead.jpg",
+            3.53
+        ],
+        [
+            "ЧБМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/radiohead/1Г/ЧБМОКАП.jpg",
+            1.12
+        ],
+        [
+            "ЧБРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/radiohead/1Г/ЧБРазмер.jpg",
+            0.83
+        ],
+        [
+            "ЧБТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/radiohead/1Г/ЧБТитульник.jpg",
+            0.97
+        ],
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Акушер (Панфилов)/1Г/1.jpg",
+            5.17
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Акушер (Панфилов)/1Г/2.jpg",
+            5.23
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Акушер (Панфилов)/1Г/3.jpg",
+            5.64
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Акушер (Панфилов)/1Г/МОКАП.jpg",
+            1.74
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Акушер (Панфилов)/1Г/Размер.jpg",
+            1.17
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Акушер (Панфилов)/1Г/Титульник.jpg",
+            1.33
+        ],
+        [
+            "С1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Белый орел/1Г/С1.jpg",
+            8.3
+        ],
+        [
+            "С2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Белый орел/1Г/С2.jpg",
+            9.0
+        ],
+        [
+            "С3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Белый орел/1Г/С3.jpg",
+            9.34
+        ],
+        [
+            "СМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Белый орел/1Г/СМОКАП.jpg",
+            1.43
+        ],
+        [
+            "СРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Белый орел/1Г/СРазмер.jpg",
+            1.38
+        ],
+        [
+            "СТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Белый орел/1Г/СТитульник.jpg",
+            1.63
+        ]
+    ],
+    "POSTER-JORDISON-GLOSS-3": [
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-GLOSS-3/1.jpg",
+            6.5
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-GLOSS-3/2.jpg",
+            7.44
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-GLOSS-3/3.jpg",
+            7.03
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-GLOSS-3/МОКАП.jpg",
+            1.54
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-GLOSS-3/Размер.jpg",
+            1.35
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-GLOSS-3/Титульник.jpg",
+            1.81
+        ]
+    ],
+    "POSTER-JORDISON-MAT-3": [
+        [
+            "ЧБ1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-MAT-3/ЧБ1.jpg",
+            7.25
+        ],
+        [
+            "ЧБ2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-MAT-3/ЧБ2.jpg",
+            6.83
+        ],
+        [
+            "ЧБ3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-MAT-3/ЧБ3.jpg",
+            4.3
+        ],
+        [
+            "ЧБМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-MAT-3/ЧБМОКАП.jpg",
+            1.38
+        ],
+        [
+            "ЧБРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-MAT-3/ЧБРазмер.jpg",
+            1.5
+        ],
+        [
+            "ЧБТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/JOEY SLIPKNOT/POSTER-JORDISON-MAT-3/ЧБТитульник.jpg",
+            1.48
+        ]
+    ],
+    "POSTER-VOGUE-GLOSS": [
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE-GLOSS/1.jpg",
+            6.16
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE-GLOSS/2.jpg",
+            5.06
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE-GLOSS/3.jpg",
+            4.88
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE-GLOSS/МОКАП.jpg",
+            2.17
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE-GLOSS/Размер.jpg",
+            1.17
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE-GLOSS/Титульник.jpg",
+            1.65
+        ]
+    ],
+    "POSTER-VOGUE1-GLOSS": [
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE1-GLOSS/1.jpg",
+            3.37
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE1-GLOSS/2.jpg",
+            3.75
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE1-GLOSS/3.jpg",
+            5.45
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE1-GLOSS/МОКАП.jpg",
+            2.25
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE1-GLOSS/Размер.jpg",
+            1.34
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/VOGUE/POSTER-VOGUE1-GLOSS/Титульник.jpg",
+            1.63
+        ]
+    ],
+    "1В": [
+        [
+            "С1 i want to believe.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/i want to believe/1В/С1 i want to believe.jpg",
+            7.5
+        ],
+        [
+            "С2 i want to believe.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/i want to believe/1В/С2 i want to believe.jpg",
+            8.35
+        ],
+        [
+            "С3 i want to believe.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/i want to believe/1В/С3 i want to believe.jpg",
+            7.19
+        ],
+        [
+            "СМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/i want to believe/1В/СМОКАП.jpg",
+            2.02
+        ],
+        [
+            "СРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/i want to believe/1В/СРазмер.jpg",
+            0.99
+        ],
+        [
+            "СТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/i want to believe/1В/СТитульник.jpg",
+            1.43
+        ],
+        [
+            "С1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/1В/С1.jpg",
+            10.5
+        ],
+        [
+            "С2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/1В/С2.jpg",
+            10.08
+        ],
+        [
+            "С3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/1В/С3.jpg",
+            10.16
+        ],
+        [
+            "С4.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/1В/С4.jpg",
+            8.1
+        ],
+        [
+            "С5.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/1В/С5.jpg",
+            6.54
+        ],
+        [
+            "С6.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/1В/С6.jpg",
+            8.06
+        ],
+        [
+            "СМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/1В/СМОКАП.jpg",
+            2.08
+        ],
+        [
+            "СРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/1В/СРазмер.jpg",
+            1.21
+        ],
+        [
+            "СТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/1В/СТитульник.jpg",
+            1.59
+        ],
+        [
+            "ЧБ1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Антонио Бандерас/1В/ЧБ1.jpg",
+            5.76
+        ],
+        [
+            "ЧБ2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Антонио Бандерас/1В/ЧБ2.jpg",
+            4.64
+        ],
+        [
+            "ЧБ3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Антонио Бандерас/1В/ЧБ3.jpg",
+            4.89
+        ],
+        [
+            "ЧБМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Антонио Бандерас/1В/ЧБМОКАП.jpg",
+            1.31
+        ],
+        [
+            "ЧБРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Антонио Бандерас/1В/ЧБРазмер.jpg",
+            1.12
+        ],
+        [
+            "ЧБТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Антонио Бандерас/1В/ЧБТитульник.jpg",
+            1.32
+        ],
+        [
+            "ЧБ1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Астрид (Битва экстрасенсов)/1В/ЧБ1.jpg",
+            3.05
+        ],
+        [
+            "ЧБ2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Астрид (Битва экстрасенсов)/1В/ЧБ2.jpg",
+            3.91
+        ],
+        [
+            "ЧБ3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Астрид (Битва экстрасенсов)/1В/ЧБ3.jpg",
+            4.15
+        ],
+        [
+            "ЧБМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Астрид (Битва экстрасенсов)/1В/ЧБМОКАП.jpg",
+            1.18
+        ],
+        [
+            "ЧБРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Астрид (Битва экстрасенсов)/1В/ЧБРазмер.jpg",
+            0.74
+        ],
+        [
+            "ЧБТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Астрид (Битва экстрасенсов)/1В/ЧБТитульник.jpg",
+            1.0
+        ]
+    ],
+    "POSTER-OGBUDA-MAT": [
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/POSTER-OGBUDA-MAT/Размер.jpg",
+            1.22
+        ],
+        [
+            "С1 og buda.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/POSTER-OGBUDA-MAT/С1 og buda.jpg",
+            8.72
+        ],
+        [
+            "С2 og buda.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/POSTER-OGBUDA-MAT/С2 og buda.jpg",
+            11.56
+        ],
+        [
+            "С3 og buda.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/POSTER-OGBUDA-MAT/С3 og buda.jpg",
+            10.19
+        ],
+        [
+            "СМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/POSTER-OGBUDA-MAT/СМОКАП.jpg",
+            1.3
+        ],
+        [
+            "СТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/og buda/POSTER-OGBUDA-MAT/СТитульник.jpg",
+            1.52
+        ]
+    ],
+    "POSTER-ABSTRAKCIYA-GLOSS": [
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Абстракция/POSTER-ABSTRAKCIYA-GLOSS/1.jpg",
+            11.24
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Абстракция/POSTER-ABSTRAKCIYA-GLOSS/2.jpg",
+            10.35
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Абстракция/POSTER-ABSTRAKCIYA-GLOSS/3.jpg",
+            10.83
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Абстракция/POSTER-ABSTRAKCIYA-GLOSS/МОКАП.jpg",
+            2.09
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Абстракция/POSTER-ABSTRAKCIYA-GLOSS/Размер.jpg",
+            1.84
+        ]
+    ],
+    "POSTER-AVATAR-GLOSS": [
+        [
+            "Джейк и Нейтири.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Аватар/POSTER-AVATAR-GLOSS/Джейк и Нейтири.jpg",
+            6.0
+        ],
+        [
+            "Лоак.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Аватар/POSTER-AVATAR-GLOSS/Лоак.jpg",
+            5.05
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Аватар/POSTER-AVATAR-GLOSS/МОКАП.jpg",
+            1.55
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Аватар/POSTER-AVATAR-GLOSS/Размер.jpg",
+            1.28
+        ],
+        [
+            "Ронал и Тоновари.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Аватар/POSTER-AVATAR-GLOSS/Ронал и Тоновари.jpg",
+            5.15
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Аватар/POSTER-AVATAR-GLOSS/Титульник.jpg",
+            1.79
+        ]
+    ],
+    "2В": [
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/2В/МОКАП.jpg",
+            1.63
+        ],
+        [
+            "С1 Африка.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/2В/С1 Африка.jpg",
+            13.46
+        ],
+        [
+            "С2 Африка.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/2В/С2 Африка.jpg",
+            15.13
+        ],
+        [
+            "С3 Африка.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/2В/С3 Африка.jpg",
+            13.98
+        ],
+        [
+            "СРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/2В/СРазмер.jpg",
+            1.97
+        ],
+        [
+            "СТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/2В/СТитульник.jpg",
+            2.38
+        ]
+    ],
+    "POSTER-AFRIKAGHIRAF-GLOSS": [
+        [
+            "1.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/POSTER-AFRIKAGHIRAF-GLOSS/1.jpg",
+            5.29
+        ],
+        [
+            "2.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/POSTER-AFRIKAGHIRAF-GLOSS/2.jpg",
+            3.04
+        ],
+        [
+            "3.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/POSTER-AFRIKAGHIRAF-GLOSS/3.jpg",
+            3.99
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/POSTER-AFRIKAGHIRAF-GLOSS/МОКАП.jpg",
+            1.21
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/POSTER-AFRIKAGHIRAF-GLOSS/Размер.jpg",
+            1.14
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Африка/POSTER-AFRIKAGHIRAF-GLOSS/Титульник.jpg",
+            1.53
+        ]
+    ],
+    "POSTER-BITVA.KGECATI-MAT-3": [
+        [
+            "С1 Константин Гецати.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.KGECATI-MAT-3/С1 Константин Гецати.jpg",
+            10.97
+        ],
+        [
+            "С2 Константин Гецати.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.KGECATI-MAT-3/С2 Константин Гецати.jpg",
+            8.51
+        ],
+        [
+            "С3 Константин Гецати.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.KGECATI-MAT-3/С3 Константин Гецати.jpg",
+            8.05
+        ],
+        [
+            "СМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.KGECATI-MAT-3/СМОКАП.jpg",
+            1.23
+        ],
+        [
+            "СРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.KGECATI-MAT-3/СРазмер.jpg",
+            1.09
+        ],
+        [
+            "СРекомендуем.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.KGECATI-MAT-3/СРекомендуем.jpg",
+            1.63
+        ],
+        [
+            "СТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.KGECATI-MAT-3/СТитульник.jpg",
+            1.53
+        ]
+    ],
+    "POSTER-BITVA.MATVEEVDM-GLOSS-3": [
+        [
+            "1 Дмитрий Матвеев.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.MATVEEVDM-GLOSS-3/1 Дмитрий Матвеев.jpg",
+            2.02
+        ],
+        [
+            "2 Дмитрий Матвеев.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.MATVEEVDM-GLOSS-3/2 Дмитрий Матвеев.jpg",
+            4.28
+        ],
+        [
+            "3 Дмитрий Матвеев.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.MATVEEVDM-GLOSS-3/3 Дмитрий Матвеев.jpg",
+            3.28
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.MATVEEVDM-GLOSS-3/МОКАП.jpg",
+            1.07
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.MATVEEVDM-GLOSS-3/Размер.jpg",
+            0.76
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.MATVEEVDM-GLOSS-3/Титульник.jpg",
+            0.97
+        ]
+    ],
+    "POSTER-BITVA.NSHEVCHENKO-GLOSS-3": [
+        [
+            "1 Надежда Шевченко.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.NSHEVCHENKO-GLOSS-3/1 Надежда Шевченко.jpg",
+            4.87
+        ],
+        [
+            "2 Надежда Шевченко.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.NSHEVCHENKO-GLOSS-3/2 Надежда Шевченко.jpg",
+            4.67
+        ],
+        [
+            "3 Надежда Шевченко.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.NSHEVCHENKO-GLOSS-3/3 Надежда Шевченко.jpg",
+            4.18
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.NSHEVCHENKO-GLOSS-3/МОКАП.jpg",
+            1.2
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.NSHEVCHENKO-GLOSS-3/Размер.jpg",
+            1.08
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.NSHEVCHENKO-GLOSS-3/Титульник.jpg",
+            1.29
+        ]
+    ],
+    "POSTER-BITVA.ROMANOVAM-GLOSS-3": [
+        [
+            "1 Марьяна Романова.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.ROMANOVAM-GLOSS-3/1 Марьяна Романова.jpg",
+            5.87
+        ],
+        [
+            "2 Марьяна Романова.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.ROMANOVAM-GLOSS-3/2 Марьяна Романова.jpg",
+            6.17
+        ],
+        [
+            "3 Марьяна Романова.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.ROMANOVAM-GLOSS-3/3 Марьяна Романова.jpg",
+            5.7
+        ],
+        [
+            "МОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.ROMANOVAM-GLOSS-3/МОКАП.jpg",
+            1.15
+        ],
+        [
+            "Размер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.ROMANOVAM-GLOSS-3/Размер.jpg",
+            0.96
+        ],
+        [
+            "Рекомендуем.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.ROMANOVAM-GLOSS-3/Рекомендуем.jpg",
+            1.37
+        ],
+        [
+            "Титульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.ROMANOVAM-GLOSS-3/Титульник.jpg",
+            1.25
+        ]
+    ],
+    "POSTER-BITVA.VRAIDOS-MAT-3": [
+        [
+            "ЧБ1 Виктория Райдос.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.VRAIDOS-MAT-3/ЧБ1 Виктория Райдос.jpg",
+            4.28
+        ],
+        [
+            "ЧБ2 Виктория Райдос.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.VRAIDOS-MAT-3/ЧБ2 Виктория Райдос.jpg",
+            2.41
+        ],
+        [
+            "ЧБ3 Виктория Райдос.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.VRAIDOS-MAT-3/ЧБ3 Виктория Райдос.jpg",
+            3.97
+        ],
+        [
+            "ЧБМОКАП.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.VRAIDOS-MAT-3/ЧБМОКАП.jpg",
+            1.11
+        ],
+        [
+            "ЧБРазмер.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.VRAIDOS-MAT-3/ЧБРазмер.jpg",
+            0.71
+        ],
+        [
+            "ЧБРекомендуем.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.VRAIDOS-MAT-3/ЧБРекомендуем.jpg",
+            1.21
+        ],
+        [
+            "ЧБТитульник.jpg",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Битва сильнейших/POSTER-BITVA.VRAIDOS-MAT-3/ЧБТитульник.jpg",
+            1.07
+        ]
+    ],
     "POSTER-ATOMICHEART-GLOSS": [
         [
             "1 В.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-GLOSS/1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-GLOSS/1 В.png",
             21.4
         ],
         [
             "2 В.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-GLOSS/2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-GLOSS/2 В.png",
             14.83
         ],
         [
             "3 В.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-GLOSS/3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-GLOSS/3 В.png",
             23.79
         ],
         [
             "МОКАП. Игры и комиксы.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-GLOSS/МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-GLOSS/МОКАП. Игры и комиксы.png",
             3.47
         ],
         [
             "Размер.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-GLOSS/Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-GLOSS/Размер.png",
             2.01
         ],
         [
             "Рекомендуем.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-GLOSS/Рекомендуем.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-GLOSS/Рекомендуем.png",
             3.72
         ],
         [
             "Титульник.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-GLOSS/Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-GLOSS/Титульник.png",
             3.37
         ]
     ],
     "POSTER-ATOMICHEART-SSSR-MAT": [
         [
             "1 В.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/1 В.png",
             21.94
         ],
         [
             "2 В.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/2 В.png",
             23.32
         ],
         [
             "3 В.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/3 В.png",
             18.16
         ],
         [
             "МОКАП. Игры и комиксы.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/МОКАП. Игры и комиксы.png",
             3.32
         ],
         [
             "С Титульник.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/С Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/С Титульник.png",
             2.83
         ],
         [
             "с. Размер.png",
-            "disk:/Downloads/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/с. Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/POSTER-ATOMICHEART-SSSR-MAT/с. Размер.png",
             1.92
+        ]
+    ],
+    "Atomic Heart": [
+        [
+            "C Рекомендуем.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/C Рекомендуем.png",
+            3.68
+        ],
+        [
+            "ОЗОН Рекомендуем.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/ОЗОН Рекомендуем.png",
+            3.27
+        ],
+        [
+            "Рекомендуем.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Atomic Heart/Рекомендуем.png",
+            3.72
+        ]
+    ],
+    "POSTER-JOJO'S-BLACK-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-BLACK-GLOSS/1 В.png",
+            4.21
+        ],
+        [
+            "1Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-BLACK-GLOSS/1Размер.png",
+            0.94
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-BLACK-GLOSS/2 В.png",
+            4.29
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-BLACK-GLOSS/3 В.png",
+            3.68
+        ],
+        [
+            "МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-BLACK-GLOSS/МОКАП. Игры и комиксы.png",
+            2.52
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-BLACK-GLOSS/Титульник.png",
+            1.04
+        ]
+    ],
+    "POSTER-JOJO'S-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-GLOSS/1 В.png",
+            16.37
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-GLOSS/2 В.png",
+            16.21
+        ],
+        [
+            "2Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-GLOSS/2Размер.png",
+            2.05
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-GLOSS/3 В.png",
+            17.67
+        ],
+        [
+            "МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-GLOSS/МОКАП. Игры и комиксы.png",
+            3.44
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-GLOSS/Титульник.png",
+            2.96
+        ]
+    ],
+    "POSTER-JOJO'S-VERTICAL-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-VERTICAL-GLOSS/1 В.png",
+            7.6
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-VERTICAL-GLOSS/2 В.png",
+            21.63
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-VERTICAL-GLOSS/3 В.png",
+            25.49
+        ],
+        [
+            "3 Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-VERTICAL-GLOSS/3 Размер.png",
+            2.0
+        ],
+        [
+            "МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-VERTICAL-GLOSS/МОКАП. Игры и комиксы.png",
+            3.34
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo/POSTER-JOJO'S-VERTICAL-GLOSS/Титульник.png",
+            2.6
+        ]
+    ],
+    "POSTER-JOJO-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-GLOSS/1 В.png",
+            14.32
+        ],
+        [
+            "1 Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-GLOSS/1 Титульник.png",
+            3.36
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-GLOSS/2 В.png",
+            16.81
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-GLOSS/3 В.png",
+            18.62
+        ],
+        [
+            "МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-GLOSS/МОКАП. Игры и комиксы.png",
+            3.56
+        ],
+        [
+            "Размер (1).png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-GLOSS/Размер (1).png",
+            1.87
+        ]
+    ],
+    "POSTER-JOJO-MAT": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-MAT/1 В.png",
+            25.87
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-MAT/2 В.png",
+            25.51
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-MAT/3 В.png",
+            26.33
+        ],
+        [
+            "МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-MAT/МОКАП. Игры и комиксы.png",
+            3.54
+        ],
+        [
+            "С Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-MAT/С Размер.png",
+            2.56
+        ],
+        [
+            "С Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO-MAT/С Титульник.png",
+            3.55
+        ]
+    ],
+    "POSTER-JOJO2-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO2-GLOSS/1 В.png",
+            17.71
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO2-GLOSS/2 В.png",
+            5.72
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO2-GLOSS/3 В.png",
+            18.07
+        ],
+        [
+            "МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO2-GLOSS/МОКАП. Игры и комиксы.png",
+            3.37
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO2-GLOSS/Размер.png",
+            1.03
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/Jojo 2/POSTER-JOJO2-GLOSS/Титульник.png",
+            2.87
+        ]
+    ],
+    "POSTER-BLESSING-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-BLESSING-GLOSS/1 В.png",
+            22.04
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-BLESSING-GLOSS/2 В.png",
+            12.86
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-BLESSING-GLOSS/3 В.png",
+            11.19
+        ],
+        [
+            "МОКАП. Милота и аниме.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-BLESSING-GLOSS/МОКАП. Милота и аниме.png",
+            4.5
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-BLESSING-GLOSS/Размер.png",
+            1.96
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-BLESSING-GLOSS/Титульник.png",
+            3.85
+        ]
+    ],
+    "POSTER-EVANGELION-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-EVANGELION-GLOSS/1 В.png",
+            11.79
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-EVANGELION-GLOSS/2 В.png",
+            11.2
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-EVANGELION-GLOSS/3 В.png",
+            13.02
+        ],
+        [
+            "МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-EVANGELION-GLOSS/МОКАП. Игры и комиксы.png",
+            3.19
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-EVANGELION-GLOSS/Размер.png",
+            2.1
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-EVANGELION-GLOSS/Титульник.png",
+            2.58
+        ]
+    ],
+    "POSTER-HEROACADEMIA-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-HEROACADEMIA-GLOSS/1 В.png",
+            17.8
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-HEROACADEMIA-GLOSS/2 В.png",
+            16.49
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-HEROACADEMIA-GLOSS/3 В.png",
+            14.73
+        ],
+        [
+            "МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-HEROACADEMIA-GLOSS/МОКАП. Игры и комиксы.png",
+            3.64
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-HEROACADEMIA-GLOSS/Размер.png",
+            2.39
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-HEROACADEMIA-GLOSS/Титульник.png",
+            3.39
+        ]
+    ],
+    "POSTER-KNOCKONMYDOOR-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KNOCKONMYDOOR-GLOSS/1 В.png",
+            13.74
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KNOCKONMYDOOR-GLOSS/2 В.png",
+            14.38
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KNOCKONMYDOOR-GLOSS/3 В.png",
+            10.96
+        ],
+        [
+            "МОКАП. Инди или сериалы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KNOCKONMYDOOR-GLOSS/МОКАП. Инди или сериалы.png",
+            3.95
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KNOCKONMYDOOR-GLOSS/Размер.png",
+            2.42
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KNOCKONMYDOOR-GLOSS/Титульник.png",
+            3.43
+        ]
+    ],
+    "POSTER-KXL-MAT": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KXL-MAT/1 В.png",
+            12.66
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KXL-MAT/2 В.png",
+            11.57
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KXL-MAT/3 В.png",
+            12.54
+        ],
+        [
+            "МОКАП НЕЙТРАЛ. Синий темный.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KXL-MAT/МОКАП НЕЙТРАЛ. Синий темный.png",
+            4.66
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KXL-MAT/Размер.png",
+            1.57
+        ],
+        [
+            "Титульник (1).png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-KXL-MAT/Титульник (1).png",
+            2.21
+        ]
+    ],
+    "POSTER-LITENERGY-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-LITENERGY-GLOSS/1 В.png",
+            5.45
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-LITENERGY-GLOSS/2 В.png",
+            5.96
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-LITENERGY-GLOSS/3 В.png",
+            6.04
+        ],
+        [
+            "МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-LITENERGY-GLOSS/МОКАП. Игры и комиксы.png",
+            3.03
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-LITENERGY-GLOSS/Размер.png",
+            1.45
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-LITENERGY-GLOSS/Титульник.png",
+            2.36
+        ]
+    ],
+    "POSTER-METALLICA-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-METALLICA-GLOSS/1 В.png",
+            13.66
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-METALLICA-GLOSS/2 В.png",
+            15.57
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-METALLICA-GLOSS/3 В.png",
+            15.62
+        ],
+        [
+            "МОКАП. Рок или готика.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-METALLICA-GLOSS/МОКАП. Рок или готика.png",
+            3.92
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-METALLICA-GLOSS/Размер.png",
+            2.07
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-METALLICA-GLOSS/Титульник.png",
+            2.99
+        ]
+    ],
+    "POSTER-MIYATEZHNIDYH-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-MIYATEZHNIDYH-GLOSS/1 В.png",
+            12.89
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-MIYATEZHNIDYH-GLOSS/2 В.png",
+            13.69
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-MIYATEZHNIDYH-GLOSS/3 В.png",
+            13.21
+        ],
+        [
+            "МОКАП. Инди или сериалы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-MIYATEZHNIDYH-GLOSS/МОКАП. Инди или сериалы.png",
+            3.89
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-MIYATEZHNIDYH-GLOSS/Размер.png",
+            2.0
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-MIYATEZHNIDYH-GLOSS/Титульник.png",
+            3.32
+        ]
+    ],
+    "POSTER-NIRVANA-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NIRVANA-GLOSS/1 В.png",
+            17.4
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NIRVANA-GLOSS/2 В.png",
+            17.69
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NIRVANA-GLOSS/3 В.png",
+            10.93
+        ],
+        [
+            "МОКАП. Рок или готика.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NIRVANA-GLOSS/МОКАП. Рок или готика.png",
+            3.94
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NIRVANA-GLOSS/Размер.png",
+            2.17
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NIRVANA-GLOSS/Титульник.png",
+            3.14
+        ]
+    ],
+    "POSTER-NISETOMEETYOU-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NISETOMEETYOU-GLOSS/1 В.png",
+            18.85
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NISETOMEETYOU-GLOSS/2 В.png",
+            14.99
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NISETOMEETYOU-GLOSS/3 В.png",
+            14.55
+        ],
+        [
+            "МОКАП. Милота и аниме.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NISETOMEETYOU-GLOSS/МОКАП. Милота и аниме.png",
+            4.13
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NISETOMEETYOU-GLOSS/Размер.png",
+            1.95
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-NISETOMEETYOU-GLOSS/Титульник.png",
+            3.51
+        ]
+    ],
+    "POSTER-ODRIHEPBURN-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ODRIHEPBURN-GLOSS/1 В.png",
+            14.13
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ODRIHEPBURN-GLOSS/2 В.png",
+            12.96
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ODRIHEPBURN-GLOSS/3 В.png",
+            11.76
+        ],
+        [
+            "МОКАП. Девчачее, аниме или милота.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ODRIHEPBURN-GLOSS/МОКАП. Девчачее, аниме или милота.png",
+            3.84
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ODRIHEPBURN-GLOSS/Размер.png",
+            2.01
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ODRIHEPBURN-GLOSS/Титульник.png",
+            2.82
+        ]
+    ],
+    "POSTER-ONEPIECE-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ONEPIECE-GLOSS/1 В.png",
+            16.57
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ONEPIECE-GLOSS/2 В.png",
+            21.34
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ONEPIECE-GLOSS/3 В.png",
+            19.75
+        ],
+        [
+            "МОКАП. Игры и комиксы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ONEPIECE-GLOSS/МОКАП. Игры и комиксы.png",
+            3.77
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ONEPIECE-GLOSS/Размер.png",
+            2.41
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-ONEPIECE-GLOSS/Титульник.png",
+            3.77
+        ]
+    ],
+    "POSTER-OVECHKIN-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-OVECHKIN-GLOSS/1 В.png",
+            16.5
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-OVECHKIN-GLOSS/2 В.png",
+            12.12
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-OVECHKIN-GLOSS/3 В.png",
+            13.59
+        ],
+        [
+            "МОКАП НЕЙТРАЛ. Синий темный.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-OVECHKIN-GLOSS/МОКАП НЕЙТРАЛ. Синий темный.png",
+            4.81
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-OVECHKIN-GLOSS/Размер.png",
+            2.27
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-OVECHKIN-GLOSS/Титульник.png",
+            2.9
+        ]
+    ],
+    "POSTER-PRAVILADOMA-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-PRAVILADOMA-GLOSS/1 В.png",
+            15.41
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-PRAVILADOMA-GLOSS/2 В.png",
+            8.13
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-PRAVILADOMA-GLOSS/3 В.png",
+            12.17
+        ],
+        [
+            "МОКАП. Белый кирпич.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-PRAVILADOMA-GLOSS/МОКАП. Белый кирпич.png",
+            5.45
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-PRAVILADOMA-GLOSS/Размер.png",
+            1.69
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-PRAVILADOMA-GLOSS/Титульник.png",
+            2.15
+        ]
+    ],
+    "POSTER-SLAYERDEMON-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLAYERDEMON-GLOSS/1 В.png",
+            15.13
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLAYERDEMON-GLOSS/2 В.png",
+            4.61
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLAYERDEMON-GLOSS/3 В.png",
+            14.26
+        ],
+        [
+            "МОКАП. Милота и аниме.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLAYERDEMON-GLOSS/МОКАП. Милота и аниме.png",
+            4.09
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLAYERDEMON-GLOSS/Размер.png",
+            2.1
+        ],
+        [
+            "Рекомендуем.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLAYERDEMON-GLOSS/Рекомендуем.png",
+            2.75
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLAYERDEMON-GLOSS/Титульник.png",
+            2.66
+        ]
+    ],
+    "POSTER-SLIPKNOT-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLIPKNOT-GLOSS/1 В.png",
+            23.26
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLIPKNOT-GLOSS/2 В.png",
+            5.98
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLIPKNOT-GLOSS/3 В.png",
+            15.94
+        ],
+        [
+            "МОКАП. Рок или готика.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLIPKNOT-GLOSS/МОКАП. Рок или готика.png",
+            3.72
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLIPKNOT-GLOSS/Размер.png",
+            1.05
+        ],
+        [
+            "Титульник (1).png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SLIPKNOT-GLOSS/Титульник (1).png",
+            2.6
+        ]
+    ],
+    "POSTER-SPARTAK-GLOSS": [
+        [
+            "1 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SPARTAK-GLOSS/1 В.png",
+            26.33
+        ],
+        [
+            "2 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SPARTAK-GLOSS/2 В.png",
+            14.88
+        ],
+        [
+            "3 В.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SPARTAK-GLOSS/3 В.png",
+            17.37
+        ],
+        [
+            "МОКАП НЕЙТРАЛ. Синий темный (1).png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SPARTAK-GLOSS/МОКАП НЕЙТРАЛ. Синий темный (1).png",
+            5.36
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SPARTAK-GLOSS/Размер.png",
+            2.28
+        ],
+        [
+            "Титульник (1).png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Диана/POSTER-SPARTAK-GLOSS/Титульник (1).png",
+            3.94
+        ]
+    ],
+    "1 набор 5 шт": [
+        [
+            "1.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/1 набор 5 шт/1.png",
+            1.93
+        ],
+        [
+            "2.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/1 набор 5 шт/2.png",
+            1.73
+        ],
+        [
+            "3.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/1 набор 5 шт/3.png",
+            1.58
+        ],
+        [
+            "4.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/1 набор 5 шт/4.png",
+            1.91
+        ],
+        [
+            "5.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/1 набор 5 шт/5.png",
+            1.59
+        ]
+    ],
+    "2 набор 5 шт": [
+        [
+            "1.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/2 набор 5 шт/1.png",
+            1.86
+        ],
+        [
+            "2.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/2 набор 5 шт/2.png",
+            1.56
+        ],
+        [
+            "3.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/2 набор 5 шт/3.png",
+            1.57
+        ],
+        [
+            "4.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/2 набор 5 шт/4.png",
+            1.55
+        ],
+        [
+            "5.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/2 набор 5 шт/5.png",
+            1.6
+        ]
+    ],
+    "2 набор 5 шт ЧБ": [
+        [
+            "1.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/2 набор 5 шт ЧБ/1.png",
+            1.69
+        ],
+        [
+            "2.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/2 набор 5 шт ЧБ/2.png",
+            1.3
+        ],
+        [
+            "3.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/2 набор 5 шт ЧБ/3.png",
+            1.31
+        ],
+        [
+            "4.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/2 набор 5 шт ЧБ/4.png",
+            1.29
+        ],
+        [
+            "5.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/10 на 15 ТЕСТ/2 набор 5 шт ЧБ/5.png",
+            1.43
+        ]
+    ],
+    "1В. Кли": [
+        [
+            "1. Кли.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1В. Кли/1. Кли.png",
+            9.37
+        ],
+        [
+            "2В. Кли.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1В. Кли/2В. Кли.png",
+            12.15
+        ],
+        [
+            "3. Кли.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1В. Кли/3. Кли.png",
+            10.86
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1В. Кли/Мокап.png",
+            3.22
+        ],
+        [
+            "С1. Кли.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1В. Кли/С1. Кли.png",
+            24.82
+        ],
+        [
+            "С2. Кли.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1В. Кли/С2. Кли.png",
+            26.46
+        ],
+        [
+            "С3. Кли.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1В. Кли/С3. Кли.png",
+            26.6
+        ],
+        [
+            "СМокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1В. Кли/СМокап.png",
+            3.62
+        ],
+        [
+            "СТитульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1В. Кли/СТитульник.png",
+            3.4
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1В. Кли/Титульник.png",
+            2.84
+        ]
+    ],
+    "1Г. Гань Юй": [
+        [
+            "1. Гань Юй и Нин Гуан.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1Г. Гань Юй/1. Гань Юй и Нин Гуан.png",
+            21.45
+        ],
+        [
+            "2. Гань Юй, Янь Фэй и Шэнь Хэ.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1Г. Гань Юй/2. Гань Юй, Янь Фэй и Шэнь Хэ.png",
+            19.19
+        ],
+        [
+            "3. Гань Юй.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1Г. Гань Юй/3. Гань Юй.png",
+            12.72
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1Г. Гань Юй/Мокап.png",
+            3.43
+        ],
+        [
+            "С1. Гань Юй и Нин Гуан.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1Г. Гань Юй/С1. Гань Юй и Нин Гуан.png",
+            29.24
+        ],
+        [
+            "С2. Гань Юй, Янь Фэй и Шэнь Хэ.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1Г. Гань Юй/С2. Гань Юй, Янь Фэй и Шэнь Хэ.png",
+            27.51
+        ],
+        [
+            "С3. Гань Юй.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1Г. Гань Юй/С3. Гань Юй.png",
+            25.88
+        ],
+        [
+            "СМокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1Г. Гань Юй/СМокап.png",
+            3.61
+        ],
+        [
+            "СТитульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1Г. Гань Юй/СТитульник.png",
+            3.5
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/1Г. Гань Юй/Титульник.png",
+            3.27
+        ]
+    ],
+    "2Г. Скарамучча или Странник": [
+        [
+            "1. Скарамучча.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/2Г. Скарамучча или Странник/1. Скарамучча.png",
+            12.27
+        ],
+        [
+            "2. Странник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/2Г. Скарамучча или Странник/2. Странник.png",
+            23.62
+        ],
+        [
+            "3. Странник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/2Г. Скарамучча или Странник/3. Странник.png",
+            12.69
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/2Г. Скарамучча или Странник/Мокап.png",
+            3.28
+        ],
+        [
+            "С1. Скарамучча.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/2Г. Скарамучча или Странник/С1. Скарамучча.png",
+            25.24
+        ],
+        [
+            "С2. Странник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/2Г. Скарамучча или Странник/С2. Странник.png",
+            28.44
+        ],
+        [
+            "С3. Странник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/2Г. Скарамучча или Странник/С3. Странник.png",
+            26.1
+        ],
+        [
+            "СМокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/2Г. Скарамучча или Странник/СМокап.png",
+            3.53
+        ],
+        [
+            "СТитульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/2Г. Скарамучча или Странник/СТитульник.png",
+            3.29
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/2Г. Скарамучча или Странник/Титульник.png",
+            2.93
+        ]
+    ],
+    "3Г. Сяо": [
+        [
+            "1. Сяо.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/3Г. Сяо/1. Сяо.png",
+            12.35
+        ],
+        [
+            "2. Сяо.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/3Г. Сяо/2. Сяо.png",
+            12.32
+        ],
+        [
+            "3. Сяо.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/3Г. Сяо/3. Сяо.png",
+            12.74
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/3Г. Сяо/Мокап.png",
+            3.18
+        ],
+        [
+            "С1. Сяо.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/3Г. Сяо/С1. Сяо.png",
+            27.67
+        ],
+        [
+            "С2. Сяо.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/3Г. Сяо/С2. Сяо.png",
+            24.21
+        ],
+        [
+            "С3. Сяо.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/3Г. Сяо/С3. Сяо.png",
+            26.0
+        ],
+        [
+            "СМокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/3Г. Сяо/СМокап.png",
+            3.49
+        ],
+        [
+            "СТитульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/3Г. Сяо/СТитульник.png",
+            3.27
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/3Г. Сяо/Титульник.png",
+            2.79
+        ]
+    ],
+    "4Г. Яэ Мико": [
+        [
+            "1. Яэ Мико.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/4Г. Яэ Мико/1. Яэ Мико.png",
+            12.4
+        ],
+        [
+            "2. Яэ Мико и Райден.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/4Г. Яэ Мико/2. Яэ Мико и Райден.png",
+            13.3
+        ],
+        [
+            "3. Яэ Мико.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/4Г. Яэ Мико/3. Яэ Мико.png",
+            15.8
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/4Г. Яэ Мико/Мокап.png",
+            3.3
+        ],
+        [
+            "С1. Яэ Мико.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/4Г. Яэ Мико/С1. Яэ Мико.png",
+            26.54
+        ],
+        [
+            "С2. Яэ Мико и Райден.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/4Г. Яэ Мико/С2. Яэ Мико и Райден.png",
+            26.94
+        ],
+        [
+            "С3. Яэ Мико.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/4Г. Яэ Мико/С3. Яэ Мико.png",
+            27.41
+        ],
+        [
+            "СМокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/4Г. Яэ Мико/СМокап.png",
+            3.58
+        ],
+        [
+            "СТитульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/4Г. Яэ Мико/СТитульник.png",
+            3.45
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Екатерина/Геншин/4Г. Яэ Мико/Титульник.png",
+            3.04
+        ]
+    ],
+    "POSTER-AKIMAQQE-GLOSS-3": [
+        [
+            "1. akumaqqe.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE-GLOSS-3/1. akumaqqe.png",
+            6.76
+        ],
+        [
+            "2. akumaqqe.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE-GLOSS-3/2. akumaqqe.png",
+            4.18
+        ],
+        [
+            "3. akumaqqe.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE-GLOSS-3/3. akumaqqe.png",
+            3.67
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE-GLOSS-3/Мокап.png",
+            2.48
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE-GLOSS-3/Размер.png",
+            0.89
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE-GLOSS-3/Титульник.png",
+            1.5
+        ]
+    ],
+    "POSTER-AKIMAQQE.2-GLOSS-3": [
+        [
+            "1. Akumaqqe.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE.2-GLOSS-3/1. Akumaqqe.png",
+            20.26
+        ],
+        [
+            "2. Akumaqqe.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE.2-GLOSS-3/2. Akumaqqe.png",
+            9.91
+        ],
+        [
+            "3. Akimaqqe.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE.2-GLOSS-3/3. Akimaqqe.png",
+            18.07
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE.2-GLOSS-3/Мокап.png",
+            2.83
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE.2-GLOSS-3/Размер.png",
+            1.7
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Akimaqqe/POSTER-AKIMAQQE.2-GLOSS-3/Титульник.png",
+            2.62
+        ]
+    ],
+    "1-Г": [
+        [
+            "1. ateez.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Ateez/1-Г/1. ateez.png",
+            9.19
+        ],
+        [
+            "2. ateez.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Ateez/1-Г/2. ateez.png",
+            15.52
+        ],
+        [
+            "3. ateez.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Ateez/1-Г/3. ateez.png",
+            11.91
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Ateez/1-Г/Мокап.png",
+            3.03
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Ateez/1-Г/Размер.png",
+            2.35
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Ateez/1-Г/Титульник.png",
+            2.89
+        ],
+        [
+            " Размер.-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-Г/ Размер.-BMW.png",
+            1.59
+        ],
+        [
+            "1-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-Г/1-BMW.png",
+            16.44
+        ],
+        [
+            "2-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-Г/2-BMW.png",
+            12.64
+        ],
+        [
+            "3-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-Г/3-BMW.png",
+            14.21
+        ],
+        [
+            "MOCKUP-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-Г/MOCKUP-BMW.png",
+            4.93
+        ],
+        [
+            "Титульник-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-Г/Титульник-BMW.png",
+            2.16
+        ],
+        [
+            "1-лего.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/LEGO/1-Г/1-лего.png",
+            21.19
+        ],
+        [
+            "2-лего.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/LEGO/1-Г/2-лего.png",
+            25.65
+        ],
+        [
+            "3-лего.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/LEGO/1-Г/3-лего.png",
+            21.77
+        ],
+        [
+            "MOCKUP-лего.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/LEGO/1-Г/MOCKUP-лего.png",
+            3.16
+        ],
+        [
+            "Размер-лего.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/LEGO/1-Г/Размер-лего.png",
+            2.24
+        ],
+        [
+            "Титульник-лего.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/LEGO/1-Г/Титульник-лего.png",
+            3.14
+        ],
+        [
+            " Титульник-make money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Make money/1-Г/ Титульник-make money.png",
+            4.0
+        ],
+        [
+            "1-make money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Make money/1-Г/1-make money.png",
+            30.12
+        ],
+        [
+            "2-make money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Make money/1-Г/2-make money.png",
+            27.99
+        ],
+        [
+            "3-make money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Make money/1-Г/3-make money.png",
+            29.8
+        ],
+        [
+            "MOCKUP-make money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Make money/1-Г/MOCKUP-make money.png",
+            4.81
+        ],
+        [
+            "Размер-make money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Make money/1-Г/Размер-make money.png",
+            2.75
+        ],
+        [
+            "1-subaru.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/SUBARU/1-Г/1-subaru.png",
+            3.83
+        ],
+        [
+            "2-subaru.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/SUBARU/1-Г/2-subaru.png",
+            12.95
+        ],
+        [
+            "3-subaru.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/SUBARU/1-Г/3-subaru.png",
+            18.11
+        ],
+        [
+            "MOCKUP-subaru.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/SUBARU/1-Г/MOCKUP-subaru.png",
+            4.8
+        ],
+        [
+            "Размер-subaru.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/SUBARU/1-Г/Размер-subaru.png",
+            1.72
+        ],
+        [
+            "Титульник-subaru.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/SUBARU/1-Г/Титульник-subaru.png",
+            1.91
+        ],
+        [
+            "1-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-Г/1-александр кузнецов.png",
+            11.87
+        ],
+        [
+            "2-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-Г/2-александр кузнецов.png",
+            18.59
+        ],
+        [
+            "3-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-Г/3-александр кузнецов.png",
+            8.58
+        ],
+        [
+            "MOCKUP-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-Г/MOCKUP-александр кузнецов.png",
+            2.91
+        ],
+        [
+            "Размер-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-Г/Размер-александр кузнецов.png",
+            1.85
+        ],
+        [
+            "Титульник-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-Г/Титульник-александр кузнецов.png",
+            2.18
+        ]
+    ],
+    "POSTER-BTSGRAFFITI-GLOSS": [
+        [
+            "1. bts.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSGRAFFITI-GLOSS/1. bts.png",
+            9.59
+        ],
+        [
+            "2. bts.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSGRAFFITI-GLOSS/2. bts.png",
+            12.96
+        ],
+        [
+            "3. bts.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSGRAFFITI-GLOSS/3. bts.png",
+            12.91
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSGRAFFITI-GLOSS/Мокап.png",
+            2.94
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSGRAFFITI-GLOSS/Размер.png",
+            2.01
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSGRAFFITI-GLOSS/Титульник.png",
+            2.67
+        ]
+    ],
+    "POSTER-BTSKOSTUM-GLOSS": [
+        [
+            "1. bts перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSKOSTUM-GLOSS/1. bts перевернуто.png",
+            20.98
+        ],
+        [
+            "2. bts перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSKOSTUM-GLOSS/2. bts перевернуто.png",
+            14.86
+        ],
+        [
+            "3. bts перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSKOSTUM-GLOSS/3. bts перевернуто.png",
+            6.95
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSKOSTUM-GLOSS/Размер.png",
+            1.8
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSKOSTUM-GLOSS/Титульник.png",
+            2.43
+        ],
+        [
+            "мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSKOSTUM-GLOSS/мокап.png",
+            2.93
+        ]
+    ],
+    "POSTER-BTSVPIDJAKAH-MAT": [
+        [
+            "C1. bts.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSVPIDJAKAH-MAT/C1. bts.png",
+            26.3
+        ],
+        [
+            "C2. bts.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSVPIDJAKAH-MAT/C2. bts.png",
+            27.32
+        ],
+        [
+            "C3. bts.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSVPIDJAKAH-MAT/C3. bts.png",
+            26.56
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSVPIDJAKAH-MAT/Мокап.png",
+            3.43
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSVPIDJAKAH-MAT/Размер.png",
+            2.61
+        ],
+        [
+            "Рекомендуем.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSVPIDJAKAH-MAT/Рекомендуем.png",
+            3.57
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS/POSTER-BTSVPIDJAKAH-MAT/Титульник.png",
+            3.46
+        ]
+    ],
+    "POSTER-BTS-1-GLOSS": [
+        [
+            "1. bts перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTS-1-GLOSS/1. bts перевернуто.png",
+            24.16
+        ],
+        [
+            "2. bts перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTS-1-GLOSS/2. bts перевернуто.png",
+            23.75
+        ],
+        [
+            "3. bts перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTS-1-GLOSS/3. bts перевернуто.png",
+            24.57
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTS-1-GLOSS/Мокап.png",
+            3.05
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTS-1-GLOSS/Размер.png",
+            2.12
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTS-1-GLOSS/Титульник.png",
+            2.79
+        ]
+    ],
+    "POSTER-BTSCB-MAT": [
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTSCB-MAT/Мокап.png",
+            2.85
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTSCB-MAT/Размер.png",
+            1.43
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTSCB-MAT/Титульник.png",
+            1.85
+        ],
+        [
+            "ЧБ1. bts перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTSCB-MAT/ЧБ1. bts перевернуто.png",
+            8.68
+        ],
+        [
+            "ЧБ2. bts перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTSCB-MAT/ЧБ2. bts перевернуто.png",
+            7.76
+        ],
+        [
+            "ЧБ3. bts перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/BTS (2)/POSTER-BTSCB-MAT/ЧБ3. bts перевернуто.png",
+            7.5
         ]
     ],
     "POSTER-BLACKPINK-GLOSS": [
         [
             "1. blackpink.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-GLOSS/1. blackpink.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-GLOSS/1. blackpink.png",
             17.48
         ],
         [
             "2. blackpnk.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-GLOSS/2. blackpnk.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-GLOSS/2. blackpnk.png",
             19.92
         ],
         [
             "3. blackpink.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-GLOSS/3. blackpink.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-GLOSS/3. blackpink.png",
             13.05
         ],
         [
             "Размер.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-GLOSS/Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-GLOSS/Размер.png",
             1.97
         ],
         [
             "Рекомендуем.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-GLOSS/Рекомендуем.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-GLOSS/Рекомендуем.png",
             2.95
         ],
         [
             "Титульник.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-GLOSS/Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-GLOSS/Титульник.png",
             2.78
         ],
         [
             "мокап.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-GLOSS/мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-GLOSS/мокап.png",
             2.9
         ]
     ],
     "POSTER-BLACKPINK-MAT": [
         [
             "Мокап.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-MAT/Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-MAT/Мокап.png",
             2.9
         ],
         [
             "Размер.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-MAT/Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-MAT/Размер.png",
             2.07
         ],
         [
             "Титульник.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-MAT/Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-MAT/Титульник.png",
             1.98
         ],
         [
             "ЧБ1. blackpink перевернуто.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-MAT/ЧБ1. blackpink перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-MAT/ЧБ1. blackpink перевернуто.png",
             14.21
         ],
         [
             "ЧБ2. blackpink перевернуто.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-MAT/ЧБ2. blackpink перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-MAT/ЧБ2. blackpink перевернуто.png",
             8.02
         ],
         [
             "ЧБ3. blackpink перевернуто.png",
-            "disk:/Downloads/Blackpink/POSTER-BLACKPINK-MAT/ЧБ3. blackpink перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink/POSTER-BLACKPINK-MAT/ЧБ3. blackpink перевернуто.png",
             6.32
         ]
     ],
-    "POSTER-EVANGELION-GLOSS": [
+    "1-В": [
         [
-            "1 В.png",
-            "disk:/Downloads/POSTER-EVANGELION-GLOSS/1 В.png",
-            11.79
+            "1. Дженни.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink 6 шт/1-В/1. Дженни.png",
+            29.39
         ],
         [
-            "2 В.png",
-            "disk:/Downloads/POSTER-EVANGELION-GLOSS/2 В.png",
-            11.2
+            "2. Джису.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink 6 шт/1-В/2. Джису.png",
+            23.37
         ],
         [
-            "3 В.png",
-            "disk:/Downloads/POSTER-EVANGELION-GLOSS/3 В.png",
-            13.02
+            "3. Розе.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink 6 шт/1-В/3. Розе.png",
+            22.08
         ],
         [
-            "МОКАП. Игры и комиксы.png",
-            "disk:/Downloads/POSTER-EVANGELION-GLOSS/МОКАП. Игры и комиксы.png",
-            3.19
+            "4. Лиса.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink 6 шт/1-В/4. Лиса.png",
+            28.28
+        ],
+        [
+            "5. blackpink.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink 6 шт/1-В/5. blackpink.png",
+            23.52
+        ],
+        [
+            "6. blackpink.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink 6 шт/1-В/6. blackpink.png",
+            9.61
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink 6 шт/1-В/Мокап.png",
+            3.86
         ],
         [
             "Размер.png",
-            "disk:/Downloads/POSTER-EVANGELION-GLOSS/Размер.png",
-            2.1
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink 6 шт/1-В/Размер.png",
+            1.65
         ],
         [
             "Титульник.png",
-            "disk:/Downloads/POSTER-EVANGELION-GLOSS/Титульник.png",
-            2.58
-        ]
-    ],
-    "POSTER-KOSMOS-GLOSS": [
-        [
-            "1 Космос.jpg",
-            "disk:/Downloads/POSTER-KOSMOS-GLOSS/1 Космос.jpg",
-            8.39
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink 6 шт/1-В/Титульник.png",
+            3.2
         ],
         [
-            "2 Космос.jpg",
-            "disk:/Downloads/POSTER-KOSMOS-GLOSS/2 Космос.jpg",
-            10.09
+            "1. Gorillaz.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Gorillaz/1-В/1. Gorillaz.png",
+            9.78
         ],
         [
-            "3 Космос.jpg",
-            "disk:/Downloads/POSTER-KOSMOS-GLOSS/3 Космос.jpg",
-            8.07
+            "2. Gorillaz.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Gorillaz/1-В/2. Gorillaz.png",
+            7.34
         ],
         [
-            "МОКАП.jpg",
-            "disk:/Downloads/POSTER-KOSMOS-GLOSS/МОКАП.jpg",
-            1.46
+            "3. Gorillaz.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Gorillaz/1-В/3. Gorillaz.png",
+            9.9
         ],
         [
-            "Размер.jpg",
-            "disk:/Downloads/POSTER-KOSMOS-GLOSS/Размер.jpg",
-            1.42
+            "Мокап блюр.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Gorillaz/1-В/Мокап блюр.png",
+            2.89
         ],
         [
-            "Титульник.jpg",
-            "disk:/Downloads/POSTER-KOSMOS-GLOSS/Титульник.jpg",
-            1.93
-        ]
-    ],
-    "POSTER-IMPROVIZATSIYA-GLOSS": [
-        [
-            "1 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/1 Импровизация.jpg",
-            4.05
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Gorillaz/1-В/Мокап.png",
+            2.89
         ],
         [
-            "2 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/2 Импровизация.jpg",
-            5.39
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Gorillaz/1-В/Размер.png",
+            1.64
         ],
         [
-            "3 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/3 Импровизация.jpg",
-            5.7
+            "Титульник блюр.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Gorillaz/1-В/Титульник блюр.png",
+            2.27
         ],
         [
-            "МОКАП.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/МОКАП.jpg",
-            1.47
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Gorillaz/1-В/Титульник.png",
+            2.27
         ],
         [
-            "Размер.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/Размер.jpg",
-            1.23
+            "1-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-В/1-BMW.png",
+            2.19
         ],
         [
-            "Рекомендуем.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/Рекомендуем.jpg",
-            1.68
+            "2-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-В/2-BMW.png",
+            8.18
         ],
         [
-            "С1 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/С1 Импровизация.jpg",
-            10.72
+            "3-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-В/3-BMW.png",
+            1.02
         ],
         [
-            "С2 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/С2 Импровизация.jpg",
-            11.3
+            "MOCKUP-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-В/MOCKUP-BMW.png",
+            4.58
         ],
         [
-            "С3 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/С3 Импровизация.jpg",
-            11.74
+            "Размер-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-В/Размер-BMW.png",
+            0.77
         ],
         [
-            "СМОКАП.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/СМОКАП.jpg",
-            1.53
+            "Титульник-BMW.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/BMW/1-В/Титульник-BMW.png",
+            1.32
         ],
         [
-            "СТитульник.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/СТитульник.jpg",
-            1.88
+            "1-KAWS.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/KAWS/1-В/1-KAWS.png",
+            10.21
         ],
         [
-            "Титульник.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-GLOSS/Титульник.jpg",
-            1.62
-        ]
-    ],
-    "POSTER-IMPROVIZATSIYA-MAT": [
-        [
-            "1 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/1 Импровизация.jpg",
-            4.66
+            "2-KAWS.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/KAWS/1-В/2-KAWS.png",
+            18.42
         ],
         [
-            "2 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/2 Импровизация.jpg",
-            4.59
+            "3-KAWS.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/KAWS/1-В/3-KAWS.png",
+            18.02
         ],
         [
-            "3 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/3 Импровизация.jpg",
-            4.0
+            "Размер-KAWS.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/KAWS/1-В/Размер-KAWS.png",
+            1.34
         ],
         [
-            "МОКАП.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/МОКАП.jpg",
-            1.31
+            "Титульник-KAWS.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/KAWS/1-В/Титульник-KAWS.png",
+            3.02
         ],
         [
-            "Размер.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/Размер.jpg",
-            1.13
+            "1-ЧБ-keep calm.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Keep Calm/1-В/1-ЧБ-keep calm.png",
+            0.5
         ],
         [
-            "Рекомендуем.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/Рекомендуем.jpg",
-            1.52
+            "2-ЧБ-keep calm.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Keep Calm/1-В/2-ЧБ-keep calm.png",
+            0.55
         ],
         [
-            "С1 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/С1 Импровизация.jpg",
-            11.44
+            "3-ЧБ-keep calm.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Keep Calm/1-В/3-ЧБ-keep calm.png",
+            0.51
         ],
         [
-            "С2 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/С2 Импровизация.jpg",
-            11.79
+            "MOCKUP-ЧБ-keep calm.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Keep Calm/1-В/MOCKUP-ЧБ-keep calm.png",
+            2.98
         ],
         [
-            "С3 Импровизация.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/С3 Импровизация.jpg",
-            10.67
+            "Размер-ЧБ-keep calm.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Keep Calm/1-В/Размер-ЧБ-keep calm.png",
+            0.62
         ],
         [
-            "СМОКАП.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/СМОКАП.jpg",
-            1.42
+            "1-love is.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Love is/1-В/1-love is.png",
+            5.24
         ],
         [
-            "СТитульник.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/СТитульник.jpg",
+            "2-love is.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Love is/1-В/2-love is.png",
+            9.74
+        ],
+        [
+            "3-love is.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Love is/1-В/3-love is.png",
+            2.27
+        ],
+        [
+            "MOCKUP-love is.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Love is/1-В/MOCKUP-love is.png",
+            2.5
+        ],
+        [
+            "Размер-love is.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Love is/1-В/Размер-love is.png",
+            0.67
+        ],
+        [
+            "Титульник-love is.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Love is/1-В/Титульник-love is.png",
+            1.43
+        ],
+        [
+            "1-moet.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/MOET/1-В/1-moet.png",
+            19.44
+        ],
+        [
+            "2-moet.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/MOET/1-В/2-moet.png",
+            12.82
+        ],
+        [
+            "3-moet.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/MOET/1-В/3-moet.png",
+            16.42
+        ],
+        [
+            "MOCKUP-moet.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/MOET/1-В/MOCKUP-moet.png",
+            3.14
+        ],
+        [
+            "Размер-moet.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/MOET/1-В/Размер-moet.png",
+            2.03
+        ],
+        [
+            "1-mickey,minnie,money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Mickey,Minnie,Money/1-В/1-mickey,minnie,money.png",
+            15.84
+        ],
+        [
+            "2-mickey,minnie,money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Mickey,Minnie,Money/1-В/2-mickey,minnie,money.png",
+            16.41
+        ],
+        [
+            "3-mickey,minnie,money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Mickey,Minnie,Money/1-В/3-mickey,minnie,money.png",
+            15.62
+        ],
+        [
+            "Размер-mickey,minnie,money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Mickey,Minnie,Money/1-В/Размер-mickey,minnie,money.png",
+            1.85
+        ],
+        [
+            "Титульник-mickey,minnie,money.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Mickey,Minnie,Money/1-В/Титульник-mickey,minnie,money.png",
+            3.12
+        ],
+        [
+            "1-ЧБ-santiz.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Santiz /1-В/1-ЧБ-santiz.png",
+            9.81
+        ],
+        [
+            "2-ЧБ-santiz.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Santiz /1-В/2-ЧБ-santiz.png",
+            16.19
+        ],
+        [
+            "3-ЧБ-santiz.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Santiz /1-В/3-ЧБ-santiz.png",
             1.71
         ],
         [
-            "Титульник.jpg",
-            "disk:/Downloads/Импровизация/POSTER-IMPROVIZATSIYA-MAT/Титульник.jpg",
+            "MOCKUP-ЧБ-santiz.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Santiz /1-В/MOCKUP-ЧБ-santiz.png",
+            3.03
+        ],
+        [
+            "Размер-ЧБ-santiz.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Santiz /1-В/Размер-ЧБ-santiz.png",
+            1.68
+        ],
+        [
+            "Титульник-ЧБ-santiz.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Santiz /1-В/Титульник-ЧБ-santiz.png",
+            1.84
+        ],
+        [
+            "1-ЧБ-uglystefan.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Ugly stephan/1-В/1-ЧБ-uglystefan.png",
+            5.07
+        ],
+        [
+            "2-ЧБ-uglystephan.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Ugly stephan/1-В/2-ЧБ-uglystephan.png",
+            6.06
+        ],
+        [
+            "3-ЧБ-uglystephan.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Ugly stephan/1-В/3-ЧБ-uglystephan.png",
+            6.31
+        ],
+        [
+            "MOCKUP-ЧБ-uglystephan.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Ugly stephan/1-В/MOCKUP-ЧБ-uglystephan.png",
+            2.75
+        ],
+        [
+            "Размер-ЧБ-uglystephan.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Ugly stephan/1-В/Размер-ЧБ-uglystephan.png",
+            0.91
+        ],
+        [
+            "Титульник-ЧБ-uglystephan.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Ugly stephan/1-В/Титульник-ЧБ-uglystephan.png",
+            1.26
+        ],
+        [
+            "1-ЧБ-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-В/1-ЧБ-александр кузнецов.png",
+            9.55
+        ],
+        [
+            "2-ЧБ-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-В/2-ЧБ-александр кузнецов.png",
+            2.97
+        ],
+        [
+            "3-ЧБ-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-В/3-ЧБ-александр кузнецов.png",
+            4.64
+        ],
+        [
+            "MOCKUP-ЧБ-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-В/MOCKUP-ЧБ-александр кузнецов.png",
+            2.85
+        ],
+        [
+            "Размер-ЧБ-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-В/Размер-ЧБ-александр кузнецов.png",
+            0.84
+        ],
+        [
+            "Титульник-ЧБ-александр кузнецов.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Александр Кузнецов/1-В/Титульник-ЧБ-александр кузнецов.png",
+            1.49
+        ]
+    ],
+    "POSTER-BLACKPINKHOWLIKE-GLOSS": [
+        [
+            "1. how you like that перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKHOWLIKE-GLOSS/1. how you like that перевернуто.png",
+            17.17
+        ],
+        [
+            "2. how you like that перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKHOWLIKE-GLOSS/2. how you like that перевернуто.png",
+            19.8
+        ],
+        [
+            "3. how you like that перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKHOWLIKE-GLOSS/3. how you like that перевернуто.png",
+            12.93
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKHOWLIKE-GLOSS/Мокап.png",
+            3.29
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKHOWLIKE-GLOSS/Размер.png",
+            1.86
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKHOWLIKE-GLOSS/Титульник.png",
+            3.07
+        ]
+    ],
+    "POSTER-BLACKPINKKORONA-GLOSS": [
+        [
+            "1. the album перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKKORONA-GLOSS/1. the album перевернуто.png",
+            24.02
+        ],
+        [
+            "2. the album перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKKORONA-GLOSS/2. the album перевернуто.png",
+            21.15
+        ],
+        [
+            "3.  the album перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKKORONA-GLOSS/3.  the album перевернуто.png",
+            10.14
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKKORONA-GLOSS/Размер.png",
+            2.53
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKKORONA-GLOSS/Титульник.png",
+            3.07
+        ],
+        [
+            "мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKKORONA-GLOSS/мокап.png",
+            3.3
+        ]
+    ],
+    "POSTER-BLACKPINKPINK-GLOSS": [
+        [
+            "1. ice cream перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKPINK-GLOSS/1. ice cream перевернуто.png",
+            10.75
+        ],
+        [
+            "2. ice cream перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKPINK-GLOSS/2. ice cream перевернуто.png",
+            11.09
+        ],
+        [
+            "3. ice cream перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKPINK-GLOSS/3. ice cream перевернуто.png",
+            10.15
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKPINK-GLOSS/Мокап.png",
+            2.99
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKPINK-GLOSS/Размер.png",
+            1.71
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKPINK-GLOSS/Титульник.png",
+            2.62
+        ]
+    ],
+    "POSTER-BLACKPINKSEREBRO-GLOS": [
+        [
+            "1. blackpink перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKSEREBRO-GLOS/1. blackpink перевернуто.png",
+            17.1
+        ],
+        [
+            "2. blackpink перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKSEREBRO-GLOS/2. blackpink перевернуто.png",
+            17.67
+        ],
+        [
+            "3. blackpink перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKSEREBRO-GLOS/3. blackpink перевернуто.png",
+            13.93
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKSEREBRO-GLOS/Размер.png",
+            2.24
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKSEREBRO-GLOS/Титульник.png",
+            3.04
+        ],
+        [
+            "мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Blackpink альбомы/POSTER-BLACKPINKSEREBRO-GLOS/мокап.png",
+            3.23
+        ]
+    ],
+    "POSTER-DEADINSIDEREDEYE-GLOSS": [
+        [
+            "1. dead inside перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDEYE-GLOSS/1. dead inside перевернуто.png",
+            20.09
+        ],
+        [
+            "2. dead inside перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDEYE-GLOSS/2. dead inside перевернуто.png",
+            18.84
+        ],
+        [
+            "3. dead inside перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDEYE-GLOSS/3. dead inside перевернуто.png",
+            7.36
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDEYE-GLOSS/Мокап.png",
+            3.02
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDEYE-GLOSS/Размер.png",
+            2.02
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDEYE-GLOSS/Титульник.png",
+            2.75
+        ]
+    ],
+    "POSTER-DEADINSIDEREDTWOEYES-GLOSS": [
+        [
+            "1. Dead inside.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDTWOEYES-GLOSS/1. Dead inside.png",
+            12.76
+        ],
+        [
+            "2. Dead inside.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDTWOEYES-GLOSS/2. Dead inside.png",
+            11.32
+        ],
+        [
+            "3. Dead inside.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDTWOEYES-GLOSS/3. Dead inside.png",
+            7.18
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDTWOEYES-GLOSS/Мокап.png",
+            2.84
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDTWOEYES-GLOSS/Размер.png",
+            2.05
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEREDTWOEYES-GLOSS/Титульник.png",
+            2.71
+        ]
+    ],
+    "POSTER-DEADINSIDEWHITEEYE-MAT": [
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEWHITEEYE-MAT/Мокап.png",
+            6.87
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEWHITEEYE-MAT/Титульник.png",
+            1.51
+        ],
+        [
+            "ЧБ1. Dead inside.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEWHITEEYE-MAT/ЧБ1. Dead inside.png",
+            5.04
+        ],
+        [
+            "ЧБ2. Dead inside.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEWHITEEYE-MAT/ЧБ2. Dead inside.png",
+            9.19
+        ],
+        [
+            "ЧБ3. Dead inside.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dead inside/POSTER-DEADINSIDEWHITEEYE-MAT/ЧБ3. Dead inside.png",
+            6.94
+        ]
+    ],
+    "POSTER-DIABLO4-GLOSS": [
+        [
+            "1.Lilith.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Diablo 4/POSTER-DIABLO4-GLOSS/1.Lilith.png",
+            9.02
+        ],
+        [
+            "2. Inarius.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Diablo 4/POSTER-DIABLO4-GLOSS/2. Inarius.png",
+            12.61
+        ],
+        [
+            "3. Diablo 4.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Diablo 4/POSTER-DIABLO4-GLOSS/3. Diablo 4.png",
+            7.3
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Diablo 4/POSTER-DIABLO4-GLOSS/Мокап.png",
+            2.82
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Diablo 4/POSTER-DIABLO4-GLOSS/Размер.png",
+            1.74
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Diablo 4/POSTER-DIABLO4-GLOSS/Титульник.png",
+            2.37
+        ]
+    ],
+    "POSTER-DOOMETERNAL-GLOSS": [
+        [
+            "1. Doom.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Doom Eternal/POSTER-DOOMETERNAL-GLOSS/1. Doom.png",
+            10.5
+        ],
+        [
+            "2. Doom.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Doom Eternal/POSTER-DOOMETERNAL-GLOSS/2. Doom.png",
+            12.97
+        ],
+        [
+            "3. doom.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Doom Eternal/POSTER-DOOMETERNAL-GLOSS/3. doom.png",
+            12.28
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Doom Eternal/POSTER-DOOMETERNAL-GLOSS/Мокап.png",
+            2.99
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Doom Eternal/POSTER-DOOMETERNAL-GLOSS/Размер.png",
+            1.55
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Doom Eternal/POSTER-DOOMETERNAL-GLOSS/Титульник.png",
+            2.54
+        ]
+    ],
+    "POSTER-DOTA2-GLOSS": [
+        [
+            "1. Juggernaut.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dota 2 /POSTER-DOTA2-GLOSS/1. Juggernaut.png",
+            12.31
+        ],
+        [
+            "3. Dota 2 .png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dota 2 /POSTER-DOTA2-GLOSS/3. Dota 2 .png",
+            13.48
+        ],
+        [
+            "3. Shadow fiend.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dota 2 /POSTER-DOTA2-GLOSS/3. Shadow fiend.png",
+            8.24
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dota 2 /POSTER-DOTA2-GLOSS/Мокап.png",
+            2.88
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dota 2 /POSTER-DOTA2-GLOSS/Размер.png",
+            1.73
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Dota 2 /POSTER-DOTA2-GLOSS/Титульник.png",
+            2.52
+        ]
+    ],
+    "POSTER-HORIZONZERODOWN-GLOSS": [
+        [
+            "1.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Horizon: Zero Down/POSTER-HORIZONZERODOWN-GLOSS/1.png",
+            22.39
+        ],
+        [
+            "2.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Horizon: Zero Down/POSTER-HORIZONZERODOWN-GLOSS/2.png",
+            18.69
+        ],
+        [
+            "3.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Horizon: Zero Down/POSTER-HORIZONZERODOWN-GLOSS/3.png",
+            18.22
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Horizon: Zero Down/POSTER-HORIZONZERODOWN-GLOSS/Размер.png",
+            1.92
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Horizon: Zero Down/POSTER-HORIZONZERODOWN-GLOSS/Титульник.png",
+            3.31
+        ],
+        [
+            "мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Horizon: Zero Down/POSTER-HORIZONZERODOWN-GLOSS/мокап.png",
+            3.06
+        ]
+    ],
+    "POSTER-LEAGUEOFLEGENDS-GLOSS": [
+        [
+            "1.  league of legends перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/League of Legends/POSTER-LEAGUEOFLEGENDS-GLOSS/1.  league of legends перевернуто.png",
+            14.46
+        ],
+        [
+            "2. league of legends перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/League of Legends/POSTER-LEAGUEOFLEGENDS-GLOSS/2. league of legends перевернуто.png",
+            11.28
+        ],
+        [
+            "3. league of legends перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/League of Legends/POSTER-LEAGUEOFLEGENDS-GLOSS/3. league of legends перевернуто.png",
+            17.11
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/League of Legends/POSTER-LEAGUEOFLEGENDS-GLOSS/Мокап.png",
+            3.11
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/League of Legends/POSTER-LEAGUEOFLEGENDS-GLOSS/Размер.png",
+            2.37
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/League of Legends/POSTER-LEAGUEOFLEGENDS-GLOSS/Титульник.png",
+            3.01
+        ]
+    ],
+    "POSTER-PHARAOH-MAT": [
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Pharaoh/POSTER-PHARAOH-MAT/Размер.png",
+            1.58
+        ],
+        [
+            "ЧБ мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Pharaoh/POSTER-PHARAOH-MAT/ЧБ мокап.png",
+            2.97
+        ],
+        [
+            "ЧБ. титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Pharaoh/POSTER-PHARAOH-MAT/ЧБ. титульник.png",
+            2.2
+        ],
+        [
+            "ЧБ1. Pharaoh.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Pharaoh/POSTER-PHARAOH-MAT/ЧБ1. Pharaoh.png",
+            14.15
+        ],
+        [
+            "ЧБ2. Pharaoh.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Pharaoh/POSTER-PHARAOH-MAT/ЧБ2. Pharaoh.png",
+            9.11
+        ],
+        [
+            "ЧБ3. Pharaoh.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Pharaoh/POSTER-PHARAOH-MAT/ЧБ3. Pharaoh.png",
+            18.4
+        ]
+    ],
+    "POSTER-RESIDENTEVIL4-GLOSS": [
+        [
+            "1.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Resident Evil 4/POSTER-RESIDENTEVIL4-GLOSS/1.png",
+            8.66
+        ],
+        [
+            "2.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Resident Evil 4/POSTER-RESIDENTEVIL4-GLOSS/2.png",
+            13.48
+        ],
+        [
+            "3.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Resident Evil 4/POSTER-RESIDENTEVIL4-GLOSS/3.png",
+            7.92
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Resident Evil 4/POSTER-RESIDENTEVIL4-GLOSS/Мокап.png",
+            2.79
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Resident Evil 4/POSTER-RESIDENTEVIL4-GLOSS/Размер.png",
+            1.63
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Resident Evil 4/POSTER-RESIDENTEVIL4-GLOSS/Титульник.png",
+            2.29
+        ]
+    ],
+    "POSTER-SKYRIMGAME-GLOSS": [
+        [
+            "1.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Skyrim/POSTER-SKYRIMGAME-GLOSS/1.png",
+            19.77
+        ],
+        [
+            "2.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Skyrim/POSTER-SKYRIMGAME-GLOSS/2.png",
+            15.06
+        ],
+        [
+            "3.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Skyrim/POSTER-SKYRIMGAME-GLOSS/3.png",
+            14.54
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Skyrim/POSTER-SKYRIMGAME-GLOSS/Мокап.png",
+            2.92
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Skyrim/POSTER-SKYRIMGAME-GLOSS/Размер.png",
+            1.95
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Skyrim/POSTER-SKYRIMGAME-GLOSS/Титульник.png",
+            2.83
+        ]
+    ],
+    "POSTER-STRAYKIDSBLUE-GLOSS": [
+        [
+            "1. Stray kids перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSBLUE-GLOSS/1. Stray kids перевернуто.png",
+            15.63
+        ],
+        [
+            "2. Stray kids перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSBLUE-GLOSS/2. Stray kids перевернуто.png",
+            19.4
+        ],
+        [
+            "3. Stray kids перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSBLUE-GLOSS/3. Stray kids перевернуто.png",
+            18.93
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSBLUE-GLOSS/Мокап.png",
+            3.27
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSBLUE-GLOSS/Размер.png",
+            2.32
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSBLUE-GLOSS/Титульник.png",
+            3.06
+        ]
+    ],
+    "POSTER-STRAYKIDSGARAJ-GLOSS": [
+        [
+            "1. Straykids перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGARAJ-GLOSS/1. Straykids перевернуто.png",
+            26.95
+        ],
+        [
+            "2. Stray Kids перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGARAJ-GLOSS/2. Stray Kids перевернуто.png",
+            26.13
+        ],
+        [
+            "3. Stray kids перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGARAJ-GLOSS/3. Stray kids перевернуто.png",
+            22.17
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGARAJ-GLOSS/Мокап.png",
+            3.45
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGARAJ-GLOSS/Размер.png",
+            2.66
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGARAJ-GLOSS/Титульник.png",
+            3.49
+        ]
+    ],
+    "POSTER-STRAYKIDSGRAFFITIGLOSS": [
+        [
+            "1. Stray Kids.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAFFITIGLOSS/1. Stray Kids.png",
+            13.06
+        ],
+        [
+            "2. Stray Kids.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAFFITIGLOSS/2. Stray Kids.png",
+            23.2
+        ],
+        [
+            "3. Stray Kids.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAFFITIGLOSS/3. Stray Kids.png",
+            20.06
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAFFITIGLOSS/Мокап.png",
+            3.29
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAFFITIGLOSS/Размер.png",
+            2.2
+        ],
+        [
+            "Рекомендуем.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAFFITIGLOSS/Рекомендуем.png",
+            3.54
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAFFITIGLOSS/Титульник.png",
+            3.33
+        ]
+    ],
+    "POSTER-STRAYKIDSGRAY-MAT": [
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAY-MAT/Мокап.png",
+            2.61
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAY-MAT/Размер.png",
+            1.11
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAY-MAT/Титульник.png",
+            1.44
+        ],
+        [
+            "ЧБ1. Stray Kids.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAY-MAT/ЧБ1. Stray Kids.png",
+            9.67
+        ],
+        [
+            "ЧБ2. Stray Kids.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAY-MAT/ЧБ2. Stray Kids.png",
+            7.49
+        ],
+        [
+            "ЧБ3. Stray kids.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSGRAY-MAT/ЧБ3. Stray kids.png",
+            2.1
+        ]
+    ],
+    "POSTER-STRAYKIDSSEPIA-MAT": [
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSSEPIA-MAT/Мокап.png",
+            3.51
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSSEPIA-MAT/Размер.png",
+            2.46
+        ],
+        [
+            "С1. Stray kids перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSSEPIA-MAT/С1. Stray kids перевернуто.png",
+            31.61
+        ],
+        [
+            "С2. Stray kids перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSSEPIA-MAT/С2. Stray kids перевернуто.png",
+            33.07
+        ],
+        [
+            "С3. Stray kids перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSSEPIA-MAT/С3. Stray kids перевернуто.png",
+            29.35
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray Kids/POSTER-STRAYKIDSSEPIA-MAT/Титульник.png",
+            3.5
+        ]
+    ],
+    "2-Г": [
+        [
+            "1. all in перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/2-Г/1. all in перевернуто.png",
+            10.45
+        ],
+        [
+            "2. all in перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/2-Г/2. all in перевернуто.png",
+            22.28
+        ],
+        [
+            "3. all in перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/2-Г/3. all in перевернуто.png",
+            22.56
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/2-Г/Мокап.png",
+            3.57
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/2-Г/Размер.png",
+            2.65
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/2-Г/Титульник.png",
+            3.52
+        ]
+    ],
+    "POSTER-STRAYKIDSGARAZH-GLOSS": [
+        [
+            "1. go live перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSGARAZH-GLOSS/1. go live перевернуто.png",
+            19.79
+        ],
+        [
+            "1.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSGARAZH-GLOSS/1.png",
+            23.44
+        ],
+        [
+            "2. go live перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSGARAZH-GLOSS/2. go live перевернуто.png",
+            28.96
+        ],
+        [
+            "МОКАП. Кпоп и айдолы.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSGARAZH-GLOSS/МОКАП. Кпоп и айдолы.png",
+            3.47
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSGARAZH-GLOSS/Размер.png",
+            2.47
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSGARAZH-GLOSS/Титульник.png",
+            3.65
+        ]
+    ],
+    "POSTER-STRAYKIDSKOREYA-GLOSS": [
+        [
+            "1. no easy перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSKOREYA-GLOSS/1. no easy перевернуто.png",
+            15.96
+        ],
+        [
+            "2. no easy перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSKOREYA-GLOSS/2. no easy перевернуто.png",
+            23.78
+        ],
+        [
+            "3. no easy перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSKOREYA-GLOSS/3. no easy перевернуто.png",
+            26.93
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSKOREYA-GLOSS/Мокап.png",
+            3.39
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSKOREYA-GLOSS/Размер.png",
+            2.06
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSKOREYA-GLOSS/Титульник.png",
+            3.31
+        ]
+    ],
+    "POSTER-STRAYKIDSMAXIDENT-GLOSS": [
+        [
+            "1. Maxident.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSMAXIDENT-GLOSS/1. Maxident.png",
+            3.92
+        ],
+        [
+            "2. Maxident.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSMAXIDENT-GLOSS/2. Maxident.png",
+            19.37
+        ],
+        [
+            "3. Maxident.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSMAXIDENT-GLOSS/3. Maxident.png",
+            21.34
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSMAXIDENT-GLOSS/Мокап.png",
+            3.13
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSMAXIDENT-GLOSS/Размер.png",
+            2.17
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSMAXIDENT-GLOSS/Титульник.png",
+            2.78
+        ]
+    ],
+    "POSTER-STRAYKIDSNEWYEAR-GLOSS": [
+        [
+            "1. Christmas EveL.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNEWYEAR-GLOSS/1. Christmas EveL.png",
+            4.1
+        ],
+        [
+            "2. Christmas EveL.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNEWYEAR-GLOSS/2. Christmas EveL.png",
+            21.22
+        ],
+        [
+            "3. Christmas EveL.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNEWYEAR-GLOSS/3. Christmas EveL.png",
+            19.57
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNEWYEAR-GLOSS/Мокап.png",
+            3.14
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNEWYEAR-GLOSS/Размер.png",
+            2.53
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNEWYEAR-GLOSS/Титульник.png",
+            2.56
+        ]
+    ],
+    "POSTER-STRAYKIDSNOTA-GLOSS": [
+        [
+            "1. the sound перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNOTA-GLOSS/1. the sound перевернуто.png",
+            5.76
+        ],
+        [
+            "2. the sound перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNOTA-GLOSS/2. the sound перевернуто.png",
+            23.37
+        ],
+        [
+            "3. the sound перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNOTA-GLOSS/3. the sound перевернуто.png",
+            20.23
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNOTA-GLOSS/Мокап.png",
+            3.29
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNOTA-GLOSS/Размер.png",
+            2.29
+        ],
+        [
+            "титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSNOTA-GLOSS/титульник.png",
+            2.93
+        ]
+    ],
+    "POSTER-STRAYKIDSPIR-GLOSS": [
+        [
+            "1. all in перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPIR-GLOSS/1. all in перевернуто.png",
+            10.45
+        ],
+        [
+            "2. all in перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPIR-GLOSS/2. all in перевернуто.png",
+            22.28
+        ],
+        [
+            "3. all in перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPIR-GLOSS/3. all in перевернуто.png",
+            22.56
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPIR-GLOSS/Мокап.png",
+            3.3
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPIR-GLOSS/Размер.png",
+            2.25
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPIR-GLOSS/Титульник.png",
+            2.98
+        ]
+    ],
+    "POSTER-STRAYKIDSPROTIVOSTOYANIE-GLOSS": [
+        [
+            "1. top перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPROTIVOSTOYANIE-GLOSS/1. top перевернуто.png",
+            17.36
+        ],
+        [
+            "2. top перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPROTIVOSTOYANIE-GLOSS/2. top перевернуто.png",
+            11.21
+        ],
+        [
+            "3. top перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPROTIVOSTOYANIE-GLOSS/3. top перевернуто.png",
+            12.67
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPROTIVOSTOYANIE-GLOSS/Мокап.png",
+            3.08
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPROTIVOSTOYANIE-GLOSS/Размер.png",
+            1.54
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSPROTIVOSTOYANIE-GLOSS/Титульник.png",
+            2.65
+        ]
+    ],
+    "POSTER-STRAYKIDSSCHOOL-GLOSS": [
+        [
+            "1. On track.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSCHOOL-GLOSS/1. On track.png",
+            15.9
+        ],
+        [
+            "2. On track.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSCHOOL-GLOSS/2. On track.png",
+            10.57
+        ],
+        [
+            "3. On track.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSCHOOL-GLOSS/3. On track.png",
+            12.66
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSCHOOL-GLOSS/Мокап.png",
+            3.18
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSCHOOL-GLOSS/Размер.png",
+            2.07
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSCHOOL-GLOSS/Титульник.png",
+            3.12
+        ]
+    ],
+    "POSTER-STRAYKIDSSERI-GLOSS": [
+        [
+            "1. skz перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSERI-GLOSS/1. skz перевернуто.png",
+            13.11
+        ],
+        [
+            "2. skz перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSERI-GLOSS/2. skz перевернуто.png",
+            11.86
+        ],
+        [
+            "3. skz перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSERI-GLOSS/3. skz перевернуто.png",
+            15.69
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSERI-GLOSS/Мокап.png",
+            3.2
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSERI-GLOSS/Размер.png",
+            2.15
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSERI-GLOSS/Титульник.png",
+            2.83
+        ]
+    ],
+    "POSTER-STRAYKIDSSHREK-GLOSS": [
+        [
+            "1. oddinary перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSHREK-GLOSS/1. oddinary перевернуто.png",
+            11.7
+        ],
+        [
+            "2. oddinary перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSHREK-GLOSS/2. oddinary перевернуто.png",
+            12.89
+        ],
+        [
+            "3.  oddinary перевернуто.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSHREK-GLOSS/3.  oddinary перевернуто.png",
+            10.43
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSHREK-GLOSS/Мокап.png",
+            3.06
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSHREK-GLOSS/Размер.png",
+            2.12
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/Stray kids (все альбомы 2020-2023)/POSTER-STRAYKIDSSHREK-GLOSS/Титульник.png",
+            2.55
+        ]
+    ],
+    "POSTER-TXT-GLOSS ": [
+        [
+            "1. txt.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-GLOSS /1. txt.png",
+            28.56
+        ],
+        [
+            "2. txt.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-GLOSS /2. txt.png",
+            33.1
+        ],
+        [
+            "3. txt.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-GLOSS /3. txt.png",
+            27.79
+        ],
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-GLOSS /Мокап.png",
+            3.45
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-GLOSS /Размер.png",
+            2.36
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-GLOSS /Титульник.png",
+            3.42
+        ]
+    ],
+    "POSTER-TXT-MAT": [
+        [
+            "Мокап.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-MAT/Мокап.png",
+            3.74
+        ],
+        [
+            "Размер.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-MAT/Размер.png",
+            2.48
+        ],
+        [
+            "С1.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-MAT/С1.png",
+            30.46
+        ],
+        [
+            "С2.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-MAT/С2.png",
+            31.14
+        ],
+        [
+            "С3.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-MAT/С3.png",
+            32.99
+        ],
+        [
+            "Титульник.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Катя Бурлакова/TXT/POSTER-TXT-MAT/Титульник.png",
+            3.7
+        ]
+    ],
+    "POSTER-9MAYA-GLOSS": [
+        [
+            " РАЗМЕР-9 мая.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/9 мая/POSTER-9MAYA-GLOSS/ РАЗМЕР-9 мая.png",
+            1.12
+        ],
+        [
+            "1-9 мая.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/9 мая/POSTER-9MAYA-GLOSS/1-9 мая.png",
+            10.12
+        ],
+        [
+            "2-9 мая.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/9 мая/POSTER-9MAYA-GLOSS/2-9 мая.png",
+            12.56
+        ],
+        [
+            "3-9 мая.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/9 мая/POSTER-9MAYA-GLOSS/3-9 мая.png",
+            8.11
+        ],
+        [
+            "MOCKUP-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/9 мая/POSTER-9MAYA-GLOSS/MOCKUP-оригинал.png",
+            4.96
+        ],
+        [
+            "Титульник-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/9 мая/POSTER-9MAYA-GLOSS/Титульник-оригинал.png",
+            1.92
+        ]
+    ],
+    "POSTER-BIGBABYTAPE-GLOSS": [
+        [
+            "1-big baby tape.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Big Baby Tape/POSTER-BIGBABYTAPE-GLOSS/1-big baby tape.png",
+            13.89
+        ],
+        [
+            "2-big baby tape.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Big Baby Tape/POSTER-BIGBABYTAPE-GLOSS/2-big baby tape.png",
+            32.57
+        ],
+        [
+            "3-big baby tape.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Big Baby Tape/POSTER-BIGBABYTAPE-GLOSS/3-big baby tape.png",
+            14.81
+        ],
+        [
+            "MOCKUP-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Big Baby Tape/POSTER-BIGBABYTAPE-GLOSS/MOCKUP-оригинал.png",
+            5.06
+        ],
+        [
+            "Размер-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Big Baby Tape/POSTER-BIGBABYTAPE-GLOSS/Размер-оригинал.png",
+            1.3
+        ],
+        [
+            "Титульник-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Big Baby Tape/POSTER-BIGBABYTAPE-GLOSS/Титульник-оригинал.png",
+            2.4
+        ]
+    ],
+    "POSTER-HBBEER-GLOSS": [
+        [
+            "1-детский.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBBEER-GLOSS/1-детский.png",
+            1.17
+        ],
+        [
+            "2-детский.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBBEER-GLOSS/2-детский.png",
+            1.31
+        ],
+        [
+            "3-детский.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBBEER-GLOSS/3-детский.png",
+            1.55
+        ],
+        [
+            "MOCKUP-день рождение.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBBEER-GLOSS/MOCKUP-день рождение.png",
+            1.92
+        ],
+        [
+            "Размер-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBBEER-GLOSS/Размер-оригинал.png",
+            0.66
+        ],
+        [
+            "Титульник-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBBEER-GLOSS/Титульник-оригинал.png",
+            1.06
+        ]
+    ],
+    "POSTER-HBGOLD-GLOSS": [
+        [
+            "1-стильный.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBGOLD-GLOSS/1-стильный.png",
+            1.14
+        ],
+        [
+            "2-стильный.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBGOLD-GLOSS/2-стильный.png",
+            0.72
+        ],
+        [
+            "3-стильный.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBGOLD-GLOSS/3-стильный.png",
+            0.78
+        ],
+        [
+            "MOCKUP-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBGOLD-GLOSS/MOCKUP-оригинал.png",
+            3.54
+        ],
+        [
+            "Размер-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBGOLD-GLOSS/Размер-оригинал.png",
+            0.67
+        ],
+        [
+            "Титульник-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBGOLD-GLOSS/Титульник-оригинал.png",
+            1.11
+        ]
+    ],
+    "POSTER-HBUNICORN-GLOSS": [
+        [
+            "1-милый.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBUNICORN-GLOSS/1-милый.png",
+            1.2
+        ],
+        [
+            "2-милый.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBUNICORN-GLOSS/2-милый.png",
+            0.96
+        ],
+        [
+            "3-милый.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBUNICORN-GLOSS/3-милый.png",
+            0.87
+        ],
+        [
+            "MOCKUP-день рождение-2.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBUNICORN-GLOSS/MOCKUP-день рождение-2.png",
+            2.0
+        ],
+        [
+            "Размер-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBUNICORN-GLOSS/Размер-оригинал.png",
+            0.7
+        ],
+        [
+            "Титульник-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/C Днем Рождения/POSTER-HBUNICORN-GLOSS/Титульник-оригинал.png",
+            1.07
+        ]
+    ],
+    "POSTER-LOST-ARK-GLOSS": [
+        [
+            " Титульник_оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOST-ARK-GLOSS/ Титульник_оригинал.png",
+            2.92
+        ],
+        [
+            "1-Lost Ark.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOST-ARK-GLOSS/1-Lost Ark.png",
+            22.95
+        ],
+        [
+            "2-Lost Ark.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOST-ARK-GLOSS/2-Lost Ark.png",
+            25.38
+        ],
+        [
+            "3-Lost Ark.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOST-ARK-GLOSS/3-Lost Ark.png",
+            11.46
+        ],
+        [
+            "MOCKUP_оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOST-ARK-GLOSS/MOCKUP_оригинал.png",
+            3.11
+        ],
+        [
+            "Размер-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOST-ARK-GLOSS/Размер-оригинал.png",
+            2.2
+        ]
+    ],
+    "POSTER-LOSTARK-GLOSS": [
+        [
+            "1-Lost Ark.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOSTARK-GLOSS/1-Lost Ark.png",
+            10.21
+        ],
+        [
+            "2-Lost Ark.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOSTARK-GLOSS/2-Lost Ark.png",
+            6.66
+        ],
+        [
+            "3-Lost Ark.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOSTARK-GLOSS/3-Lost Ark.png",
+            5.67
+        ],
+        [
+            "MOCKUP-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOSTARK-GLOSS/MOCKUP-оригинал.png",
+            2.5
+        ],
+        [
+            "Размер-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOSTARK-GLOSS/Размер-оригинал.png",
+            1.05
+        ],
+        [
+            "Титульник-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Lost Ark/POSTER-LOSTARK-GLOSS/Титульник-оригинал.png",
+            1.57
+        ]
+    ],
+    "2-В": [
+        [
+            "1-moet.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/MOET/2-В/1-moet.png",
+            5.39
+        ],
+        [
+            "2-moet.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/MOET/2-В/2-moet.png",
+            8.59
+        ],
+        [
+            "3-moet.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/MOET/2-В/3-moet.png",
+            8.99
+        ],
+        [
+            "MOCKUP-moet.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/MOET/2-В/MOCKUP-moet.png",
+            2.74
+        ],
+        [
+            "Размер-moet.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/MOET/2-В/Размер-moet.png",
+            1.02
+        ]
+    ],
+    "POSTER-NBA-GLOSS": [
+        [
+            "1-nba.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/NBA/POSTER-NBA-GLOSS/1-nba.png",
+            8.49
+        ],
+        [
+            "2-nba.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/NBA/POSTER-NBA-GLOSS/2-nba.png",
+            19.32
+        ],
+        [
+            "3-nba.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/NBA/POSTER-NBA-GLOSS/3-nba.png",
+            4.98
+        ],
+        [
+            "MOCKUP-нба_.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/NBA/POSTER-NBA-GLOSS/MOCKUP-нба_.png",
+            4.76
+        ],
+        [
+            "Размер-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/NBA/POSTER-NBA-GLOSS/Размер-оригинал.png",
+            1.95
+        ],
+        [
+            "Титульник -оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/NBA/POSTER-NBA-GLOSS/Титульник -оригинал.png",
+            1.86
+        ]
+    ],
+    "POSTER-RAMMSTEIN-GLOSS-3": [
+        [
+            "1-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-GLOSS-3/1-Rammstein.png",
+            8.71
+        ],
+        [
+            "2-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-GLOSS-3/2-Rammstein.png",
+            4.72
+        ],
+        [
+            "3-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-GLOSS-3/3-Rammstein.png",
+            4.64
+        ],
+        [
+            "MOCKUP-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-GLOSS-3/MOCKUP-Rammstein.png",
+            2.81
+        ],
+        [
+            "Размер-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-GLOSS-3/Размер-Rammstein.png",
+            1.06
+        ],
+        [
+            "Титульник-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-GLOSS-3/Титульник-Rammstein.png",
+            1.44
+        ]
+    ],
+    "POSTER-RAMMSTEIN-MAT-3": [
+        [
+            "1-ЧБ-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-MAT-3/1-ЧБ-Rammstein.png",
+            6.56
+        ],
+        [
+            "2-ЧБ-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-MAT-3/2-ЧБ-Rammstein.png",
+            7.84
+        ],
+        [
+            "3-ЧБ-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-MAT-3/3-ЧБ-Rammstein.png",
+            0.45
+        ],
+        [
+            "MOCKUP-ЧБ-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-MAT-3/MOCKUP-ЧБ-Rammstein.png",
+            2.93
+        ],
+        [
+            "Размер-ЧБ-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-MAT-3/Размер-ЧБ-Rammstein.png",
+            1.25
+        ],
+        [
+            "Титульник-ЧБ-Rammstein.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Rammstein /POSTER-RAMMSTEIN-MAT-3/Титульник-ЧБ-Rammstein.png",
+            1.27
+        ]
+    ],
+    "БЛЮР": [
+        [
+            "MOCKUP-ЧБ-santiz-БЛЮР.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Santiz /1-В/БЛЮР/MOCKUP-ЧБ-santiz-БЛЮР.png",
+            3.03
+        ],
+        [
+            "Титульник-ЧБ-santiz-БЛЮР.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Santiz /1-В/БЛЮР/Титульник-ЧБ-santiz-БЛЮР.png",
+            1.84
+        ]
+    ],
+    "POSTER-SCALLYMILANO-GLOSS": [
+        [
+            " РАЗМЕР-scally milano.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Scally Milano/POSTER-SCALLYMILANO-GLOSS/ РАЗМЕР-scally milano.png",
+            1.54
+        ],
+        [
+            "1-scally milano.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Scally Milano/POSTER-SCALLYMILANO-GLOSS/1-scally milano.png",
+            29.69
+        ],
+        [
+            "2-scally milano.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Scally Milano/POSTER-SCALLYMILANO-GLOSS/2-scally milano.png",
+            15.57
+        ],
+        [
+            "3-scally milano.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Scally Milano/POSTER-SCALLYMILANO-GLOSS/3-scally milano.png",
+            7.28
+        ],
+        [
+            "MOCKUP-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Scally Milano/POSTER-SCALLYMILANO-GLOSS/MOCKUP-оригинал.png",
+            3.25
+        ],
+        [
+            "Титульник-оригинал.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Scally Milano/POSTER-SCALLYMILANO-GLOSS/Титульник-оригинал.png",
+            2.43
+        ]
+    ],
+    "POSTER-SODALUV-MAT": [
+        [
+            "MOCKUP-ЧБ-soda luv.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Soda LUV/POSTER-SODALUV-MAT/MOCKUP-ЧБ-soda luv.png",
+            2.84
+        ],
+        [
+            "Размер-ЧБ.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Soda LUV/POSTER-SODALUV-MAT/Размер-ЧБ.png",
+            1.25
+        ],
+        [
+            "Титульник-ЧБ.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Soda LUV/POSTER-SODALUV-MAT/Титульник-ЧБ.png",
             1.37
+        ],
+        [
+            "ЧБ-1-soda luv.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Soda LUV/POSTER-SODALUV-MAT/ЧБ-1-soda luv.png",
+            4.34
+        ],
+        [
+            "ЧБ-2-soda luv.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Soda LUV/POSTER-SODALUV-MAT/ЧБ-2-soda luv.png",
+            10.24
+        ],
+        [
+            "ЧБ-3-soda luv.png",
+            "disk:/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Мария/Soda LUV/POSTER-SODALUV-MAT/ЧБ-3-soda luv.png",
+            3.44
         ]
     ]
 }

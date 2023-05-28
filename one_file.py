@@ -2,14 +2,11 @@ import datetime
 
 from reportlab.lib.pagesizes import A3
 from reportlab.pdfgen import canvas
+from PIL import Image
 import glob
 
 
-def one_pdf(folder_path):
-    # Ищем все файлы с расширениями PNG и JPG
-    poster_files = glob.glob(f"{folder_path}/*.png") + glob.glob(f"{folder_path}/*.jpg")
-    poster_files = sorted(poster_files)
-    # Выводим найденные файлы
+def one_pdf(poster_files):
     for file_path in poster_files:
         print(file_path)
     # Создание нового PDF файла
@@ -23,7 +20,37 @@ def one_pdf(folder_path):
     c.save()
 
 
+def combine_images(filepaths, output_filepath):
+    # Определяем размер итогового изображения
+    width, height = (297 * 3, 420)  # Размер А3: 297мм x 420мм
+
+    # Создаем пустое изображение с необходимым размером
+    combined_image = Image.new('RGB', (width, height))
+
+    x_offset = 0
+    for filepath in filepaths:
+        # Открываем каждое изображение
+        image = Image.open(filepath)
+
+        # Масштабируем изображение до ширины А3
+        scaled_image = image.resize((297, 420))
+
+        # Вставляем масштабированное изображение в пустое изображение
+        combined_image.paste(scaled_image, (x_offset, 0))
+
+        # Увеличиваем смещение для следующего изображения
+        x_offset += 297
+
+    # Сохраняем итоговое изображение
+    combined_image.save(output_filepath)
+
+
 if __name__ == '__main__':
     time_start = datetime.datetime.now()
-    one_pdf(folder_path='/home/mikhail/PycharmProjects/posters/posters')
+    folder_path = '/home/mikhail/PycharmProjects/posters/posters'
+    poster_files = glob.glob(f"{folder_path}/*.png") + glob.glob(f"{folder_path}/*.jpg")
+    poster_files = sorted(poster_files)
+    # one_pdf(poster_files)
     print(f'Время выполнения: {datetime.datetime.now() - time_start}')
+    output_filepath = 'combined_image.jpg'
+    combine_images(poster_files, output_filepath)
