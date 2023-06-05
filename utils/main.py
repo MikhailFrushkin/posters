@@ -58,6 +58,6 @@ for item in file_list:
     else:
         result[code] = [[name, path, size_mb]]
 
-with open('json.json', "w") as f:
+with open('../json.json', "w") as f:
     json.dump(result, f, ensure_ascii=False, indent=4)
 print(result)

@@ -6,7 +6,11 @@ from PIL import Image
 import glob
 
 
-def one_pdf(poster_files):
+def one_pdf(folder_path):
+    # Ищем все файлы с расширениями PNG и JPG
+    poster_files = glob.glob(f"{folder_path}/*.png") + glob.glob(f"{folder_path}/*.jpg")
+    poster_files = sorted(poster_files)
+    # Выводим найденные файлы
     for file_path in poster_files:
         print(file_path)
     # Создание нового PDF файла
@@ -47,10 +51,5 @@ def combine_images(filepaths, output_filepath):
 
 if __name__ == '__main__':
     time_start = datetime.datetime.now()
-    folder_path = '/home/mikhail/PycharmProjects/posters/posters'
-    poster_files = glob.glob(f"{folder_path}/*.png") + glob.glob(f"{folder_path}/*.jpg")
-    poster_files = sorted(poster_files)
-    # one_pdf(poster_files)
+    one_pdf(folder_path='/home/mikhail/PycharmProjects/posters/posters')
     print(f'Время выполнения: {datetime.datetime.now() - time_start}')
-    output_filepath = 'combined_image.jpg'
-    combine_images(poster_files, output_filepath)
