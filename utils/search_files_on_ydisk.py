@@ -1,6 +1,6 @@
 import datetime
 import json
-
+from loguru import logger
 import requests
 from config import token
 
@@ -27,10 +27,8 @@ def get_yandex_disk_files(folder_path, token):
                     size = file["size"]
                     size_mb = bytes_to_megabytes(size)
                     code = path.split('/')[-2] if '/' in path else ''  # Извлечение имени папки из пути
-                    # if '-' in code and code.isupper():
                     file_tuple = (name, path, code, size_mb)
                     file_list.append(file_tuple)
-                    print(file)
                 elif file["type"] == "dir":
                     subfolder_files = get_yandex_disk_files(file["path"], token)
                     file_list.extend(subfolder_files)
@@ -39,25 +37,28 @@ def get_yandex_disk_files(folder_path, token):
             print(ex)
             return []
     else:
-        print("Ошибка при получении списка файлов.")
+        logger.error("Ошибка при получении списка файлов.")
         return []
 
 
-folder_path = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/"  # Путь к папке на Яндекс.Диске
-time_start = datetime.datetime.now()
-file_list = get_yandex_disk_files(folder_path, token)
-for file in file_list:
-    print(f"Артикул: {file[2]} Имя: {file[0]}, Путь: {file[1]}, Размер: {file[3]} МБ")
-print(f"Время поиска всех файлов: {datetime.datetime.now() - time_start}")
-result = {}
+if __name__ == '__main__':
+    folder_path = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Greenpeace"  # Путь к папке на Яндекс.Диске
+    time_start = datetime.datetime.now()
+    file_list = get_yandex_disk_files(folder_path, token)
+    for file in file_list:
+        print(f"Артикул: {file[2]} Имя: {file[0]}, Путь: {file[1]}, Размер: {file[3]} МБ")
+    logger.info(f"Время поиска всех файлов: {datetime.datetime.now() - time_start}")
+    result = {}
 
-for item in file_list:
-    name, path, code, size_mb = item
-    if code in result:
-        result[code].append([name, path, size_mb])
-    else:
-        result[code] = [[name, path, size_mb]]
+    for item in file_list:
+        name, path, code, size_mb = item
+        if name.split('.')[0].isdigit():
+            if code in result:
+                result[code].append([name, path, size_mb])
+            else:
+                result[code] = [[name, path, size_mb]]
 
-with open('../json.json', "w") as f:
-    json.dump(result, f, ensure_ascii=False, indent=4)
-print(result)
+    with open('../json.json', "w") as f:
+        json.dump(result, f, ensure_ascii=False, indent=4)
+    print(result)
+

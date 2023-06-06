@@ -48,7 +48,6 @@ def enum_printers() -> list:
 
 
 if __name__ == '__main__':
-    logger.add(sink="logs.log", level="DEBUG", format="{time} {level} {message}")
     # размер, ориентация, качество
     dev_mode_parameters = {
         "PaperSize": win32con.DMPAPER_A3,
