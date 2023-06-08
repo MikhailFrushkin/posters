@@ -163,9 +163,9 @@ class QueueDialog(QWidget):
 
     def evt_btn_print_clicked(self):
         selected_data = self.get_selected_data()
-        print(type(selected_data))
-        print(selected_data)
         if selected_data:
+            print(self.printers)
+
             QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
                 '\n'.join([f'{i}, {j} шт.' for i, j in selected_data])))
         else:
@@ -173,9 +173,11 @@ class QueueDialog(QWidget):
 
     def evt_btn_print_all_clicked(self):
         all_data = self.get_all_data()
+
         if all_data:
             QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
                 '\n'.join([f'{i}, {j} шт.' for i, j in all_data])))
+
         else:
             QMessageBox.information(self, 'Отправка на печать', 'Таблица пуста')
 
@@ -185,7 +187,7 @@ class QueueDialog(QWidget):
         for row in selected_rows:
             art = self.tableWidget.item(row.row(), 0).text()
             count = self.tableWidget.item(row.row(), 1).text()
-            data.append((art, count))
+            data.append((art, int(count)))
         return data
 
     def get_all_data(self):
@@ -193,7 +195,7 @@ class QueueDialog(QWidget):
         for row in range(self.tableWidget.rowCount()):
             art = self.tableWidget.item(row, 0).text()
             count = self.tableWidget.item(row, 1).text()
-            data.append((art, count))
+            data.append((art, int(count)))
         return data
 
 
