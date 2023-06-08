@@ -164,10 +164,13 @@ class QueueDialog(QWidget):
     def evt_btn_print_clicked(self):
         selected_data = self.get_selected_data()
         if selected_data:
-            print(self.printers)
-
             QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
                 '\n'.join([f'{i}, {j} шт.' for i, j in selected_data])))
+            print(selected_data)
+            print(self.printers)
+            #отправка на печать в зависимости от матовая или глянец, соответствующие принтера, которые были выбраны как доступные
+            #так же нужно добавить разделение принетеров матовая и гланец, в зависмости от какого окна пришла очередь
+            #так же добаить сохранение выбранных принтеров в файл и загрузка с него при следующем запуске
         else:
             QMessageBox.information(self, 'Отправка на печать', 'Ни одна строка не выбрана')
 
@@ -177,7 +180,8 @@ class QueueDialog(QWidget):
         if all_data:
             QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
                 '\n'.join([f'{i}, {j} шт.' for i, j in all_data])))
-
+            print(all_data)
+            print(self.printers)
         else:
             QMessageBox.information(self, 'Отправка на печать', 'Таблица пуста')
 

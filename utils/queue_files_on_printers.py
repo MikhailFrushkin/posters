@@ -58,6 +58,7 @@ def create_file_list(orders: dict) -> list:
 if __name__ == '__main__':
     printer_list = ['Отправить в OneNote 16', 'Fax']
     order = {'POSTER-ATOMICHEART-GLOSS': 3, 'POSTER-BLACKPINK-GLOSS': 2}
+    #переделать словарь на кортеж
     file_list = create_file_list(order)
     # print(file_list)
     queue(printer_list, file_list)
