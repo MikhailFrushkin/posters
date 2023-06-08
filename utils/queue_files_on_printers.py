@@ -41,14 +41,14 @@ def queue(printer_list, file_list):
             win32api.ShellExecute(2, 'print', file[0], '.', '/manualstoprint', 0)
             # "Закрываем" принтер
         except Exception as e:
-            print("Ошибка при применении параметров печати:", str(e))
+            logger.error(f"Ошибка при применении параметров печати:{e}")
         finally:
             # Закрываем принтер
             win32print.ClosePrinter(printer_handle)
 
 
 def create_file_list(orders: dict) -> list:
-    directory = r'C:\Users\A3_posters\Готовые постеры по 3 шт'
+    directory = r'C:\Users\Machine4\PycharmProjects\posters\Готовые постеры по 3 шт'
     file_list = list()
     for key, value in orders.items():
         file_list.append((search_file(f"{key}.pdf", directory), value))
@@ -56,8 +56,10 @@ def create_file_list(orders: dict) -> list:
 
 
 if __name__ == '__main__':
-    printer_list = ['Отправить в OneNote 16', 'Fax']
-    order = {'POSTER-ATOMICHEART-GLOSS': 3, 'POSTER-BLACKPINK-GLOSS': 2}
+    #Нужна обработка ошибок при печати, проплевывает, остаавливается печать
+    #отправляет на принтер по умолчанию
+    printer_list = ['принтер1']
+    order = {'POSTER-ATOMICHEART-GLOSS': 1}
     file_list = create_file_list(order)
     # print(file_list)
     queue(printer_list, file_list)
