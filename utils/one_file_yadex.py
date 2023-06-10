@@ -1,9 +1,10 @@
 from config import token
 import requests
+from urllib.parse import quote
 
 
 def download_image(folder_path, file_path):
-    url = f"https://cloud-api.yandex.net/v1/disk/resources/download?path={folder_path}"
+    url = f"https://cloud-api.yandex.net/v1/disk/resources/download?path={quote(folder_path)}"
     headers = {
         "Authorization": f"OAuth {token}"
     }

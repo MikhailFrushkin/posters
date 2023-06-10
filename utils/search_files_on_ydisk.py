@@ -3,6 +3,7 @@ import json
 from loguru import logger
 import requests
 from config import token
+from urllib.parse import quote
 
 
 def bytes_to_megabytes(size_in_bytes):
@@ -11,11 +12,12 @@ def bytes_to_megabytes(size_in_bytes):
 
 
 def get_yandex_disk_files(folder_path, token):
-    url = f"https://cloud-api.yandex.net/v1/disk/resources?path={folder_path}"
+    url = f"https://cloud-api.yandex.net/v1/disk/resources?path={quote(folder_path)}"
     headers = {
         "Authorization": f"OAuth {token}"
     }
     response = requests.get(url, headers=headers)
+    logger.info(response.status_code)
     if response.status_code == 200:
         try:
             files = response.json()["_embedded"]["items"]
@@ -42,7 +44,7 @@ def get_yandex_disk_files(folder_path, token):
 
 
 if __name__ == '__main__':
-    folder_path = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/Greenpeace"  # Путь к папке на Яндекс.Диске
+    folder_path = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Валерия/14+ продолжение/POSTER-14+PRODOLZHENIE-GLOSS-3"  # Путь к папке на Яндекс.Диске
     time_start = datetime.datetime.now()
     file_list = get_yandex_disk_files(folder_path, token)
     for file in file_list:
@@ -60,5 +62,5 @@ if __name__ == '__main__':
 
     with open('../json.json', "w") as f:
         json.dump(result, f, ensure_ascii=False, indent=4)
-    print(result)
+
 

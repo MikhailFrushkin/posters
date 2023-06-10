@@ -2300,3 +2300,563 @@
 2023-06-08T12:04:48.372743+0300 INFO 
 2023-06-08T12:04:48.372743+0300 INFO Доступные принтеры: принтер3, принтер2, принтер1, Microsoft XPS Document Writer, Microsoft Print to PDF, Fax, Canon G1010 series
 2023-06-08T12:04:59.291351+0300 INFO {'POSTER-ATOMICHEART-GLOSS': 2, 'POSTER-BLACKPINK-GLOSS': 2, 'POSTER-BLACKPINK-MAT': 1}
+2023-06-09T12:32:26.730897+0700 INFO Доступные принтеры, подключенные по USB: 
+2023-06-09T12:33:31.485543+0700 INFO Доступные принтеры, подключенные по USB: 
+2023-06-09T12:34:00.043036+0700 INFO Доступные принтеры, подключенные по USB: 
+2023-06-09T12:34:09.304716+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:36:41.464500+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:36:41.465510+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:36:41.465510+0700 INFO Порт: nul:
+2023-06-09T12:36:41.465510+0700 INFO Сетевой принтер: False
+2023-06-09T12:36:41.466500+0700 INFO Статус: 0
+2023-06-09T12:36:41.466500+0700 INFO 
+2023-06-09T12:36:41.466500+0700 INFO 
+Имя: Fax
+2023-06-09T12:36:41.466500+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:36:41.466500+0700 INFO Порт: SHRFAX:
+2023-06-09T12:36:41.467510+0700 INFO Сетевой принтер: False
+2023-06-09T12:36:41.467510+0700 INFO Статус: 0
+2023-06-09T12:36:41.467510+0700 INFO 
+2023-06-09T12:36:41.467510+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:36:46.008722+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:39:58.826436+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:39:58.827436+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:39:58.827436+0700 INFO Порт: nul:
+2023-06-09T12:39:58.827436+0700 INFO Сетевой принтер: False
+2023-06-09T12:39:58.827436+0700 INFO Статус: 0
+2023-06-09T12:39:58.827436+0700 INFO 
+2023-06-09T12:39:58.828435+0700 INFO 
+Имя: Fax
+2023-06-09T12:39:58.828435+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:39:58.828435+0700 INFO Порт: SHRFAX:
+2023-06-09T12:39:58.829436+0700 INFO Сетевой принтер: False
+2023-06-09T12:39:58.829436+0700 INFO Статус: 0
+2023-06-09T12:39:58.829436+0700 INFO 
+2023-06-09T12:39:58.829436+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:40:03.583631+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:40:03.597840+0700 ERROR 'str' object has no attribute 'name'
+2023-06-09T12:43:14.000871+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:43:14.001869+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:43:14.001869+0700 INFO Порт: nul:
+2023-06-09T12:43:14.001869+0700 INFO Сетевой принтер: False
+2023-06-09T12:43:14.001869+0700 INFO Статус: 0
+2023-06-09T12:43:14.001869+0700 INFO 
+2023-06-09T12:43:14.002872+0700 INFO 
+Имя: Fax
+2023-06-09T12:43:14.002872+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:43:14.002872+0700 INFO Порт: SHRFAX:
+2023-06-09T12:43:14.002872+0700 INFO Сетевой принтер: False
+2023-06-09T12:43:14.002872+0700 INFO Статус: 0
+2023-06-09T12:43:14.002872+0700 INFO 
+2023-06-09T12:43:14.003875+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:43:18.168935+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:44:38.464589+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:44:38.464589+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:44:38.464589+0700 INFO Порт: nul:
+2023-06-09T12:44:38.465590+0700 INFO Сетевой принтер: False
+2023-06-09T12:44:38.465590+0700 INFO Статус: 0
+2023-06-09T12:44:38.465590+0700 INFO 
+2023-06-09T12:44:38.465590+0700 INFO 
+Имя: Fax
+2023-06-09T12:44:38.465590+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:44:38.465590+0700 INFO Порт: SHRFAX:
+2023-06-09T12:44:38.466643+0700 INFO Сетевой принтер: False
+2023-06-09T12:44:38.466643+0700 INFO Статус: 0
+2023-06-09T12:44:38.466643+0700 INFO 
+2023-06-09T12:44:38.466643+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:44:44.232353+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:46:49.747253+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:46:49.747253+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:46:49.748253+0700 INFO Порт: nul:
+2023-06-09T12:46:49.748253+0700 INFO Сетевой принтер: False
+2023-06-09T12:46:49.748253+0700 INFO Статус: 0
+2023-06-09T12:46:49.748253+0700 INFO 
+2023-06-09T12:46:49.749254+0700 INFO 
+Имя: Fax
+2023-06-09T12:46:49.749254+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:46:49.749254+0700 INFO Порт: SHRFAX:
+2023-06-09T12:46:49.749254+0700 INFO Сетевой принтер: False
+2023-06-09T12:46:49.750253+0700 INFO Статус: 0
+2023-06-09T12:46:49.750253+0700 INFO 
+2023-06-09T12:46:49.750253+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:46:54.538565+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:47:17.127718+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:47:17.127718+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:47:17.127718+0700 INFO Порт: nul:
+2023-06-09T12:47:17.127718+0700 INFO Сетевой принтер: False
+2023-06-09T12:47:17.128718+0700 INFO Статус: 0
+2023-06-09T12:47:17.128718+0700 INFO 
+2023-06-09T12:47:17.128718+0700 INFO 
+Имя: Fax
+2023-06-09T12:47:17.128718+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:47:17.128718+0700 INFO Порт: SHRFAX:
+2023-06-09T12:47:17.129718+0700 INFO Сетевой принтер: False
+2023-06-09T12:47:17.129718+0700 INFO Статус: 0
+2023-06-09T12:47:17.129718+0700 INFO 
+2023-06-09T12:47:17.129718+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:47:21.100123+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:47:33.374400+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:47:33.374400+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:47:33.374400+0700 INFO Порт: nul:
+2023-06-09T12:47:33.374400+0700 INFO Сетевой принтер: False
+2023-06-09T12:47:33.375400+0700 INFO Статус: 0
+2023-06-09T12:47:33.375400+0700 INFO 
+2023-06-09T12:47:33.375400+0700 INFO 
+Имя: Fax
+2023-06-09T12:47:33.375400+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:47:33.375400+0700 INFO Порт: SHRFAX:
+2023-06-09T12:47:33.375400+0700 INFO Сетевой принтер: False
+2023-06-09T12:47:33.376399+0700 INFO Статус: 0
+2023-06-09T12:47:33.376399+0700 INFO 
+2023-06-09T12:47:33.376399+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:47:37.297901+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:47:57.800325+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:47:57.800325+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:47:57.800325+0700 INFO Порт: nul:
+2023-06-09T12:47:57.801315+0700 INFO Сетевой принтер: False
+2023-06-09T12:47:57.801315+0700 INFO Статус: 0
+2023-06-09T12:47:57.801315+0700 INFO 
+2023-06-09T12:47:57.801315+0700 INFO 
+Имя: Fax
+2023-06-09T12:47:57.801315+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:47:57.802314+0700 INFO Порт: SHRFAX:
+2023-06-09T12:47:57.802314+0700 INFO Сетевой принтер: False
+2023-06-09T12:47:57.802314+0700 INFO Статус: 0
+2023-06-09T12:47:57.802314+0700 INFO 
+2023-06-09T12:47:57.802314+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:48:03.203468+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:49:28.635073+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:49:28.635073+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:49:28.635073+0700 INFO Порт: nul:
+2023-06-09T12:49:28.635073+0700 INFO Сетевой принтер: False
+2023-06-09T12:49:28.636126+0700 INFO Статус: 0
+2023-06-09T12:49:28.636126+0700 INFO 
+2023-06-09T12:49:28.636126+0700 INFO 
+Имя: Fax
+2023-06-09T12:49:28.636126+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:49:28.636126+0700 INFO Порт: SHRFAX:
+2023-06-09T12:49:28.636126+0700 INFO Сетевой принтер: False
+2023-06-09T12:49:28.637126+0700 INFO Статус: 0
+2023-06-09T12:49:28.637126+0700 INFO 
+2023-06-09T12:49:28.637126+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:49:33.290380+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:50:11.770313+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:50:11.770313+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:50:11.771313+0700 INFO Порт: nul:
+2023-06-09T12:50:11.771313+0700 INFO Сетевой принтер: False
+2023-06-09T12:50:11.771313+0700 INFO Статус: 0
+2023-06-09T12:50:11.771313+0700 INFO 
+2023-06-09T12:50:11.771313+0700 INFO 
+Имя: Fax
+2023-06-09T12:50:11.772313+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:50:11.772313+0700 INFO Порт: SHRFAX:
+2023-06-09T12:50:11.772313+0700 INFO Сетевой принтер: False
+2023-06-09T12:50:11.772313+0700 INFO Статус: 0
+2023-06-09T12:50:11.773313+0700 INFO 
+2023-06-09T12:50:11.773313+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:50:15.757155+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-09T12:58:05.189982+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-09T12:58:05.190981+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-09T12:58:05.190981+0700 INFO Порт: nul:
+2023-06-09T12:58:05.190981+0700 INFO Сетевой принтер: False
+2023-06-09T12:58:05.191980+0700 INFO Статус: 0
+2023-06-09T12:58:05.191980+0700 INFO 
+2023-06-09T12:58:05.191980+0700 INFO 
+Имя: Fax
+2023-06-09T12:58:05.191980+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-09T12:58:05.192981+0700 INFO Порт: SHRFAX:
+2023-06-09T12:58:05.192981+0700 INFO Сетевой принтер: False
+2023-06-09T12:58:05.192981+0700 INFO Статус: 0
+2023-06-09T12:58:05.192981+0700 INFO 
+2023-06-09T12:58:05.193982+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-09T12:58:10.370690+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd')]
+2023-06-10T17:34:18.610381+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:34:18.611383+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:34:18.611383+0700 INFO Порт: nul:
+2023-06-10T17:34:18.611383+0700 INFO Сетевой принтер: False
+2023-06-10T17:34:18.611383+0700 INFO Статус: 0
+2023-06-10T17:34:18.612382+0700 INFO 
+2023-06-10T17:34:18.612382+0700 INFO 
+Имя: Fax
+2023-06-10T17:34:18.612382+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:34:18.612382+0700 INFO Порт: SHRFAX:
+2023-06-10T17:34:18.612382+0700 INFO Сетевой принтер: False
+2023-06-10T17:34:18.613382+0700 INFO Статус: 0
+2023-06-10T17:34:18.613382+0700 INFO 
+2023-06-10T17:34:18.613382+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:34:24.251135+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status=False), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status=False), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status=False)]
+2023-06-10T17:34:55.232758+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:34:55.233757+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:34:55.233757+0700 INFO Порт: nul:
+2023-06-10T17:34:55.233757+0700 INFO Сетевой принтер: False
+2023-06-10T17:34:55.233757+0700 INFO Статус: 0
+2023-06-10T17:34:55.234758+0700 INFO 
+2023-06-10T17:34:55.234758+0700 INFO 
+Имя: Fax
+2023-06-10T17:34:55.234758+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:34:55.234758+0700 INFO Порт: SHRFAX:
+2023-06-10T17:34:55.234758+0700 INFO Сетевой принтер: False
+2023-06-10T17:34:55.235757+0700 INFO Статус: 0
+2023-06-10T17:34:55.235757+0700 INFO 
+2023-06-10T17:34:55.235757+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:34:59.441969+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status=False), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status=False), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status=False)]
+2023-06-10T17:37:11.332309+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:37:11.332309+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:37:11.333315+0700 INFO Порт: nul:
+2023-06-10T17:37:11.333315+0700 INFO Сетевой принтер: False
+2023-06-10T17:37:11.333315+0700 INFO Статус: 0
+2023-06-10T17:37:11.333315+0700 INFO 
+2023-06-10T17:37:11.333315+0700 INFO 
+Имя: Fax
+2023-06-10T17:37:11.334315+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:37:11.334315+0700 INFO Порт: SHRFAX:
+2023-06-10T17:37:11.334315+0700 INFO Сетевой принтер: False
+2023-06-10T17:37:11.334315+0700 INFO Статус: 0
+2023-06-10T17:37:11.334315+0700 INFO 
+2023-06-10T17:37:11.334315+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:37:17.043152+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='❌'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='❌'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='❌')]
+2023-06-10T17:41:29.091083+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:41:29.092082+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:41:29.092082+0700 INFO Порт: nul:
+2023-06-10T17:41:29.092082+0700 INFO Сетевой принтер: False
+2023-06-10T17:41:29.092082+0700 INFO Статус: 0
+2023-06-10T17:41:29.093082+0700 INFO 
+2023-06-10T17:41:29.093082+0700 INFO 
+Имя: Fax
+2023-06-10T17:41:29.093082+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:41:29.093082+0700 INFO Порт: SHRFAX:
+2023-06-10T17:41:29.093082+0700 INFO Сетевой принтер: False
+2023-06-10T17:41:29.094083+0700 INFO Статус: 0
+2023-06-10T17:41:29.094083+0700 INFO 
+2023-06-10T17:41:29.094083+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:41:33.126288+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T17:43:53.499429+0700 INFO [FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-3', count=1, name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-6', count=2, name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-BITVA.SHEPSOLEG-MAT-3', count=1, name='Постеры Олег Шепс постеры Интерьерные А3', status='✅'), FilesOnPrint(art='POSTER-BITVA.VRAIDOS.CB2-MAT-3', count=1, name='Постеры Виктория Райдос постеры Интерьерные А3', status='✅'), FilesOnPrint(art='POSTER-DEEPINS-GLOSS', count=1, name='Постеры Тиктокер Дипинс  постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-DIMAMASLENNIKOV-GLOSS', count=1, name='Постеры Дима Масленников картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-HJNKAISTARRAIL.4-GLOSS-3', count=1, name='Постеры Honkai: Star Rail игры постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-LOVV66-3-GLOSS', count=1, name='Постер певец Lovv66 постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-NINETIES-GLOSS', count=2, name='Постеры в стиле девяностых 90-е постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-OGBUDA-MAT', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-SCALLYMILANO-1-GLOSS', count=1, name='Постер Scally Milano постер Интерьерный', status='❌'), FilesOnPrint(art='POSTER-WEDNESDAY-MAT', count=1, name='Постеры сериал Wednesday  картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-ZXCURSED-MAT-3', count=1, name='Постеры Zxcursed стример Курсед постеры Интерьерные А3', status='❌')]
+2023-06-10T17:47:11.903827+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:47:11.903827+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:47:11.904828+0700 INFO Порт: nul:
+2023-06-10T17:47:11.904828+0700 INFO Сетевой принтер: False
+2023-06-10T17:47:11.904828+0700 INFO Статус: 0
+2023-06-10T17:47:11.904828+0700 INFO 
+2023-06-10T17:47:11.904828+0700 INFO 
+Имя: Fax
+2023-06-10T17:47:11.905828+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:47:11.905828+0700 INFO Порт: SHRFAX:
+2023-06-10T17:47:11.905828+0700 INFO Сетевой принтер: False
+2023-06-10T17:47:11.905828+0700 INFO Статус: 0
+2023-06-10T17:47:11.905828+0700 INFO 
+2023-06-10T17:47:11.905828+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:47:22.268215+0700 INFO [FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-3', count=1, name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-6', count=2, name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-BITVA.SHEPSOLEG-MAT-3', count=1, name='Постеры Олег Шепс постеры Интерьерные А3', status='✅'), FilesOnPrint(art='POSTER-BITVA.VRAIDOS.CB2-MAT-3', count=1, name='Постеры Виктория Райдос постеры Интерьерные А3', status='✅'), FilesOnPrint(art='POSTER-DEEPINS-GLOSS', count=1, name='Постеры Тиктокер Дипинс  постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-DIMAMASLENNIKOV-GLOSS', count=1, name='Постеры Дима Масленников картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-HJNKAISTARRAIL.4-GLOSS-3', count=1, name='Постеры Honkai: Star Rail игры постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-LOVV66-3-GLOSS', count=1, name='Постер певец Lovv66 постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-NINETIES-GLOSS', count=2, name='Постеры в стиле девяностых 90-е постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-OGBUDA-MAT', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-SCALLYMILANO-1-GLOSS', count=1, name='Постер Scally Milano постер Интерьерный', status='❌'), FilesOnPrint(art='POSTER-WEDNESDAY-MAT', count=1, name='Постеры сериал Wednesday  картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-ZXCURSED-MAT-3', count=1, name='Постеры Zxcursed стример Курсед постеры Интерьерные А3', status='❌')]
+2023-06-10T17:49:01.333844+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:49:01.334843+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:49:01.334843+0700 INFO Порт: nul:
+2023-06-10T17:49:01.334843+0700 INFO Сетевой принтер: False
+2023-06-10T17:49:01.334843+0700 INFO Статус: 0
+2023-06-10T17:49:01.334843+0700 INFO 
+2023-06-10T17:49:01.335849+0700 INFO 
+Имя: Fax
+2023-06-10T17:49:01.335849+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:49:01.335849+0700 INFO Порт: SHRFAX:
+2023-06-10T17:49:01.335849+0700 INFO Сетевой принтер: False
+2023-06-10T17:49:01.335849+0700 INFO Статус: 0
+2023-06-10T17:49:01.335849+0700 INFO 
+2023-06-10T17:49:01.336849+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:49:10.621503+0700 INFO [FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-3', count=1, name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-6', count=2, name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-BITVA.SHEPSOLEG-MAT-3', count=1, name='Постеры Олег Шепс постеры Интерьерные А3', status='✅'), FilesOnPrint(art='POSTER-BITVA.VRAIDOS.CB2-MAT-3', count=1, name='Постеры Виктория Райдос постеры Интерьерные А3', status='✅'), FilesOnPrint(art='POSTER-DEEPINS-GLOSS', count=1, name='Постеры Тиктокер Дипинс  постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-DIMAMASLENNIKOV-GLOSS', count=1, name='Постеры Дима Масленников картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-HJNKAISTARRAIL.4-GLOSS-3', count=1, name='Постеры Honkai: Star Rail игры постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-LOVV66-3-GLOSS', count=1, name='Постер певец Lovv66 постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-NINETIES-GLOSS', count=2, name='Постеры в стиле девяностых 90-е постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-OGBUDA-MAT', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-SCALLYMILANO-1-GLOSS', count=1, name='Постер Scally Milano постер Интерьерный', status='❌'), FilesOnPrint(art='POSTER-WEDNESDAY-MAT', count=1, name='Постеры сериал Wednesday  картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-ZXCURSED-MAT-3', count=1, name='Постеры Zxcursed стример Курсед постеры Интерьерные А3', status='❌')]
+2023-06-10T17:49:38.953639+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:49:38.953639+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:49:38.954645+0700 INFO Порт: nul:
+2023-06-10T17:49:38.954645+0700 INFO Сетевой принтер: False
+2023-06-10T17:49:38.954645+0700 INFO Статус: 0
+2023-06-10T17:49:38.954645+0700 INFO 
+2023-06-10T17:49:38.954645+0700 INFO 
+Имя: Fax
+2023-06-10T17:49:38.954645+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:49:38.955645+0700 INFO Порт: SHRFAX:
+2023-06-10T17:49:38.955645+0700 INFO Сетевой принтер: False
+2023-06-10T17:49:38.955645+0700 INFO Статус: 0
+2023-06-10T17:49:38.955645+0700 INFO 
+2023-06-10T17:49:38.955645+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:49:55.597920+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:49:55.598914+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:49:55.598914+0700 INFO Порт: nul:
+2023-06-10T17:49:55.598914+0700 INFO Сетевой принтер: False
+2023-06-10T17:49:55.598914+0700 INFO Статус: 0
+2023-06-10T17:49:55.599919+0700 INFO 
+2023-06-10T17:49:55.599919+0700 INFO 
+Имя: Fax
+2023-06-10T17:49:55.599919+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:49:55.599919+0700 INFO Порт: SHRFAX:
+2023-06-10T17:49:55.599919+0700 INFO Сетевой принтер: False
+2023-06-10T17:49:55.600919+0700 INFO Статус: 0
+2023-06-10T17:49:55.600919+0700 INFO 
+2023-06-10T17:49:55.600919+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:50:04.204201+0700 INFO [FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-3', count=1, name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-6', count=2, name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-BITVA.SHEPSOLEG-MAT-3', count=1, name='Постеры Олег Шепс постеры Интерьерные А3', status='✅'), FilesOnPrint(art='POSTER-BITVA.VRAIDOS.CB2-MAT-3', count=1, name='Постеры Виктория Райдос постеры Интерьерные А3', status='✅'), FilesOnPrint(art='POSTER-DEEPINS-GLOSS', count=1, name='Постеры Тиктокер Дипинс  постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-DIMAMASLENNIKOV-GLOSS', count=1, name='Постеры Дима Масленников картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-HJNKAISTARRAIL.4-GLOSS-3', count=1, name='Постеры Honkai: Star Rail игры постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-LOVV66-3-GLOSS', count=1, name='Постер певец Lovv66 постеры Интерьерные', status='❌'), FilesOnPrint(art='POSTER-NINETIES-GLOSS', count=2, name='Постеры в стиле девяностых 90-е постеры Интерьерные', status='✅'), FilesOnPrint(art='POSTER-OGBUDA-MAT', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-SCALLYMILANO-1-GLOSS', count=1, name='Постер Scally Milano постер Интерьерный', status='❌'), FilesOnPrint(art='POSTER-WEDNESDAY-MAT', count=1, name='Постеры сериал Wednesday  картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-ZXCURSED-MAT-3', count=1, name='Постеры Zxcursed стример Курсед постеры Интерьерные А3', status='❌')]
+2023-06-10T17:51:39.631354+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:51:39.633359+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:51:39.633359+0700 INFO Порт: nul:
+2023-06-10T17:51:39.634359+0700 INFO Сетевой принтер: False
+2023-06-10T17:51:39.635354+0700 INFO Статус: 0
+2023-06-10T17:51:39.635354+0700 INFO 
+2023-06-10T17:51:39.636352+0700 INFO 
+Имя: Fax
+2023-06-10T17:51:39.637352+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:51:39.637352+0700 INFO Порт: SHRFAX:
+2023-06-10T17:51:39.638356+0700 INFO Сетевой принтер: False
+2023-06-10T17:51:39.639359+0700 INFO Статус: 0
+2023-06-10T17:51:39.639359+0700 INFO 
+2023-06-10T17:51:39.640353+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:51:44.851351+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T17:52:58.965590+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:52:58.966576+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:52:58.966576+0700 INFO Порт: nul:
+2023-06-10T17:52:58.966576+0700 INFO Сетевой принтер: False
+2023-06-10T17:52:58.966576+0700 INFO Статус: 0
+2023-06-10T17:52:58.967588+0700 INFO 
+2023-06-10T17:52:58.967588+0700 INFO 
+Имя: Fax
+2023-06-10T17:52:58.967588+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:52:58.967588+0700 INFO Порт: SHRFAX:
+2023-06-10T17:52:58.967588+0700 INFO Сетевой принтер: False
+2023-06-10T17:52:58.967588+0700 INFO Статус: 0
+2023-06-10T17:52:58.968577+0700 INFO 
+2023-06-10T17:52:58.968577+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:53:03.714335+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T17:55:08.701173+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:55:08.701173+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:55:08.702176+0700 INFO Порт: nul:
+2023-06-10T17:55:08.702176+0700 INFO Сетевой принтер: False
+2023-06-10T17:55:08.702176+0700 INFO Статус: 0
+2023-06-10T17:55:08.702176+0700 INFO 
+2023-06-10T17:55:08.702176+0700 INFO 
+Имя: Fax
+2023-06-10T17:55:08.702176+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:55:08.703174+0700 INFO Порт: SHRFAX:
+2023-06-10T17:55:08.703174+0700 INFO Сетевой принтер: False
+2023-06-10T17:55:08.703174+0700 INFO Статус: 0
+2023-06-10T17:55:08.703174+0700 INFO 
+2023-06-10T17:55:08.703174+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:55:13.448887+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T17:56:44.693233+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:56:44.694231+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:56:44.694231+0700 INFO Порт: nul:
+2023-06-10T17:56:44.694231+0700 INFO Сетевой принтер: False
+2023-06-10T17:56:44.694231+0700 INFO Статус: 0
+2023-06-10T17:56:44.695232+0700 INFO 
+2023-06-10T17:56:44.695232+0700 INFO 
+Имя: Fax
+2023-06-10T17:56:44.695232+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:56:44.695232+0700 INFO Порт: SHRFAX:
+2023-06-10T17:56:44.695232+0700 INFO Сетевой принтер: False
+2023-06-10T17:56:44.695232+0700 INFO Статус: 0
+2023-06-10T17:56:44.696231+0700 INFO 
+2023-06-10T17:56:44.696231+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:56:48.276458+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T17:57:08.796132+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T17:57:08.796132+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T17:57:08.796132+0700 INFO Порт: nul:
+2023-06-10T17:57:08.797131+0700 INFO Сетевой принтер: False
+2023-06-10T17:57:08.797131+0700 INFO Статус: 0
+2023-06-10T17:57:08.797131+0700 INFO 
+2023-06-10T17:57:08.797131+0700 INFO 
+Имя: Fax
+2023-06-10T17:57:08.797131+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T17:57:08.798132+0700 INFO Порт: SHRFAX:
+2023-06-10T17:57:08.798132+0700 INFO Сетевой принтер: False
+2023-06-10T17:57:08.798132+0700 INFO Статус: 0
+2023-06-10T17:57:08.798132+0700 INFO 
+2023-06-10T17:57:08.798132+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T17:57:12.850289+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T18:00:09.319725+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:00:09.320728+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:00:09.320728+0700 INFO Порт: nul:
+2023-06-10T18:00:09.320728+0700 INFO Сетевой принтер: False
+2023-06-10T18:00:09.320728+0700 INFO Статус: 0
+2023-06-10T18:00:09.321728+0700 INFO 
+2023-06-10T18:00:09.321728+0700 INFO 
+Имя: Fax
+2023-06-10T18:00:09.321728+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:00:09.321728+0700 INFO Порт: SHRFAX:
+2023-06-10T18:00:09.321728+0700 INFO Сетевой принтер: False
+2023-06-10T18:00:09.322728+0700 INFO Статус: 0
+2023-06-10T18:00:09.322728+0700 INFO 
+2023-06-10T18:00:09.322728+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:00:15.591432+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T18:03:13.119412+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:03:13.120411+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:03:13.120411+0700 INFO Порт: nul:
+2023-06-10T18:03:13.120411+0700 INFO Сетевой принтер: False
+2023-06-10T18:03:13.120411+0700 INFO Статус: 0
+2023-06-10T18:03:13.120411+0700 INFO 
+2023-06-10T18:03:13.120411+0700 INFO 
+Имя: Fax
+2023-06-10T18:03:13.121417+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:03:13.121417+0700 INFO Порт: SHRFAX:
+2023-06-10T18:03:13.121417+0700 INFO Сетевой принтер: False
+2023-06-10T18:03:13.121417+0700 INFO Статус: 0
+2023-06-10T18:03:13.121417+0700 INFO 
+2023-06-10T18:03:13.121417+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:03:17.556142+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T18:08:52.020795+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:08:52.020795+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:08:52.020795+0700 INFO Порт: nul:
+2023-06-10T18:08:52.020795+0700 INFO Сетевой принтер: False
+2023-06-10T18:08:52.020795+0700 INFO Статус: 0
+2023-06-10T18:08:52.021847+0700 INFO 
+2023-06-10T18:08:52.021847+0700 INFO 
+Имя: Fax
+2023-06-10T18:08:52.021847+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:08:52.021847+0700 INFO Порт: SHRFAX:
+2023-06-10T18:08:52.021847+0700 INFO Сетевой принтер: False
+2023-06-10T18:08:52.021847+0700 INFO Статус: 0
+2023-06-10T18:08:52.022847+0700 INFO 
+2023-06-10T18:08:52.022847+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:14:18.964393+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:14:18.965394+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:14:18.965394+0700 INFO Порт: nul:
+2023-06-10T18:14:18.965394+0700 INFO Сетевой принтер: False
+2023-06-10T18:14:18.965394+0700 INFO Статус: 0
+2023-06-10T18:14:18.966445+0700 INFO 
+2023-06-10T18:14:18.966445+0700 INFO 
+Имя: Fax
+2023-06-10T18:14:18.966445+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:14:18.966445+0700 INFO Порт: SHRFAX:
+2023-06-10T18:14:18.966445+0700 INFO Сетевой принтер: False
+2023-06-10T18:14:18.966445+0700 INFO Статус: 0
+2023-06-10T18:14:18.967447+0700 INFO 
+2023-06-10T18:14:18.967447+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:15:16.015855+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:15:16.015855+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:15:16.016855+0700 INFO Порт: nul:
+2023-06-10T18:15:16.016855+0700 INFO Сетевой принтер: False
+2023-06-10T18:15:16.016855+0700 INFO Статус: 0
+2023-06-10T18:15:16.016855+0700 INFO 
+2023-06-10T18:15:16.017855+0700 INFO 
+Имя: Fax
+2023-06-10T18:15:16.017855+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:15:16.017855+0700 INFO Порт: SHRFAX:
+2023-06-10T18:15:16.017855+0700 INFO Сетевой принтер: False
+2023-06-10T18:15:16.018855+0700 INFO Статус: 0
+2023-06-10T18:15:16.018855+0700 INFO 
+2023-06-10T18:15:16.018855+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:15:24.143977+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T18:17:41.408841+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:17:41.409839+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:17:41.409839+0700 INFO Порт: nul:
+2023-06-10T18:17:41.409839+0700 INFO Сетевой принтер: False
+2023-06-10T18:17:41.410839+0700 INFO Статус: 0
+2023-06-10T18:17:41.410839+0700 INFO 
+2023-06-10T18:17:41.411839+0700 INFO 
+Имя: Fax
+2023-06-10T18:17:41.411839+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:17:41.411839+0700 INFO Порт: SHRFAX:
+2023-06-10T18:17:41.411839+0700 INFO Сетевой принтер: False
+2023-06-10T18:17:41.411839+0700 INFO Статус: 0
+2023-06-10T18:17:41.412839+0700 INFO 
+2023-06-10T18:17:41.412839+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:17:57.558309+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:17:57.558309+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:17:57.558309+0700 INFO Порт: nul:
+2023-06-10T18:17:57.559308+0700 INFO Сетевой принтер: False
+2023-06-10T18:17:57.559308+0700 INFO Статус: 0
+2023-06-10T18:17:57.559308+0700 INFO 
+2023-06-10T18:17:57.559308+0700 INFO 
+Имя: Fax
+2023-06-10T18:17:57.559308+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:17:57.559308+0700 INFO Порт: SHRFAX:
+2023-06-10T18:17:57.560308+0700 INFO Сетевой принтер: False
+2023-06-10T18:17:57.560308+0700 INFO Статус: 0
+2023-06-10T18:17:57.560308+0700 INFO 
+2023-06-10T18:17:57.560308+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:22:21.460681+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:22:21.461681+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:22:21.461681+0700 INFO Порт: nul:
+2023-06-10T18:22:21.461681+0700 INFO Сетевой принтер: False
+2023-06-10T18:22:21.461681+0700 INFO Статус: 0
+2023-06-10T18:22:21.462681+0700 INFO 
+2023-06-10T18:22:21.462681+0700 INFO 
+Имя: Fax
+2023-06-10T18:22:21.462681+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:22:21.462681+0700 INFO Порт: SHRFAX:
+2023-06-10T18:22:21.462681+0700 INFO Сетевой принтер: False
+2023-06-10T18:22:21.462681+0700 INFO Статус: 0
+2023-06-10T18:22:21.463681+0700 INFO 
+2023-06-10T18:22:21.463681+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:22:27.411276+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T18:22:27.598278+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+2023-06-10T18:23:51.440960+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:23:51.440960+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:23:51.440960+0700 INFO Порт: nul:
+2023-06-10T18:23:51.440960+0700 INFO Сетевой принтер: False
+2023-06-10T18:23:51.441959+0700 INFO Статус: 0
+2023-06-10T18:23:51.441959+0700 INFO 
+2023-06-10T18:23:51.441959+0700 INFO 
+Имя: Fax
+2023-06-10T18:23:51.441959+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:23:51.442979+0700 INFO Порт: SHRFAX:
+2023-06-10T18:23:51.442979+0700 INFO Сетевой принтер: False
+2023-06-10T18:23:51.442979+0700 INFO Статус: 0
+2023-06-10T18:23:51.442979+0700 INFO 
+2023-06-10T18:23:51.442979+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:24:31.533666+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:24:31.534666+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:24:31.534666+0700 INFO Порт: nul:
+2023-06-10T18:24:31.535674+0700 INFO Сетевой принтер: False
+2023-06-10T18:24:31.535674+0700 INFO Статус: 0
+2023-06-10T18:24:31.535674+0700 INFO 
+2023-06-10T18:24:31.535674+0700 INFO 
+Имя: Fax
+2023-06-10T18:24:31.536667+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:24:31.536667+0700 INFO Порт: SHRFAX:
+2023-06-10T18:24:31.536667+0700 INFO Сетевой принтер: False
+2023-06-10T18:24:31.536667+0700 INFO Статус: 0
+2023-06-10T18:24:31.536667+0700 INFO 
+2023-06-10T18:24:31.536667+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:28:10.487560+0700 INFO 
+Имя: Отправить в OneNote 16
+2023-06-10T18:28:10.487560+0700 INFO Драйвер: Send to Microsoft OneNote 16 Driver
+2023-06-10T18:28:10.487560+0700 INFO Порт: nul:
+2023-06-10T18:28:10.487560+0700 INFO Сетевой принтер: False
+2023-06-10T18:28:10.488570+0700 INFO Статус: 0
+2023-06-10T18:28:10.488570+0700 INFO 
+2023-06-10T18:28:10.488570+0700 INFO 
+Имя: Fax
+2023-06-10T18:28:10.488570+0700 INFO Драйвер: Microsoft Shared Fax Driver
+2023-06-10T18:28:10.488570+0700 INFO Порт: SHRFAX:
+2023-06-10T18:28:10.489560+0700 INFO Сетевой принтер: False
+2023-06-10T18:28:10.489560+0700 INFO Статус: 0
+2023-06-10T18:28:10.489560+0700 INFO 
+2023-06-10T18:28:10.489560+0700 INFO Доступные принтеры, подключенные по USB: Отправить в OneNote 16, Fax
+2023-06-10T18:28:35.130362+0700 INFO [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'), FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]

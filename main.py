@@ -7,14 +7,16 @@ from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem
     QAbstractItemView
 from loguru import logger
 
+from config import FilesOnPrint
 from utils.read_excel import read_excel_file
 from utils.read_printers import enum_printers
+from utils.search_file import search_file
 
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(488, 738)
+        MainWindow.resize(1000, 738)
         font = QtGui.QFont()
         font.setPointSize(14)
         MainWindow.setFont(font)
@@ -114,30 +116,35 @@ class Ui_MainWindow(object):
 
 
 class QueueDialog(QWidget):
-    def __init__(self, art_dict, printers, title, parent=None):
+    def __init__(self, files_on_print, printers, title, parent=None):
         super().__init__(parent)
-        self.art_dict = art_dict
+        self.files_on_print = files_on_print
         self.printers = printers
         self.setWindowTitle(title)
 
         layout = QVBoxLayout(self)
 
         self.tableWidget = QTableWidget(self)
-        self.tableWidget.setColumnCount(2)
-        self.tableWidget.setMinimumSize(450, 300)
-        self.tableWidget.setHorizontalHeaderLabels(["Артикул", "Количество"])
+        self.tableWidget.setColumnCount(4)  # Добавление колонки "Название"
+        self.tableWidget.setMinimumSize(800, 300)
+        self.tableWidget.setHorizontalHeaderLabels(
+            ["Название", "Артикул", "Количество", "Найден"])  # Обновленные заголовки
 
         font = self.tableWidget.font()
         font.setPointSize(14)
         self.tableWidget.setFont(font)
 
-        self.tableWidget.setRowCount(len(self.art_dict))
+        self.tableWidget.setRowCount(len(self.files_on_print))
 
-        for row, (art, count) in enumerate(self.art_dict.items()):
-            art_item = QTableWidgetItem(art)
-            count_item = QTableWidgetItem(str(count))
-            self.tableWidget.setItem(row, 0, art_item)
-            self.tableWidget.setItem(row, 1, count_item)
+        for row, file_on_print in enumerate(self.files_on_print):
+            name_item = QTableWidgetItem(file_on_print.name)  # Получение названия из датакласса
+            art_item = QTableWidgetItem(file_on_print.art)
+            count_item = QTableWidgetItem(str(file_on_print.count))
+            status_item = QTableWidgetItem(str(file_on_print.status))
+            self.tableWidget.setItem(row, 0, name_item)  # Установка элемента в колонку "Название"
+            self.tableWidget.setItem(row, 1, art_item)
+            self.tableWidget.setItem(row, 2, count_item)
+            self.tableWidget.setItem(row, 3, status_item)
 
         layout.addWidget(self.tableWidget)
 
@@ -160,28 +167,24 @@ class QueueDialog(QWidget):
         header = self.tableWidget.horizontalHeader()
         header.setSectionResizeMode(0, QHeaderView.Stretch)
         header.setSectionResizeMode(1, QHeaderView.ResizeToContents)
+        header.setSectionResizeMode(2, QHeaderView.ResizeToContents)
 
     def evt_btn_print_clicked(self):
         selected_data = self.get_selected_data()
         if selected_data:
             QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
-                '\n'.join([f'{i}, {j} шт.' for i, j in selected_data])))
-            print(selected_data)
-            print(self.printers)
-            #отправка на печать в зависимости от матовая или глянец, соответствующие принтера, которые были выбраны как доступные
-            #так же нужно добавить разделение принетеров матовая и гланец, в зависмости от какого окна пришла очередь
-            #так же добаить сохранение выбранных принтеров в файл и загрузка с него при следующем запуске
+                '\n'.join([f'{item.art}, {item.count} шт.' for item in selected_data])))
+            print(self.windowTitle())
         else:
             QMessageBox.information(self, 'Отправка на печать', 'Ни одна строка не выбрана')
 
     def evt_btn_print_all_clicked(self):
         all_data = self.get_all_data()
+        print(self.windowTitle())
 
         if all_data:
             QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
-                '\n'.join([f'{i}, {j} шт.' for i, j in all_data])))
-            print(all_data)
-            print(self.printers)
+                '\n'.join([f'{item.art}, {item.count} шт.' for item in all_data])))
         else:
             QMessageBox.information(self, 'Отправка на печать', 'Таблица пуста')
 
@@ -189,17 +192,23 @@ class QueueDialog(QWidget):
         selected_rows = self.tableWidget.selectionModel().selectedRows()
         data = []
         for row in selected_rows:
-            art = self.tableWidget.item(row.row(), 0).text()
-            count = self.tableWidget.item(row.row(), 1).text()
-            data.append((art, int(count)))
+            name = self.tableWidget.item(row.row(), 0).text()
+            art = self.tableWidget.item(row.row(), 1).text()
+            count = self.tableWidget.item(row.row(), 2).text()
+            status = self.tableWidget.item(row.row(), 3).text()
+            if status == '✅':
+                data.append(FilesOnPrint(name=name, art=art, count=int(count)))
         return data
 
     def get_all_data(self):
         data = []
         for row in range(self.tableWidget.rowCount()):
-            art = self.tableWidget.item(row, 0).text()
-            count = self.tableWidget.item(row, 1).text()
-            data.append((art, int(count)))
+            name = self.tableWidget.item(row, 0).text()
+            art = self.tableWidget.item(row, 1).text()
+            count = self.tableWidget.item(row, 2).text()
+            status = self.tableWidget.item(row, 3).text()
+            if status == '✅':
+                data.append(FilesOnPrint(name=name, art=art, count=int(count)))
         return data
 
 
@@ -214,6 +223,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             printers_list = enum_printers()
             for printer in printers_list:
                 self.addPrinterCheckbox(printer)
+                self.addPrinterCheckbox(printer, is_matte=True)
+
         except Exception as ex:
             logger.debug(ex)
         self.dialogs = []
@@ -223,13 +234,19 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         model.setStringList(values)
         self.listView.setModel(model)
 
-    def addPrinterCheckbox(self, printer_name):
-        checkbox = QCheckBox(printer_name, self.centralwidget)
+    def addPrinterCheckbox(self, printer_name, is_matte=False):
+        checkbox = QCheckBox(self.formatPrinterName(printer_name, is_matte), self.centralwidget)
         font = QtGui.QFont()
         font.setPointSize(14)
         checkbox.setFont(font)
         checkbox.setObjectName(printer_name)
         self.verticalLayout.addWidget(checkbox)
+
+    def formatPrinterName(self, printer_name, is_matte):
+        if is_matte:
+            return printer_name + " (матовый)"
+        else:
+            return printer_name
 
     def evt_btn_open_file_clicked(self):
         """Ивент на кнопку загрузить файл"""
@@ -237,7 +254,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if res[0] != '':
             self.lineEdit.setText(res[0])
             counts_art = read_excel_file(self.lineEdit.text())
-            values = [f"{key} - {value} шт." for key, value in counts_art.items()]
+            print(counts_art)
+            values = [f"{item.name} - {item.art}: {item.count} шт." for item in counts_art]
             self.update_list_view(values)
 
     def evt_btn_create_queue(self):
@@ -245,15 +263,20 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if self.lineEdit.text() != '':
             try:
                 # Формирования словаря с глянцевой печатью и матовой
+                directory = 'E:\\Ярослав\\Готовые постеры по 3 шт\\Готовые постеры по 3 шт'
                 counts_art = read_excel_file(self.lineEdit.text())
-                art_dict = {}
-                art_dict_mat = {}
+                for item in counts_art:
+                    status = search_file(filename=f"{item.art}.pdf", directory=directory)
+                    if status:
+                        item.status = '✅'
+                art_list = []
+                art_list_mat = []
                 logger.info(counts_art)
-                for key, value in counts_art.items():
-                    if 'MAT' in [q.strip() for q in key.split('-')]:
-                        art_dict_mat[key] = value
+                for item in counts_art:
+                    if 'MAT' in [q.strip() for q in item.art.split('-')]:
+                        art_list_mat.append(item)
                     else:
-                        art_dict[key] = value
+                        art_list.append(item)
             except Exception as ex:
                 logger.debug(ex)
 
@@ -270,8 +293,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 if len(checked_checkboxes) == 0:
                     QMessageBox.information(self, 'Инфо', 'Не выбран ни один принтер')
                 else:
-                    dialog = QueueDialog(art_dict, checked_checkboxes, 'Глянцевые')
-                    dialog2 = QueueDialog(art_dict_mat, checked_checkboxes, 'Матовые')
+                    dialog = QueueDialog(art_list, checked_checkboxes, 'Глянцевые')
+                    dialog2 = QueueDialog(art_list_mat, checked_checkboxes, 'Матовые')
                     self.dialogs.append(dialog)
                     self.dialogs.append(dialog2)
                     dialog.show()

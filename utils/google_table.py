@@ -46,6 +46,5 @@ def main():
     # df_in_xlsx(df, 'Артикула')
 
 
-
 if __name__ == '__main__':
     main()

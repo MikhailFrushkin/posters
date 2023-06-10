@@ -58,8 +58,10 @@ def create_file_list(orders: dict) -> list:
 if __name__ == '__main__':
     #Нужна обработка ошибок при печати, проплевывает, остаавливается печать
     #отправляет на принтер по умолчанию
-    printer_list = ['принтер1']
-    order = {'POSTER-ATOMICHEART-GLOSS': 1}
+    printer_list = ['Fax', 'Отправить в OneNote 16']
+    order = {'POSTER-ATOMICHEART-GLOSS': 1,
+             'POSTER-ATOMICHEART-SSSR-MAT': 1,
+             }
     file_list = create_file_list(order)
     # print(file_list)
     queue(printer_list, file_list)
