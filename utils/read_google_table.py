@@ -11,6 +11,7 @@ def read_codes_on_googl():
     CREDENTIALS_FILE = '../google_acc.json'
     # ID Google Sheets документа (можно взять из его URL)
     spreadsheet_id = '1CGN9T4E5RjK1MCEDCVpYz-sRp8udtA9RZ13Uc52xVsk'
+    # spreadsheet_id = '1IaXufU8CYTQsMDxEvynBzlRAFm_G43Kll0PO3lvQDxA'
 
     # Авторизуемся и получаем service — экземпляр доступа к API
     credentials = ServiceAccountCredentials.from_json_keyfile_name(
@@ -47,9 +48,10 @@ def read_codes_on_googl():
     df['Артикул на ВБ'] = df['Артикул на ВБ'].apply(lambda x: re.sub(r'\s+', ',', x))
     df['Артикул на ВБ'] = df['Артикул на ВБ'].apply(lambda x: x.lower().replace(',,', ','))
     df['Артикул на ВБ'].apply(lambda x: list_art.extend(x.split(',')))
-    list_art = [i for i in list_art if len(i) > 0]
+    list_art = [i for i in list_art if len(i) > 0 and '-' in i]
     df = pd.DataFrame({'Артикул': list_art})
     df_in_xlsx(df, 'Артикула с гугл таблицы')
+    return list_art
 
 
 if __name__ == '__main__':

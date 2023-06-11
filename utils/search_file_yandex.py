@@ -6,6 +6,7 @@ import pandas as pd
 from loguru import logger
 
 from config import token, df_in_xlsx
+from utils.read_google_table import read_codes_on_googl
 
 
 async def get_folders(directory_path, folder_name, token):
@@ -59,19 +60,11 @@ async def traverse_yandex_disk(folder_path, target_folders, result_dict):
 
 
 async def main():
-    df = pd.read_excel('гуглтаблица.xlsx', usecols=['шепс', 'Наименование', 'Артикул на ВБ', 'POSTER-LIGAFOOTB'],
-                       dtype=str)
-    list_arts = []
-    df = df[~df['Артикул на ВБ'].isna()]
-    df['Артикул на ВБ'] = df['Артикул на ВБ'].apply(lambda x: x.lower().replace(' ', ',').replace(',,', ','))
-    for row in df['Артикул на ВБ']:
-        artikuls = str(row).split(',')
-        list_arts.extend(artikuls)
-    target_folders = [artikul.strip() for artikul in list_arts if len(artikul.strip()) != 0]
+    list_arts = read_codes_on_googl()
     starting_folder = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/"
     result_dict = {}
 
-    await traverse_yandex_disk(starting_folder, target_folders, result_dict)
+    await traverse_yandex_disk(starting_folder, list_arts, result_dict)
 
     df = pd.DataFrame(list(result_dict.items()), columns=['Артикул', 'Путь'])
     df_in_xlsx(df, 'Пути к артикулам')
