@@ -6,8 +6,7 @@ import pandas as pd
 import requests
 from loguru import logger
 
-from config import token
-from utils.google_table import df_in_xlsx
+from config import token, df_in_xlsx, main_path, ready_path
 from utils.one_file import one_pdf
 
 
@@ -107,12 +106,12 @@ if __name__ == '__main__':
     #Проверка что в папке папки с 3мя файлами
     # find_folders_with_incorrect_file_count('E:\\Ярослав\\Готовые постеры по 3 шт')
     bad_list = []
-    directory = 'E:\\Ярослав\\Готовые постеры по 3 шт'
+    directory = main_path
     for root, dirs, files in os.walk(directory):
         for folder in dirs:
             try:
                 full_path = os.path.join(directory, folder)
-                if not os.path.exists(f'E:\\Ярослав\\Готовые постеры по 3 шт\\Готовые постеры по 3 шт\\{folder}.pdf'):
+                if not os.path.exists(f'{ready_path}\\{folder}.pdf'):
                     # print(f'E:\\Ярослав\\Готовые постеры по 3 шт\\Готовые постеры по 3 шт\\{folder}.pdf')
                     time_start = datetime.datetime.now()
                     one_pdf(folder_path=full_path, filename=folder)

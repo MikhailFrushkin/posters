@@ -5,6 +5,8 @@ from reportlab.pdfgen import canvas
 from PIL import Image
 import glob
 
+from config import ready_path
+
 
 def one_pdf(folder_path, filename):
     # Ищем все файлы с расширениями PNG и JPG
@@ -12,7 +14,7 @@ def one_pdf(folder_path, filename):
     poster_files = sorted(poster_files)
 
     # Создание нового PDF файла
-    pdf_filename = f'E:\\Ярослав\\Готовые постеры по 3 шт\\Готовые постеры по 3 шт\\{filename}.pdf'
+    pdf_filename = f'{ready_path}\\{filename}.pdf'
     c = canvas.Canvas(pdf_filename, pagesize=A3)
     # Размещение каждого постера в виде очереди на отдельной странице PDF
     for i, poster_file in enumerate(poster_files):

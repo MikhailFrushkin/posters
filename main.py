@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem
     QAbstractItemView
 from loguru import logger
 
-from config import FilesOnPrint
+from config import FilesOnPrint, ready_path
 from utils.read_excel import read_excel_file
 from utils.read_printers import enum_printers
 from utils.search_file import search_file
@@ -263,7 +263,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if self.lineEdit.text() != '':
             try:
                 # Формирования словаря с глянцевой печатью и матовой
-                directory = 'E:\\Ярослав\\Готовые постеры по 3 шт\\Готовые постеры по 3 шт'
+                directory = ready_path
                 counts_art = read_excel_file(self.lineEdit.text())
                 for item in counts_art:
                     status = search_file(filename=f"{item.art}.pdf", directory=directory)

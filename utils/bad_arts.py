@@ -1,6 +1,6 @@
 import pandas as pd
 
-from utils.google_table import df_in_xlsx
+from config import df_in_xlsx
 
 
 def find_missing_elements(list1, list2):

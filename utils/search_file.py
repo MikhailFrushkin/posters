@@ -1,5 +1,7 @@
 import os
 
+from config import main_path
+
 
 def search_file(filename, directory):
     for root, dirs, files in os.walk(directory):
@@ -11,7 +13,7 @@ def search_file(filename, directory):
 if __name__ == '__main__':
     # Пример использования
     filename = "POSTER-BLACKPINK-GLOSS.pdf"
-    directory = r'C:\Users\A3_posters\Готовые постеры по 3 шт'
+    directory = main_path
     result = search_file(filename, directory)
     if result:
         print("Файл найден:", result)

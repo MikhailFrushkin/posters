@@ -5,8 +5,7 @@ import aiohttp
 import pandas as pd
 from loguru import logger
 
-from config import token
-from utils.google_table import df_in_xlsx
+from config import token, df_in_xlsx
 
 
 async def get_folders(directory_path, folder_name, token):

@@ -5,16 +5,21 @@ import win32con
 import win32print
 from loguru import logger
 
+from config import FilesOnPrint, ready_path
 from utils.search_file import search_file
 
 
-def queue(printer_list, file_list):
+def queue(printer_list, file_list, type_files):
     dev_mode_parameters = {
         "PaperSize": win32con.DMPAPER_A3,
         "Orientation": win32con.DMORIENT_PORTRAIT,
         "PrintQuality": win32con.DMRES_HIGH,
     }
-
+    if type_files == 'Матовые':
+        printer_list = [i.split('(')[0].strip() for i in printer_list if 'мат' in i]
+        print(printer_list)
+        print(file_list)
+        print(type_files)
     # Циклическое распределение файлов по принтерам
     printer_file_pairs = zip(printer_list, itertools.cycle(file_list))
     for printer, file in printer_file_pairs:
@@ -47,21 +52,21 @@ def queue(printer_list, file_list):
             win32print.ClosePrinter(printer_handle)
 
 
-def create_file_list(orders: dict) -> list:
-    directory = r'C:\Users\Machine4\PycharmProjects\posters\Готовые постеры по 3 шт'
-    file_list = list()
-    for key, value in orders.items():
-        file_list.append((search_file(f"{key}.pdf", directory), value))
-    return file_list
+def create_file_list(orders):
+    directory = ready_path
+    file_tuple = tuple()
+    for item in orders:
+        path_file = search_file(f"{item.art}.pdf", directory)
+        file_tuple += ((path_file, item.count),)
+    return file_tuple
 
 
 if __name__ == '__main__':
-    #Нужна обработка ошибок при печати, проплевывает, остаавливается печать
-    #отправляет на принтер по умолчанию
-    printer_list = ['Fax', 'Отправить в OneNote 16']
-    order = {'POSTER-ATOMICHEART-GLOSS': 1,
-             'POSTER-ATOMICHEART-SSSR-MAT': 1,
-             }
-    file_list = create_file_list(order)
-    # print(file_list)
-    queue(printer_list, file_list)
+    # Нужна обработка ошибок при печати, проплевывает, остаавливается печать
+    # отправляет на принтер по умолчанию
+    printer_list = ['Fax', 'Отправить в OneNote 16 (матовый)']
+    order = [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=5, name='Атомик', status='✅'),
+             FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'),
+             FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+    file_tuple = create_file_list(order)
+    queue(printer_list, file_tuple, type_files='Матовые')
