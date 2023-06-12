@@ -1,3 +1,4 @@
+import os
 import re
 import pandas as pd
 from config import df_in_xlsx
@@ -6,12 +7,17 @@ import apiclient
 from oauth2client.service_account import ServiceAccountCredentials
 
 
-def read_codes_on_googl():
+def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
+    file_path = 'Артикула с гугл таблицы.xlsx'
+    old_file_path = 'Старые артикула с гугл таблицы.xlsx'
+    if os.path.exists(file_path):
+        if os.path.exists(old_file_path):
+            os.remove(old_file_path)
+        os.rename(file_path, old_file_path)
     # Файл, полученный в Google Developer Console
-    CREDENTIALS_FILE = '../google_acc.json'
     # ID Google Sheets документа (можно взять из его URL)
-    spreadsheet_id = '1CGN9T4E5RjK1MCEDCVpYz-sRp8udtA9RZ13Uc52xVsk'
-    # spreadsheet_id = '1IaXufU8CYTQsMDxEvynBzlRAFm_G43Kll0PO3lvQDxA'
+    # spreadsheet_id = '1CGN9T4E5RjK1MCEDCVpYz-sRp8udtA9RZ13Uc52xVsk'
+    spreadsheet_id = '1IaXufU8CYTQsMDxEvynBzlRAFm_G43Kll0PO3lvQDxA'
 
     # Авторизуемся и получаем service — экземпляр доступа к API
     credentials = ServiceAccountCredentials.from_json_keyfile_name(
@@ -51,8 +57,21 @@ def read_codes_on_googl():
     list_art = [i for i in list_art if len(i) > 0 and '-' in i]
     df = pd.DataFrame({'Артикул': list_art})
     df_in_xlsx(df, 'Артикула с гугл таблицы')
+
+    df1 = pd.read_excel('Старые артикула с гугл таблицы.xlsx')
+    df1 = df1.reindex(columns=df.columns)
+    df1 = df1.reindex(index=df.index)
+    diff = df.compare(df1)
+    print(diff)
+    merged = df1.merge(df, indicator=True, how='outer')
+    diff = merged[merged['_merge'] != 'both']
+    diff.to_excel("отличия.xlsx", index=True)
+    diff = diff[~diff['Артикул'].isna()]
+    list_new_arts = diff['Артикул'].unique().tolist()
+    print(list_new_arts)
+
     return list_art
 
 
 if __name__ == '__main__':
-    read_codes_on_googl()
+    read_codes_on_google()

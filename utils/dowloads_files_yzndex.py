@@ -1,3 +1,4 @@
+import asyncio
 import datetime
 import os
 from urllib.parse import quote
@@ -8,6 +9,7 @@ from loguru import logger
 
 from config import token, df_in_xlsx, main_path, ready_path
 from utils.one_file import one_pdf
+from utils.search_file_yandex import main_search
 
 
 def bytes_to_megabytes(size_in_bytes):
@@ -80,7 +82,7 @@ def dowloads_files(self, df_new, new_arts):
     df['Путь'] = df['Путь'].apply(lambda x: x[5:])
     combined_list = df[['Путь', 'Артикул']].values.tolist()
     logger.info(f'{combined_list}')
-    total_folders = len(new_arts) * 3
+    total_folders = len(new_arts) * 3 * 2
     for number, i in enumerate(combined_list, start=1):
         file_path = f'{main_path}\\{i[1]}'
         count = 3
@@ -111,7 +113,7 @@ def dowloads_files(self, df_new, new_arts):
 def unions_arts(self, new_arts):
     bad_list = []
     directory = main_path
-    total_folders = len(new_arts)
+    total_folders = len(new_arts * 3)
     current_folder = 0
 
     for root, dirs, files in os.walk(directory):
@@ -122,12 +124,10 @@ def unions_arts(self, new_arts):
                     time_start = datetime.datetime.now()
                     one_pdf(folder_path=full_path, filename=folder)
                     logger.info(f'{folder}|Время выполнения: {datetime.datetime.now() - time_start}')
-                    pass
+                    current_folder += 3
+                    self.update_progress(current_folder, total_folders)
                 else:
                     logger.info(f'{folder} существует')
-
-                current_folder += 1
-                self.update_progress(current_folder, total_folders)
             except Exception as ex:
                 logger.error(f'{folder} ошибка соединения файлов {ex}')
                 with open('Не объединенные артикула.txt', 'a') as f:
@@ -138,7 +138,12 @@ def unions_arts(self, new_arts):
     df_in_xlsx(bad_df, 'Не объединенные артикула')
 
 
-def new_arts(new_file):
+def new_arts(new_file, self):
+    # получение и сохранение артикулов с гугл таблицы
+    # loop = asyncio.get_event_loop()
+    # loop.run_until_complete(main_search(self))
+    asyncio.run(main_search(self))
+
     new_df = pd.read_excel(new_file)
     new_arts = new_df['Артикул'].str.lower().unique().tolist()
 

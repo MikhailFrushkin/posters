@@ -17,14 +17,11 @@ def queue(printer_list, file_list, type_files):
     }
     if type_files == 'Матовые':
         printer_list = [i.split('(')[0].strip() for i in printer_list if 'мат' in i]
-        print(printer_list)
-        print(file_list)
-        print(type_files)
+    else:
+        printer_list = [i.split('(')[0].strip() for i in printer_list if 'мат' not in i]
     # Циклическое распределение файлов по принтерам
-    printer_file_pairs = zip(printer_list, itertools.cycle(file_list))
-    for printer, file in printer_file_pairs:
-        print(printer, file)
-
+    for file, printer in zip(file_list, itertools.cycle(printer_list)):
+        logger.debug(f"Печать файла {file} на принтере {printer}")
         print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
         printer_handle = win32print.OpenPrinter(printer, print_defaults)
         logger.info(f"параметры принтера: {printer_handle}")

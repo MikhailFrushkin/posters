@@ -10,6 +10,7 @@ from loguru import logger
 
 from config import FilesOnPrint, ready_path
 from utils.dowloads_files_yzndex import new_arts, unions_arts, dowloads_files
+from utils.queue_files_on_printers import queue, create_file_list
 from utils.read_excel import read_excel_file
 from utils.read_printers import enum_printers
 from utils.search_file import search_file
@@ -18,7 +19,7 @@ from utils.search_file import search_file
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(685, 738)
+        MainWindow.resize(1000, 750)
         font = QtGui.QFont()
         font.setPointSize(14)
         MainWindow.setFont(font)
@@ -172,6 +173,8 @@ class QueueDialog(QWidget):
     def evt_btn_print_clicked(self):
         selected_data = self.get_selected_data()
         if selected_data:
+            file_tuple = create_file_list(selected_data)
+            queue(self.printers, file_tuple, type_files=self.windowTitle())
             QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
                 '\n'.join([f'{item.art}, {item.count} шт.' for item in selected_data])))
         else:
@@ -181,6 +184,8 @@ class QueueDialog(QWidget):
         all_data = self.get_all_data()
 
         if all_data:
+            file_tuple = create_file_list(all_data)
+            queue(self.printers, file_tuple, type_files=self.windowTitle())
             QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
                 '\n'.join([f'{item.art}, {item.count} шт.' for item in all_data])))
         else:
@@ -317,43 +322,61 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def evt_btn_update_db(self):
         """Ивент на кнопку проверить базу"""
-        list_new_atrs = new_arts('utils/Пути к артикулам.xlsx')
-        msg_box = QMessageBox()
-        msg_box.setWindowTitle('Загрузка')
-        msg_box.setText('Найдены новые артикула: \n{}'.format('\n'.join(list_new_atrs)))
+        msg_box_1 = QMessageBox()
+        msg_box_1.setWindowTitle('Загрузка')
+        msg_box_1.setText('Продолжить?')
         font = QFont()
-        font.setPointSize(14)  # Здесь устанавливаем желаемый размер шрифта
-        msg_box.setFont(font)
-        if len(list_new_atrs) != 0:
-            download_button = QPushButton('Скачать')
-            skip_button = QPushButton('Пропустить')
+        font.setPointSize(14)
+        msg_box_1.setFont(font)
+        download_button = QPushButton('Да')
+        skip_button = QPushButton('Нет')
+        button_font = download_button.font()
+        button_font.setPointSize(button_font.pointSize() + 8)
+        download_button.setFont(button_font)
+        skip_button.setFont(button_font)
+        # Добавляем кнопки в QMessageBox
+        msg_box_1.addButton(download_button, QMessageBox.YesRole)
+        msg_box_1.addButton(skip_button, QMessageBox.NoRole)
+        result = msg_box_1.exec_()
+        # Обработка результата
+        if result == 0:
+            list_new_atrs = new_arts('utils/Пути к артикулам.xlsx', self)
+            msg_box = QMessageBox()
+            msg_box.setWindowTitle('Загрузка')
+            msg_box.setText('Найдены новые артикула: \n{}'.format('\n'.join(list_new_atrs)))
+            font = QFont()
+            font.setPointSize(14)
+            msg_box.setFont(font)
+            if len(list_new_atrs) != 0:
+                download_button = QPushButton('Скачать')
+                skip_button = QPushButton('Пропустить')
 
-            button_font = download_button.font()
-            button_font.setPointSize(button_font.pointSize() + 8)
-            download_button.setFont(button_font)
-            skip_button.setFont(button_font)
+                button_font = download_button.font()
+                button_font.setPointSize(button_font.pointSize() + 8)
+                download_button.setFont(button_font)
+                skip_button.setFont(button_font)
 
-            # Добавляем кнопки в QMessageBox
-            msg_box.addButton(download_button, QMessageBox.AcceptRole)
-            msg_box.addButton(skip_button, QMessageBox.RejectRole)
+                # Добавляем кнопки в QMessageBox
+                msg_box.addButton(download_button, QMessageBox.AcceptRole)
+                msg_box.addButton(skip_button, QMessageBox.RejectRole)
 
-            # Отображаем QMessageBox и получаем результат
-            result = msg_box.exec_()
+                # Отображаем QMessageBox и получаем результат
+                result = msg_box.exec_()
 
-            # Обработка результата
-            if result == QMessageBox.AcceptRole:
-                if len(list_new_atrs) != 0:
-                    logger.info(f'Нажата кнопка скачать. Список файлов: {list_new_atrs}')
-                    dowloads_files(self, df_new='utils/Пути к артикулам.xlsx', new_arts=list_new_atrs)
-                    QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
+                # Обработка результата
+                if result == QMessageBox.AcceptRole:
+                    if len(list_new_atrs) != 0:
+                        logger.info(f'Нажата кнопка скачать. Список файлов: {list_new_atrs}')
+                        self.progress_bar.setValue(90)
+                        dowloads_files(self, df_new='utils/Пути к артикулам.xlsx', new_arts=list_new_atrs)
+                        QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
+                        unions_arts(self, new_arts=list_new_atrs)
+                        QMessageBox.information(self, 'Инфо', 'Файлы соединены')
 
-                    unions_arts(self, new_arts=list_new_atrs)
-                    QMessageBox.information(self, 'Инфо', 'Файлы соединены')
-
-            elif result == QMessageBox.RejectRole:
-                logger.info(f'Нажата кнопка Пропустить. Список файлов: {list_new_atrs}')
-        else:
-            QMessageBox.information(self, 'Инфо', 'не найдено новых артикулов')
+                elif result == QMessageBox.RejectRole:
+                    logger.info(f'Нажата кнопка Пропустить. Список файлов: {list_new_atrs}')
+            else:
+                QMessageBox.information(self, 'Инфо', 'не найдено новых артикулов')
 
 
 if __name__ == '__main__':
