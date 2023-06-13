@@ -1,6 +1,8 @@
 import os
 import re
 import pandas as pd
+from loguru import logger
+
 from config import df_in_xlsx
 import httplib2
 import apiclient
@@ -8,6 +10,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 
 def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
+    logger.debug('Читаю гугл таблицу')
     file_path = 'Артикула с гугл таблицы.xlsx'
     old_file_path = 'Старые артикула с гугл таблицы.xlsx'
     if os.path.exists(file_path):
@@ -18,22 +21,23 @@ def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
     # ID Google Sheets документа (можно взять из его URL)
     # spreadsheet_id = '1CGN9T4E5RjK1MCEDCVpYz-sRp8udtA9RZ13Uc52xVsk'
     spreadsheet_id = '1IaXufU8CYTQsMDxEvynBzlRAFm_G43Kll0PO3lvQDxA'
+    try:
+        # Авторизуемся и получаем service — экземпляр доступа к API
+        credentials = ServiceAccountCredentials.from_json_keyfile_name(
+            CREDENTIALS_FILE,
+            ['https://www.googleapis.com/auth/spreadsheets',
+             'https://www.googleapis.com/auth/drive'])
+        httpAuth = credentials.authorize(httplib2.Http())
+        service = apiclient.discovery.build('sheets', 'v4', http=httpAuth)
 
-    # Авторизуемся и получаем service — экземпляр доступа к API
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(
-        CREDENTIALS_FILE,
-        ['https://www.googleapis.com/auth/spreadsheets',
-         'https://www.googleapis.com/auth/drive'])
-    httpAuth = credentials.authorize(httplib2.Http())
-    service = apiclient.discovery.build('sheets', 'v4', http=httpAuth)
+        # Пример чтения файла
+        values = service.spreadsheets().values().get(
+            spreadsheetId=spreadsheet_id,
+            range='A1:L30000',
 
-    # Пример чтения файла
-    values = service.spreadsheets().values().get(
-        spreadsheetId=spreadsheet_id,
-        range='A1:L30000',
-
-    ).execute()
-
+        ).execute()
+    except Exception as ex:
+        logger.error(f'Ошибка чтения гуглтаблицы {ex}')
     data = values['values']
     headers = data[0]  # Заголовки столбцов из первого элемента списка значений
     rows = data[1:]

@@ -61,7 +61,7 @@ async def traverse_yandex_disk(session, folder_path, target_folders, result_dict
             for item in data["_embedded"]['items']:
                 if item["type"] == "dir" and item["name"].lower() in target_folders:
                     result_dict[item["name"]] = item["path"]
-                    logger.error(f'Найден артикул {item["name"]} {item["path"]} current_folder: {progress}')
+                    logger.success(f'Найден артикул {item["name"]} {item["path"]} current_folder: {progress}')
                     progress.update_progress()
                     target_folders.remove(item["name"].lower())
                     if not target_folders:  # If target_folders list is empty, all folders have been found
