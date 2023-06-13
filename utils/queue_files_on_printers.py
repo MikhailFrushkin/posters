@@ -21,8 +21,11 @@ def queue(printer_list, file_list, type_files):
         printer_list = [i.split('(')[0].strip() for i in printer_list if 'мат' not in i]
     # Циклическое распределение файлов по принтерам
     for file, printer in zip(file_list, itertools.cycle(printer_list)):
+
         logger.debug(f"Печать файла {file} на принтере {printer}")
         print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
+        temp = win32print.SetDefaultPrinterW(printer)
+        logger.debug(win32print.GetDefaultPrinter())
         printer_handle = win32print.OpenPrinter(printer, print_defaults)
         logger.info(f"параметры принтера: {printer_handle}")
         # Получаем текущую конфигурацию принтера
