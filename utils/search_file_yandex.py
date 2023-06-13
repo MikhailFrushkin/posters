@@ -9,6 +9,20 @@ from config import token, df_in_xlsx
 from utils.read_google_table import read_codes_on_google
 
 
+class SearchProgress:
+    def __init__(self, total_folders, progress_bar):
+        self.current_folder = 0
+        self.total_folders = total_folders
+        self.progress_bar = progress_bar
+
+    def update_progress(self):
+        self.current_folder += 1
+        self.progress_bar.update_progress(self.current_folder, self.total_folders)
+
+    def __str__(self):
+        return str(self.current_folder)
+
+
 async def get_folders(session, directory_path, folder_name, token):
     url = f"https://cloud-api.yandex.net/v1/disk/resources?path={quote(directory_path)}&limit=1000"
     headers = {"Authorization": f"OAuth {token}"}
@@ -38,37 +52,41 @@ async def search(folder_path, folder_name):
         print("Целевая папка не найдена.")
 
 
-async def traverse_yandex_disk(session, folder_path, target_folders, result_dict, self, current_folder):
+async def traverse_yandex_disk(session, folder_path, target_folders, result_dict, self, progress):
     url = f"https://cloud-api.yandex.net/v1/disk/resources?path={quote(folder_path)}&limit=1000"
     headers = {"Authorization": f"OAuth {token}"}
-    total_folders = len(target_folders)
     async with session.get(url, headers=headers) as response:
         data = await response.json()
         try:
             for item in data["_embedded"]['items']:
                 if item["type"] == "dir" and item["name"].lower() in target_folders:
                     result_dict[item["name"]] = item["path"]
-                    logger.error(f'Найден артикул {item["name"]} {item["path"]} current_folder: {current_folder}')
+                    logger.error(f'Найден артикул {item["name"]} {item["path"]} current_folder: {progress}')
+                    progress.update_progress()
+                    target_folders.remove(item["name"].lower())
+                    if not target_folders:  # If target_folders list is empty, all folders have been found
+                        return  # Terminate the function
+
                 elif item["type"] == "dir":
-                    await traverse_yandex_disk(session, item["path"], target_folders, result_dict, self, current_folder)
+                    await traverse_yandex_disk(session, item["path"], target_folders, result_dict, self, progress)
                     logger.info(f'Проверена папка(файл){item["name"]} {item["path"]}')
-                current_folder += 1
-                self.update_progress(current_folder, total_folders)
+
         except Exception as ex:
             logger.debug(f'Ошибка при поиске папки {item["name"]} {ex}')
 
 
 async def main_search(self):
     list_arts = read_codes_on_google()
-    starting_folder = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/"
-    result_dict = {}
-    current_folder = 0
-    async with aiohttp.ClientSession() as session:
-        await traverse_yandex_disk(session, starting_folder, list_arts, result_dict, self, current_folder=current_folder)
+    if list_arts:
+        starting_folder = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/"
+        result_dict = {}
+        progress = SearchProgress(len(list_arts), self)
+        async with aiohttp.ClientSession() as session:
+            await traverse_yandex_disk(session, starting_folder, list_arts, result_dict, self, progress)
 
-    df = pd.DataFrame(list(result_dict.items()), columns=['Артикул', 'Путь'])
-    df_in_xlsx(df, 'Пути к артикулам')
-
+        df = pd.DataFrame(list(result_dict.items()), columns=['Артикул', 'Путь'])
+        df_in_xlsx(df, 'Пути к артикулам')
+        return True
 
 if __name__ == '__main__':
     asyncio.run(main_search())

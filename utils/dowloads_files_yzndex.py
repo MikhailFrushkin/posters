@@ -138,12 +138,7 @@ def unions_arts(self, new_arts):
     df_in_xlsx(bad_df, 'Не объединенные артикула')
 
 
-def new_arts(new_file, self):
-    # получение и сохранение артикулов с гугл таблицы
-    # loop = asyncio.get_event_loop()
-    # loop.run_until_complete(main_search(self))
-    asyncio.run(main_search(self))
-
+def missing_arts(new_file):
     new_df = pd.read_excel(new_file)
     new_arts = new_df['Артикул'].str.lower().unique().tolist()
 
@@ -152,9 +147,21 @@ def new_arts(new_file, self):
 
     folders = [folder.lower() for folder in os.listdir(directory) if
                os.path.isdir(os.path.join(directory, folder)) and folder != excluded_folder]
-
+    logger.debug(f'Количество артикулов в директории {main_path}: {len(folders)}')
+    logger.debug(f'Количество артикулов в файле {new_file}: {len(new_arts)}')
     missing_elements = list(set(new_arts) - set(folders))
+    logger.debug(f'разница артикулов: {missing_elements}')
+    return missing_elements
 
+
+def new_arts(new_file, self):
+    # получение и сохранение артикулов с гугл таблицы
+    # loop = asyncio.get_event_loop()
+    # loop.run_until_complete(main_search(self))
+    flag = asyncio.run(main_search(self))
+    missing_elements = []
+    if flag:
+        missing_arts(new_file)
     logger.info(missing_elements)
     return missing_elements
 

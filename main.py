@@ -3,13 +3,13 @@ from pathlib import Path
 import qdarkstyle
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtGui import QFont
-from PyQt5.QtWidgets import QFileDialog, QCheckBox, QApplication, QProgressBar
+from PyQt5.QtWidgets import QFileDialog, QCheckBox, QApplication, QProgressBar, QDialog, QLabel, QBoxLayout, QHBoxLayout
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem, QPushButton, QMessageBox, QHeaderView, \
     QAbstractItemView
 from loguru import logger
 
 from config import FilesOnPrint, ready_path
-from utils.dowloads_files_yzndex import new_arts, unions_arts, dowloads_files
+from utils.dowloads_files_yzndex import new_arts, unions_arts, dowloads_files, missing_arts
 from utils.queue_files_on_printers import queue, create_file_list
 from utils.read_excel import read_excel_file
 from utils.read_printers import enum_printers
@@ -230,6 +230,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton_2.clicked.connect(self.evt_btn_create_queue)
         self.pushButton_3.clicked.connect(self.evt_btn_update_db)
 
+
         try:
             printers_list = enum_printers()
             for printer in printers_list:
@@ -322,25 +323,12 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def evt_btn_update_db(self):
         """Ивент на кнопку проверить базу"""
-        msg_box_1 = QMessageBox()
-        msg_box_1.setWindowTitle('Загрузка')
-        msg_box_1.setText('Продолжить?')
-        font = QFont()
-        font.setPointSize(14)
-        msg_box_1.setFont(font)
-        download_button = QPushButton('Да')
-        skip_button = QPushButton('Нет')
-        button_font = download_button.font()
-        button_font.setPointSize(button_font.pointSize() + 8)
-        download_button.setFont(button_font)
-        skip_button.setFont(button_font)
-        # Добавляем кнопки в QMessageBox
-        msg_box_1.addButton(download_button, QMessageBox.YesRole)
-        msg_box_1.addButton(skip_button, QMessageBox.NoRole)
-        result = msg_box_1.exec_()
-        # Обработка результата
-        if result == 0:
-            list_new_atrs = new_arts('utils/Пути к артикулам.xlsx', self)
+
+        def on_yes_clicked():
+            print("Нажата кнопка 'Да'")
+            dialog.reject()
+
+            list_new_atrs = new_arts('Пути к артикулам.xlsx', self)
             msg_box = QMessageBox()
             msg_box.setWindowTitle('Загрузка')
             msg_box.setText('Найдены новые артикула: \n{}'.format('\n'.join(list_new_atrs)))
@@ -368,7 +356,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     if len(list_new_atrs) != 0:
                         logger.info(f'Нажата кнопка скачать. Список файлов: {list_new_atrs}')
                         self.progress_bar.setValue(90)
-                        dowloads_files(self, df_new='utils/Пути к артикулам.xlsx', new_arts=list_new_atrs)
+                        dowloads_files(self, df_new='Пути к артикулам.xlsx', new_arts=list_new_atrs)
                         QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
                         unions_arts(self, new_arts=list_new_atrs)
                         QMessageBox.information(self, 'Инфо', 'Файлы соединены')
@@ -377,6 +365,57 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     logger.info(f'Нажата кнопка Пропустить. Список файлов: {list_new_atrs}')
             else:
                 QMessageBox.information(self, 'Инфо', 'не найдено новых артикулов')
+
+        def on_no_clicked():
+            print("Нажата кнопка 'Нет'")
+            dialog.reject()
+
+        def on_skip_clicked():
+            print("Нажата кнопка 'Пропустить сканирование Я.диска'")
+
+            dialog.reject()
+            list_new_atrs = missing_arts('Пути к артикулам.xlsx')
+            dowloads_files(self, df_new='Пути к артикулам.xlsx', new_arts=list_new_atrs)
+            QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
+            unions_arts(self, new_arts=list_new_atrs)
+            QMessageBox.information(self, 'Инфо', 'Файлы соединены')
+            self.progress_bar.setValue(100)
+
+
+        dialog = QDialog()
+        dialog.setWindowTitle('Загрузка')
+
+        main_layout = QVBoxLayout(dialog)
+
+        label_layout = QVBoxLayout()
+        label = QLabel('Продолжить?', dialog)
+        font = label.font()
+        font.setPointSize(12)
+        label.setFont(font)
+        label_layout.addWidget(label)
+
+        button_layout = QHBoxLayout()
+
+        yes_button = QPushButton('Да', dialog)
+        yes_button.setFixedSize(yes_button.sizeHint().width() * 2, yes_button.sizeHint().height() * 2)
+        yes_button.clicked.connect(on_yes_clicked)
+        button_layout.addWidget(yes_button)
+
+        no_button = QPushButton('Нет', dialog)
+        no_button.setFixedSize(no_button.sizeHint().width() * 2, no_button.sizeHint().height() * 2)
+        no_button.clicked.connect(on_no_clicked)
+        button_layout.addWidget(no_button)
+
+        skip_button = QPushButton('Пропустить сканирование Я.диска', dialog)
+        skip_button.setFixedSize(skip_button.sizeHint().width() * 2, skip_button.sizeHint().height() * 2)
+        skip_button.clicked.connect(on_skip_clicked)
+        button_layout.addWidget(skip_button)
+
+        main_layout.addLayout(label_layout)
+        main_layout.addLayout(button_layout)
+
+        dialog.exec_()
+
 
 
 if __name__ == '__main__':

@@ -42,7 +42,6 @@ def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
         print("Ошибка: количество столбцов не совпадает с количеством значений.")
     else:
         df = pd.DataFrame(rows, columns=headers)
-        print(df)
         df_in_xlsx(df, 'Таблица гугл')
 
     list_art = []
@@ -57,20 +56,18 @@ def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
     list_art = [i for i in list_art if len(i) > 0 and '-' in i]
     df = pd.DataFrame({'Артикул': list_art})
     df_in_xlsx(df, 'Артикула с гугл таблицы')
-
-    df1 = pd.read_excel('Старые артикула с гугл таблицы.xlsx')
-    df1 = df1.reindex(columns=df.columns)
-    df1 = df1.reindex(index=df.index)
-    diff = df.compare(df1)
-    print(diff)
-    merged = df1.merge(df, indicator=True, how='outer')
-    diff = merged[merged['_merge'] != 'both']
-    diff.to_excel("отличия.xlsx", index=True)
-    diff = diff[~diff['Артикул'].isna()]
-    list_new_arts = diff['Артикул'].unique().tolist()
-    print(list_new_arts)
-
-    return list_art
+    if os.path.exists(old_file_path):
+        df1 = pd.read_excel('Старые артикула с гугл таблицы.xlsx')
+        df1 = df1.reindex(columns=df.columns)
+        df1 = df1.reindex(index=df.index)
+        merged = df1.merge(df, indicator=True, how='outer')
+        diff = merged[merged['_merge'] != 'both']
+        diff.to_excel("отличия.xlsx", index=True)
+        diff = diff[~diff['Артикул'].isna()]
+        list_art = diff['Артикул'].unique().tolist()
+    print(list_art)
+    if len(list_art) != 0:
+        return list_art
 
 
 if __name__ == '__main__':
