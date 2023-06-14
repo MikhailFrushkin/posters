@@ -5,22 +5,9 @@ import aiohttp
 import pandas as pd
 from loguru import logger
 
-from config import token, df_in_xlsx
+from config import token, df_in_xlsx, SearchProgress
 from utils.read_google_table import read_codes_on_google
 
-
-class SearchProgress:
-    def __init__(self, total_folders, progress_bar):
-        self.current_folder = 0
-        self.total_folders = total_folders
-        self.progress_bar = progress_bar
-
-    def update_progress(self):
-        self.current_folder += 1
-        self.progress_bar.update_progress(self.current_folder, self.total_folders)
-
-    def __str__(self):
-        return str(self.current_folder)
 
 
 async def get_folders(session, directory_path, folder_name, token):

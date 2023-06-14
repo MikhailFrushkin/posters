@@ -13,7 +13,7 @@ def enum_printers() -> list:
 
     for printer in printers:
         for port in printer['pPortName'].split(','):
-            if port.strip().startswith('USB') and printer['pPrinterName'].startswith('принтер'):
+            if not port.strip().startswith('USB') and not printer['pPrinterName'].startswith('принтер'):
                 logger.info("\nИмя: {}".format(printer['pPrinterName']))
                 logger.info("Драйвер: {}".format(printer['pDriverName']))
                 logger.info("Порт: {}".format(port.strip()))

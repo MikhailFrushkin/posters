@@ -364,7 +364,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 elif result == QMessageBox.RejectRole:
                     logger.info(f'Нажата кнопка Пропустить. Список файлов: {list_new_atrs}')
             else:
-                QMessageBox.information(self, 'Инфо', 'не найдено новых артикулов')
+                QMessageBox.information(self, 'Инфо', 'Не найдено новых артикулов')
 
         def on_no_clicked():
             print("Нажата кнопка 'Нет'")
@@ -372,8 +372,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         def on_skip_clicked():
             print("Нажата кнопка 'Пропустить сканирование Я.диска'")
-
             dialog.reject()
+
             list_new_atrs = missing_arts('Пути к артикулам.xlsx')
             dowloads_files(self, df_new='Пути к артикулам.xlsx', new_arts=list_new_atrs)
             QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
@@ -381,6 +381,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, 'Инфо', 'Файлы соединены')
             self.progress_bar.setValue(100)
 
+        def dowloads_stikers():
+            print("Нажата кнопка 'Скачать стикеры'")
+            dialog.reject()
 
         dialog = QDialog()
         dialog.setWindowTitle('Загрузка')
@@ -395,6 +398,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         label_layout.addWidget(label)
 
         button_layout = QHBoxLayout()
+        button_layout2 = QVBoxLayout()
 
         yes_button = QPushButton('Да', dialog)
         yes_button.setFixedSize(yes_button.sizeHint().width() * 2, yes_button.sizeHint().height() * 2)
@@ -406,13 +410,22 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         no_button.clicked.connect(on_no_clicked)
         button_layout.addWidget(no_button)
 
-        skip_button = QPushButton('Пропустить сканирование Я.диска', dialog)
+        stiker_button = QPushButton('Скачать стикеры', dialog)
+        stiker_button.setFixedSize(stiker_button.sizeHint().width() * 2, stiker_button.sizeHint().height() * 2)
+        stiker_button.clicked.connect(dowloads_stikers)
+        button_layout2.addWidget(stiker_button)
+
+        skip_button = QPushButton('Пропустить сканирования Я.диска', dialog)
         skip_button.setFixedSize(skip_button.sizeHint().width() * 2, skip_button.sizeHint().height() * 2)
         skip_button.clicked.connect(on_skip_clicked)
-        button_layout.addWidget(skip_button)
+        button_layout2.addWidget(skip_button)
+
+        button_layout.addStretch()
+        button_layout2.addStretch()
 
         main_layout.addLayout(label_layout)
         main_layout.addLayout(button_layout)
+        main_layout.addLayout(button_layout2)
 
         dialog.exec_()
 
