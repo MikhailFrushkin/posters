@@ -8,12 +8,13 @@ from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem
     QAbstractItemView
 from loguru import logger
 
-from config import FilesOnPrint, ready_path
+from config import FilesOnPrint, ready_path, stiker_path
 from utils.dowloads_files_yzndex import new_arts, unions_arts, dowloads_files, missing_arts
-from utils.queue_files_on_printers import queue, create_file_list
+from utils.queue_files_on_printers import queue, create_file_list, queue_stikers
 from utils.read_excel import read_excel_file
 from utils.read_printers import enum_printers
 from utils.search_file import search_file
+from utils.search_stikers import dowload_srikers
 
 
 class Ui_MainWindow(object):
@@ -93,6 +94,14 @@ class Ui_MainWindow(object):
         self.pushButton_2.setFont(font)
         self.pushButton_2.setObjectName("pushButton_2")
         self.verticalLayout_3.addWidget(self.pushButton_2)
+
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        font = QtGui.QFont()
+        font.setPointSize(16)
+        self.pushButton_4.setFont(font)
+        self.pushButton_4.setObjectName("pushButton_2")
+        self.verticalLayout_3.addWidget(self.pushButton_4)
+
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 685, 21))
@@ -114,6 +123,7 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Загрузить файл "))
         self.pushButton_3.setText(_translate("MainWindow", "Проверить базу"))
         self.pushButton_2.setText(_translate("MainWindow", "Сформировать очереди"))
+        self.pushButton_4.setText(_translate("MainWindow", "Напечатать стикеры"))
 
 
 class QueueDialog(QWidget):
@@ -215,6 +225,34 @@ class QueueDialog(QWidget):
         return data
 
 
+class Dialog2(QDialog):
+    def __init__(self, button_names, files):
+        super(Dialog2, self).__init__()
+        self.button_names = button_names
+        self.files = files
+        self.initUI()
+
+    def initUI(self):
+        self.setWindowTitle("Выберите принтер для печати стикеров")
+        layout = QVBoxLayout()
+
+        for button_name in self.button_names:
+            button = QPushButton(button_name, self)
+            button.clicked.connect(self.buttonClicked)
+            button.setStyleSheet("QPushButton { font-size: 18px; height: 50px; }")  # Установка стиля кнопки
+            layout.addWidget(button)
+
+        self.setLayout(layout)
+
+    def buttonClicked(self):
+        sender = self.sender()
+        print(f"Нажата кнопка: {sender.text()}")
+        self.reject()
+        file_tuple = create_file_list(self.files, directory=stiker_path)
+        queue_stikers(printer_list=[sender.text()], file_list=file_tuple)
+
+
+
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
@@ -229,6 +267,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton.clicked.connect(self.evt_btn_open_file_clicked)
         self.pushButton_2.clicked.connect(self.evt_btn_create_queue)
         self.pushButton_3.clicked.connect(self.evt_btn_update_db)
+        self.pushButton_4.clicked.connect(self.evt_btn_print_stikers)
 
 
         try:
@@ -384,6 +423,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         def dowloads_stikers():
             print("Нажата кнопка 'Скачать стикеры'")
             dialog.reject()
+            dowload_srikers(self)
 
         dialog = QDialog()
         dialog.setWindowTitle('Загрузка')
@@ -429,6 +469,22 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         dialog.exec_()
 
+    def evt_btn_print_stikers(self):
+        """Ивент на кнопку напечатать стикеры"""
+        logger.info(self.lineEdit.text())
+        if self.lineEdit.text() != '':
+            directory = stiker_path
+            counts_art = read_excel_file(self.lineEdit.text())
+            for item in counts_art:
+                status = search_file(filename=f"{item.art}.pdf", directory=directory)
+                if status:
+                    item.status = '✅'
+            logger.debug(counts_art)
+            button_names = enum_printers('стикеры')
+            dialog = Dialog2(button_names=button_names, files=counts_art)
+            dialog.exec_()
+        else:
+            QMessageBox.information(self, 'Инфо', 'Загрузите заказ')
 
 
 if __name__ == '__main__':

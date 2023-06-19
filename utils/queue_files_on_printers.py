@@ -115,8 +115,55 @@ def queue(printer_list, file_list, type_files):
                 win32print.ClosePrinter(printer_handle)
 
 
-def create_file_list(orders):
-    directory = ready_path
+def queue_stikers(printer_list, file_list):
+    # Циклическое распределение файлов по принтерам
+    for file, printer in zip(file_list, itertools.cycle(printer_list)):
+        logger.debug(f"Печать файла {file} на принтере {printer}")
+        win32print.SetDefaultPrinter(printer)
+        while True:
+            try:
+                print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
+                printer_handle = win32print.OpenPrinter(printer, print_defaults)
+                # Получаем текущую конфигурацию принтера
+                printer_info = win32print.GetPrinter(printer_handle, 2)
+                dev_mode = printer_info["pDevMode"]
+                # Устанавливаем количество копий
+                dev_mode.Copies = file[1]
+                # Устанавливаем обновленную конфигурацию принтера
+                win32print.SetPrinter(printer_handle, 2, printer_info, 0)
+                logger.info("Параметры печати успешно применены.")
+                win32print.StartDocPrinter(printer_handle, 1, [file[0], None, "raw"])
+                # 2 в начале для открытия pdf и его сворачивания, для открытия без сворачивания поменяйте на 1
+                win32api.ShellExecute(2, 'print', file[0], '.', '/manualstoprint', 0)
+                while True:
+                    printer_info = win32print.GetPrinter(printer_handle, 2)
+                    status = printer_info['Status']
+                    if status is not None:
+                        logger.debug(f"Статус принтера '{printer}': {status}")
+                        ready = is_printer_ready(printer)
+                        if ready:
+                            logger.success(f"Принтер '{printer}' готов к печати.")
+                            break
+                        else:
+                            logger.error(f"Принтер '{printer}' не готов к печати или его статус неизвестен.")
+                            break
+                break
+
+            except Exception as e:
+                logger.error(f"Ошибка при применении параметров печати: {e}")
+                try:
+                    error_code = win32print.PRINTER_STATUS_ERROR()
+                    if error_code == win32print.PRINTER_STATUS_PAPER_OUT:
+                        logger.info("Ошибка: Нет бумаги")
+
+                except Exception as ex:
+                    logger.error(f'Другая ошибка {ex}')
+                    break
+            finally:
+                win32print.ClosePrinter(printer_handle)
+
+
+def create_file_list(orders, directory=ready_path):
     file_tuple = tuple()
     for item in orders:
         path_file = search_file(f"{item.art}.pdf", directory)

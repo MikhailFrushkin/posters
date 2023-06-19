@@ -156,10 +156,9 @@ def missing_arts(new_file):
 
 def new_arts(new_file, self):
     # получение и сохранение артикулов с гугл таблицы
-    flag = asyncio.run(main_search(self))
+    asyncio.run(main_search(self))
     missing_elements = []
-    if flag:
-        missing_arts(new_file)
+    missing_arts(new_file)
     logger.info(missing_elements)
     return missing_elements
 

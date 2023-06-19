@@ -2,12 +2,18 @@ import io
 import os
 import re
 
+from PyQt5.QtWidgets import QMessageBox
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
 from loguru import logger
 
 from config import main_path
+
+credentials = service_account.Credentials.from_service_account_file('google_acc.json')
+service = build('drive', 'v3', credentials=credentials)
+folder_url = "https://drive.google.com/drive/folders/18UcnBXbN5q7yrF898CjW0m-iXFs1pws4"
+local_directory = f"{main_path}/!Стикеры"
 
 
 def search_files_by_folder_url(folder_url: str) -> list:
@@ -31,15 +37,19 @@ def search_files(query: str) -> list:
 def download_file(file_id: str, file_name: str) -> None:
     """Загрузка файла с гугл диска"""
     try:
-        request = service.files().get_media(fileId=file_id)
-        fh = io.BytesIO()
-        downloader = MediaIoBaseDownload(fh, request)
-        done = False
-        while not done:
-            status, done = downloader.next_chunk()
-        with open(f"{main_path}/!Стикеры/{file_name}", 'wb') as f:
-            f.write(fh.getvalue())
-            logger.success("Файл сохранен: {}".format(file_name))
+        if not os.path.exists(f"{main_path}/!Стикеры/{file_name}"):
+            request = service.files().get_media(fileId=file_id)
+            fh = io.BytesIO()
+            downloader = MediaIoBaseDownload(fh, request)
+            done = False
+            while not done:
+                status, done = downloader.next_chunk()
+            with open(f"{main_path}/!Стикеры/{file_name}", 'wb') as f:
+                f.write(fh.getvalue())
+                logger.success("Файл сохранен: {}".format(file_name))
+        else:
+            logger.success("Файл существует: {}".format(file_name))
+
     except:
         request = service.files().export_media(fileId=file_id, mimeType='application/pdf')
         fh = io.FileIO(f"{main_path}/!Стикеры/{file_name}", 'wb')
@@ -140,24 +150,8 @@ def compare_files_with_local_directory(folder_url: str, local_directory: str) ->
     return missing_files
 
 
-if __name__ == '__main__':
+def dowload_srikers(self=None):
     # Путь к вашему файлу с учетными данными OAuth 2.0
-    credentials = service_account.Credentials.from_service_account_file('google_acc.json')
-    service = build('drive', 'v3', credentials=credentials)
-    folder_url = "https://drive.google.com/drive/folders/18UcnBXbN5q7yrF898CjW0m-iXFs1pws4"
-    local_directory = f"{main_path}/!Стикеры"
-
-    # # Поиск файла
-    # query = "name='POSTER-DLYAMALCHIKA.SLONIK-GLOSS.pdf'"
-    #
-    # files = search_files(query)
-    # if files:
-    #     file_id = files[0]['id']
-    #     file_name = files[0]['name']
-    #     download_file(file_id, file_name)
-    # else:
-    #     print("Файл не найден.")
-    #
     # download_files_from_folder(folder_url)
     # all_files = get_all_files_in_folder(folder_url)
     #
@@ -166,7 +160,28 @@ if __name__ == '__main__':
     #     print(file['name'])
     # logger.success({len(all_files)})
 
-    #Проверка на новые артикула
+    # Проверка на новые артикула
     missing_files = compare_files_with_local_directory(folder_url, local_directory)
-    logger.success(f'Количество новых стикеров на г.диске: {len(missing_files)}')
+    logger.success(f'Количество новых стикеров на я.диске: {len(missing_files)}')
     logger.success(f'Список новых стикеров: {missing_files}')
+    if self:
+        QMessageBox.information(self, 'Инфо', f'Список новых стикеров: {missing_files}')
+
+    # Поиск файла и загрузка
+    for item in missing_files:
+        query = f"name='{item}'"
+
+        files = search_files(query)
+        if files:
+            file_id = files[0]['id']
+            file_name = files[0]['name']
+            try:
+                download_file(file_id, file_name)
+            except Exception as ex:
+                logger.error(f'Ошибка скачивания стикера {query} {ex}')
+        else:
+            print("Файл не найден.")
+
+
+if __name__ == '__main__':
+    dowload_srikers()
