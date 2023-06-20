@@ -12,9 +12,9 @@ env = Env()
 env.read_env()
 
 token = env.str('token')
-main_path = 'E:\\Ярослав\\Готовые постеры по 3 шт'
-ready_path = 'E:\\Ярослав\\Готовые постеры по 3 шт\\!Готовые постеры по 3 шт'
-stiker_path = 'E:\\Ярослав\\Готовые постеры по 3 шт\\!Стикеры'
+main_path = 'E:\\Новая база\\Готовые'
+ready_path = 'E:\\Новая база\\Готовые pdf'
+stiker_path = 'E:\\Новая база\\!Стикеры'
 
 
 class SearchProgress:

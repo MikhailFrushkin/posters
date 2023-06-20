@@ -1,55 +1,60 @@
 import datetime
+import os
+import tempfile
+from io import BytesIO
 
 from reportlab.lib.pagesizes import A3
 from reportlab.pdfgen import canvas
 from PIL import Image
 import glob
-
-from config import ready_path
+from loguru import logger
+from config import ready_path, main_path
 
 
 def one_pdf(folder_path, filename):
     # Ищем все файлы с расширениями PNG и JPG
-    poster_files = glob.glob(f"{folder_path}/*.png") + glob.glob(f"{folder_path}/*.jpg")
-    poster_files = sorted(poster_files)
-
-    # Создание нового PDF файла
     pdf_filename = f'{ready_path}\\{filename}.pdf'
-    c = canvas.Canvas(pdf_filename, pagesize=A3)
-    # Размещение каждого постера в виде очереди на отдельной странице PDF
-    for i, poster_file in enumerate(poster_files):
-        c.drawImage(poster_file, 0, 0, width=A3[0], height=A3[1])
-        if i != len(poster_files) - 1:
-            c.showPage()
-    c.save()
+    if os.path.exists(pdf_filename):
+        logger.debug(f'Файл существует: {pdf_filename}')
+    else:
+        poster_files = glob.glob(f"{folder_path}/*.png") + glob.glob(f"{folder_path}/*.jpg")
+        poster_files = sorted(poster_files)
+        good_files = []
+        for file in poster_files:
+            name = file.split('\\')[-1].split('.')[0]
+            if name.isdigit():
+                good_files.append(file)
 
-
-def combine_images(filepaths, output_filepath):
-    # Определяем размер итогового изображения
-    width, height = (297 * 3, 420)  # Размер А3: 297мм x 420мм
-
-    # Создаем пустое изображение с необходимым размером
-    combined_image = Image.new('RGB', (width, height))
-
-    x_offset = 0
-    for filepath in filepaths:
-        # Открываем каждое изображение
-        image = Image.open(filepath)
-
-        # Масштабируем изображение до ширины А3
-        scaled_image = image.resize((297, 420))
-
-        # Вставляем масштабированное изображение в пустое изображение
-        combined_image.paste(scaled_image, (x_offset, 0))
-
-        # Увеличиваем смещение для следующего изображения
-        x_offset += 297
-
-    # Сохраняем итоговое изображение
-    combined_image.save(output_filepath)
+        # Создание нового PDF файла
+        c = canvas.Canvas(pdf_filename, pagesize=A3)
+        # Размещение каждого постера в виде очереди на отдельной странице PDF
+        for i, poster_file in enumerate(good_files):
+            image = Image.open(poster_file)
+            width, height = image.size
+            # logger.info(f'{poster_file} {width} {height}')
+            if width > height:  # Горизонтальная ориентация
+                rotated_image = image.rotate(90, expand=True)  # Поворот изображения на 90 градусов
+                with tempfile.NamedTemporaryFile(suffix='.jpg', delete=False) as temp_file:
+                    rotated_image.save(temp_file.name,
+                                       format='JPEG')  # Сохранение повернутого изображения во временный файл
+                    c.drawImage(temp_file.name, 0, 0, width=A3[0],
+                                height=A3[1])  # Использование временного файла в качестве источника изображения
+            else:  # Вертикальная ориентация
+                c.drawImage(poster_file, 0, 0, width=A3[0], height=A3[1])
+            if i != len(poster_files) - 1:
+                c.showPage()
+        c.save()
+        logger.success(f'Создан файл: {pdf_filename}')
 
 
 if __name__ == '__main__':
-    time_start = datetime.datetime.now()
-    one_pdf(folder_path='/home/mikhail/PycharmProjects/posters/posters')
-    print(f'Время выполнения: {datetime.datetime.now() - time_start}')
+    count = 0
+    for address, dirs, files in os.walk(main_path):
+        for dir in dirs:
+            count += 1
+            logger.info(f'{count}/{len(dirs)} Папка {dir}')
+            time_start = datetime.datetime.now()
+            one_pdf(folder_path=os.path.join(main_path, dir), filename=dir)
+            logger.info(f'Время выполнения: {datetime.datetime.now() - time_start}')
+    # one_pdf(folder_path=r'E:\Новая база\Готовые\poster-maneskin-mat', filename='poster-maneskin-mat')
+    # one_pdf(folder_path=r'E:\Новая база\Готовые\poster-mandalaorecmech-gloss', filename='poster-mandalaorecmech-gloss')
