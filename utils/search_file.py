@@ -5,7 +5,7 @@ from config import main_path
 
 def search_file(filename, directory):
     for root, dirs, files in os.walk(directory):
-        if filename in files:
+        if filename.lower() in list(map(str.lower, files)):
             return os.path.join(root, filename)
     return None
 

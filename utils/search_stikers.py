@@ -8,12 +8,12 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
 from loguru import logger
 
-from config import main_path
+from config import main_path, stiker_path, SearchProgress
 
 credentials = service_account.Credentials.from_service_account_file('google_acc.json')
 service = build('drive', 'v3', credentials=credentials)
 folder_url = "https://drive.google.com/drive/folders/18UcnBXbN5q7yrF898CjW0m-iXFs1pws4"
-local_directory = f"{main_path}/!Стикеры"
+local_directory = f"{stiker_path}"
 
 
 def search_files_by_folder_url(folder_url: str) -> list:
@@ -37,14 +37,14 @@ def search_files(query: str) -> list:
 def download_file(file_id: str, file_name: str) -> None:
     """Загрузка файла с гугл диска"""
     try:
-        if not os.path.exists(f"{main_path}/!Стикеры/{file_name}"):
+        if not os.path.exists(f"{stiker_path}/{file_name}"):
             request = service.files().get_media(fileId=file_id)
             fh = io.BytesIO()
             downloader = MediaIoBaseDownload(fh, request)
             done = False
             while not done:
                 status, done = downloader.next_chunk()
-            with open(f"{main_path}/!Стикеры/{file_name}", 'wb') as f:
+            with open(f"{stiker_path}/{file_name}", 'wb') as f:
                 f.write(fh.getvalue())
                 logger.success("Файл сохранен: {}".format(file_name))
         else:
@@ -52,7 +52,7 @@ def download_file(file_id: str, file_name: str) -> None:
 
     except:
         request = service.files().export_media(fileId=file_id, mimeType='application/pdf')
-        fh = io.FileIO(f"{main_path}/!Стикеры/{file_name}", 'wb')
+        fh = io.FileIO(f"{stiker_path}/{file_name}", 'wb')
         downloader = MediaIoBaseDownload(fh, request)
 
         done = False
@@ -62,7 +62,7 @@ def download_file(file_id: str, file_name: str) -> None:
         logger.success("Файл сохранен: {}".format(file_name))
 
 
-def download_files_from_folder(folder_url: str, destination_folder: str = f"{main_path}/!Стикеры") -> None:
+def download_files_from_folder(folder_url: str, destination_folder: str = f"{stiker_path}") -> None:
     """Загрузка всех файлов по урлу"""
     folder_id = re.search(r'/folders/([^/]+)', folder_url).group(1)
 
@@ -159,11 +159,12 @@ def dowload_srikers(self=None):
     # for file in all_files:
     #     print(file['name'])
     # logger.success({len(all_files)})
-
     # Проверка на новые артикула
     missing_files = compare_files_with_local_directory(folder_url, local_directory)
     logger.success(f'Количество новых стикеров на я.диске: {len(missing_files)}')
     logger.success(f'Список новых стикеров: {missing_files}')
+    progress = SearchProgress(len(missing_files), self)
+
     if self:
         QMessageBox.information(self, 'Инфо', f'Список новых стикеров: {missing_files}')
 
@@ -177,10 +178,15 @@ def dowload_srikers(self=None):
             file_name = files[0]['name']
             try:
                 download_file(file_id, file_name)
+                progress.update_progress()
             except Exception as ex:
                 logger.error(f'Ошибка скачивания стикера {query} {ex}')
         else:
             print("Файл не найден.")
+
+    progress = SearchProgress(1, self)
+    progress.update_progress()
+    QMessageBox.information(self, 'Инфо', 'Загрузка завершена')
 
 
 if __name__ == '__main__':
