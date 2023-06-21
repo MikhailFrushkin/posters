@@ -9,36 +9,6 @@ from config import token, df_in_xlsx, SearchProgress
 from utils.read_google_table import read_codes_on_google
 
 
-
-async def get_folders(session, directory_path, folder_name, token):
-    url = f"https://cloud-api.yandex.net/v1/disk/resources?path={quote(directory_path)}&limit=1000"
-    headers = {"Authorization": f"OAuth {token}"}
-    async with session.get(url, headers=headers) as response:
-        if response.status == 200:
-            data = await response.json()
-            for item in data["_embedded"]['items']:
-                if item['type'] == 'dir':
-                    if item['name'].lower() == folder_name.lower():
-                        return item['path']
-                    else:
-                        subfolder_path = await get_folders(session, item['path'], folder_name, token)
-                        if subfolder_path:
-                            return subfolder_path
-        else:
-            print(directory_path)
-    return None
-
-
-async def search(folder_path, folder_name):
-    async with aiohttp.ClientSession() as session:
-        result = await get_folders(session, folder_path, folder_name, token)
-
-    if result:
-        print(f"Найдена папка: {result}")
-    else:
-        print("Целевая папка не найдена.")
-
-
 async def traverse_yandex_disk(session, folder_path, target_folders, result_dict, self, progress):
     url = f"https://cloud-api.yandex.net/v1/disk/resources?path={quote(folder_path)}&limit=1000"
     headers = {"Authorization": f"OAuth {token}"}

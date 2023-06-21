@@ -69,7 +69,6 @@ def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
         diff.to_excel("отличия.xlsx", index=True)
         diff = diff[~diff['Артикул'].isna()]
         list_art = diff['Артикул'].unique().tolist()
-    print(list_art)
     if len(list_art) != 0:
         return list_art
 

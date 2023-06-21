@@ -56,7 +56,8 @@ def queue(printer_list, file_list, type_files):
         printer_list = [i.split('(')[0].strip() for i in printer_list if 'мат' in i]
     else:
         printer_list = [i.split('(')[0].strip() for i in printer_list if 'мат' not in i]
-
+    if len(printer_list) == 0:
+        return False
     # Циклическое распределение файлов по принтерам
     for file, printer in zip(file_list, itertools.cycle(printer_list)):
         logger.debug(f"Печать файла {file} на принтере {printer}")

@@ -184,9 +184,13 @@ class QueueDialog(QWidget):
         selected_data = self.get_selected_data()
         if selected_data:
             file_tuple = create_file_list(selected_data)
-            queue(self.printers, file_tuple, type_files=self.windowTitle())
-            QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
-                '\n'.join([f'{item.art}, {item.count} шт.' for item in selected_data])))
+            flag = queue(self.printers, file_tuple, type_files=self.windowTitle())
+            if flag == False:
+                QMessageBox.warning(self, 'Отправка на печать',
+                                    f"Не выбран принтер для {'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
+            else:
+                QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
+                    '\n'.join([f'{item.art}, {item.count} шт.' for item in selected_data])))
         else:
             QMessageBox.information(self, 'Отправка на печать', 'Ни одна строка не выбрана')
 
@@ -195,9 +199,13 @@ class QueueDialog(QWidget):
 
         if all_data:
             file_tuple = create_file_list(all_data)
-            queue(self.printers, file_tuple, type_files=self.windowTitle())
-            QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
-                '\n'.join([f'{item.art}, {item.count} шт.' for item in all_data])))
+            flag = queue(self.printers, file_tuple, type_files=self.windowTitle())
+            if flag == False:
+                QMessageBox.warning(self, 'Отправка на печать',
+                                    f"Не выбран принтер для {'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
+            else:
+                QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
+                    '\n'.join([f'{item.art}, {item.count} шт.' for item in all_data])))
         else:
             QMessageBox.information(self, 'Отправка на печать', 'Таблица пуста')
 
@@ -252,7 +260,6 @@ class Dialog2(QDialog):
         queue_stikers(printer_list=[sender.text()], file_list=file_tuple)
 
 
-
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
@@ -268,7 +275,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton_2.clicked.connect(self.evt_btn_create_queue)
         self.pushButton_3.clicked.connect(self.evt_btn_update_db)
         self.pushButton_4.clicked.connect(self.evt_btn_print_stikers)
-
 
         try:
             printers_list = enum_printers()

@@ -13,53 +13,6 @@ from utils.rename_files import count_objects_in_folders
 from utils.search_file_yandex import main_search
 
 
-def bytes_to_megabytes(size_in_bytes):
-    size_in_mb = size_in_bytes / (1024 * 1024)
-    return round(size_in_mb, 2)
-
-
-def get_yandex_disk_files(folder_path, token):
-    url = f"https://cloud-api.yandex.net/v1/disk/resources?path={quote(folder_path)}"
-    headers = {
-        "Authorization": f"OAuth {token}"
-    }
-    response = requests.get(url, headers=headers)
-    if response.status_code == 200:
-        try:
-            files = response.json()["_embedded"]["items"]
-            file_list = []
-            for file in files:
-                if file["type"] == "file" and file["name"].lower().endswith((".png", ".jpg")):
-                    name = file["name"]
-                    path = file["path"]
-                    size = file["size"]
-                    size_mb = bytes_to_megabytes(size)
-                    code = path.split('/')[-2] if '/' in path else ''  # Извлечение имени папки из пути
-                    file_tuple = (name, path, code, size_mb)
-                    file_list.append(file_tuple)
-                elif file["type"] == "dir":
-                    subfolder_files = get_yandex_disk_files(file["path"], token)
-                    file_list.extend(subfolder_files)
-            return file_list
-        except Exception as ex:
-            print(ex)
-            return []
-    else:
-        logger.error("Ошибка при получении списка файлов.")
-        return []
-
-
-def download_image(folder_path, file_path, filename):
-    url = f"https://cloud-api.yandex.net/v1/disk/resources/download?path={quote(folder_path)}"
-    headers = {
-        "Authorization": f"OAuth {token}"
-    }
-    response = requests.get(url, headers=headers)
-    download_url = response.json()["href"]
-    image_response = requests.get(download_url)
-    with open(os.path.join(file_path, filename), "wb") as file:
-        file.write(image_response.content)
-
 
 def count_files(directory):
     file_count = 0
