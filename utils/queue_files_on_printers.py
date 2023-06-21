@@ -130,6 +130,7 @@ def queue_stikers(printer_list, file_list):
             # Устанавливаем количество копий
             dev_mode.Copies = file[1]
             # Устанавливаем обновленную конфигурацию принтера
+            printer_info["pDevMode"] = dev_mode
             win32print.SetPrinter(printer_handle, 2, printer_info, 0)
             logger.info("Параметры печати успешно применены.")
             win32print.StartDocPrinter(printer_handle, 1, [file[0], None, "raw"])
@@ -146,6 +147,7 @@ def queue_stikers(printer_list, file_list):
                 break
         finally:
             win32print.ClosePrinter(printer_handle)
+
 
 
 def create_file_list(orders, directory=ready_path):
