@@ -10,7 +10,7 @@ from loguru import logger
 
 from config import FilesOnPrint, ready_path, stiker_path
 from utils.dowloads_files_yzndex import new_arts, unions_arts, dowloads_files, missing_arts
-from utils.queue_files_on_printers import queue, create_file_list, queue_stikers
+from utils.queue_files_on_printers import queue, create_file_list, queue_sticker
 from utils.read_excel import read_excel_file
 from utils.read_printers import enum_printers
 from utils.search_file import search_file
@@ -257,7 +257,7 @@ class Dialog2(QDialog):
         print(f"Нажата кнопка: {sender.text()}")
         self.reject()
         file_tuple = create_file_list(self.files, directory=stiker_path)
-        queue_stikers(printer_list=[sender.text()], file_list=file_tuple)
+        queue_sticker(printer_list=[sender.text()], file_list=file_tuple)
 
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
