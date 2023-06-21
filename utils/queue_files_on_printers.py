@@ -116,17 +116,21 @@ def queue(printer_list, file_list, type_files):
                 win32print.ClosePrinter(printer_handle)
 
 
+
 def queue_stikers(printer_list, file_list):
     # Циклическое распределение файлов по принтерам
+    printer_handles = []  # Список для хранения handler'ов принтеров
     for file, printer in zip(file_list, itertools.cycle(printer_list)):
         logger.debug(f"Печать файла {file} на принтере {printer}")
         win32print.SetDefaultPrinter(printer)
+        printer_handle = None  # Инициализация handler'а принтера
         try:
             print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
             printer_handle = win32print.OpenPrinter(printer, print_defaults)
             # Получаем текущую конфигурацию принтера
             printer_info = win32print.GetPrinter(printer_handle, 2)
-            dev_mode = printer_info["pDevMode"]
+            dev_mode = win32print.DEVMODE()  # Создаем новый объект DEVMODE
+            dev_mode.CopyFrom(printer_info["pDevMode"])  # Копируем текущую конфигурацию принтера
             # Устанавливаем количество копий
             dev_mode.Copies = file[1]
             # Устанавливаем обновленную конфигурацию принтера
@@ -146,7 +150,10 @@ def queue_stikers(printer_list, file_list):
                 logger.error(f'Другая ошибка {ex}')
                 break
         finally:
-            win32print.ClosePrinter(printer_handle)
+            if printer_handle is not None:
+                win32print.ClosePrinter(printer_handle)
+                printer_handles.remove(printer_handle)
+
 
 
 
