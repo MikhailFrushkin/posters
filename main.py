@@ -395,7 +395,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     if len(list_new_atrs) != 0:
                         logger.info(f'Нажата кнопка скачать. Список файлов: {list_new_atrs}')
                         self.progress_bar.setValue(90)
-                        dowloads_files(self, df_new='Пути к артикулам.xlsx', new_arts=list_new_atrs)
+                        dowloads_files(df_new='Пути к артикулам.xlsx', self=self)
                         QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
                         unions_arts(self, new_arts=list_new_atrs)
                         QMessageBox.information(self, 'Инфо', 'Файлы соединены')
@@ -414,7 +414,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             dialog.reject()
 
             list_new_atrs = missing_arts('Пути к артикулам.xlsx')
-            dowloads_files(self, df_new='Пути к артикулам.xlsx', new_arts=list_new_atrs)
+            dowloads_files(df_new='Пути к артикулам.xlsx', self=self)
+            self.progress_bar.setValue(100)
             QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
             unions_arts(self, new_arts=list_new_atrs)
             QMessageBox.information(self, 'Инфо', 'Файлы соединены')

@@ -47,7 +47,7 @@ async def traverse_yandex_disk(session, folder_path, target_folders, result_dict
         try:
             for item in data["_embedded"]['items']:
                 if item["type"] == "dir" and item["name"].lower() in target_folders:
-                    result_dict[item["name"]] = item["path"]
+                    result_dict[item["name"].lower()] = item["path"]
                     logger.success(f'Найден артикул {item["name"]} {item["path"]} current_folder: {progress}')
                     progress.update_progress()
                     target_folders.remove(item["name"].lower())
@@ -62,7 +62,7 @@ async def traverse_yandex_disk(session, folder_path, target_folders, result_dict
             logger.debug(f'Ошибка при поиске папки {item["name"]} {ex}')
 
 
-async def main_search(self):
+async def main_search(self=None):
     list_arts = read_codes_on_google()
     if list_arts:
         starting_folder = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/"
