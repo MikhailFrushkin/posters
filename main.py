@@ -116,7 +116,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Печать постеров"))
         self.label_3.setText(_translate("MainWindow", "Список артикулов:"))
         self.label_2.setText(_translate("MainWindow", "Доступные принтеры для печати:"))
         self.label.setText(_translate("MainWindow", "Выберите файл заказа:"))
