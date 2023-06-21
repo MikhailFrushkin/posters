@@ -151,42 +151,36 @@ def compare_files_with_local_directory(folder_url: str, local_directory: str) ->
 
 
 def dowload_srikers(self=None):
-    # Путь к вашему файлу с учетными данными OAuth 2.0
-    # download_files_from_folder(folder_url)
-    # all_files = get_all_files_in_folder(folder_url)
-    #
-    # # Вывод списка всех файлов
-    # for file in all_files:
-    #     print(file['name'])
-    # logger.success({len(all_files)})
-    # Проверка на новые артикула
     missing_files = compare_files_with_local_directory(folder_url, local_directory)
     logger.success(f'Количество новых стикеров на я.диске: {len(missing_files)}')
     logger.success(f'Список новых стикеров: {missing_files}')
     progress = SearchProgress(len(missing_files), self)
+    if len(missing_files) != 0:
+        if self:
+            QMessageBox.information(self, 'Инфо', f'Список новых стикеров: {missing_files}')
 
-    if self:
-        QMessageBox.information(self, 'Инфо', f'Список новых стикеров: {missing_files}')
+        # Поиск файла и загрузка
+        for item in missing_files:
+            query = f"name='{item}'"
 
-    # Поиск файла и загрузка
-    for item in missing_files:
-        query = f"name='{item}'"
+            files = search_files(query)
+            if files:
+                file_id = files[0]['id']
+                file_name = files[0]['name']
+                try:
+                    download_file(file_id, file_name)
+                    progress.update_progress()
+                except Exception as ex:
+                    logger.error(f'Ошибка скачивания стикера {query} {ex}')
+            else:
+                print("Файл не найден.")
 
-        files = search_files(query)
-        if files:
-            file_id = files[0]['id']
-            file_name = files[0]['name']
-            try:
-                download_file(file_id, file_name)
-                progress.update_progress()
-            except Exception as ex:
-                logger.error(f'Ошибка скачивания стикера {query} {ex}')
-        else:
-            print("Файл не найден.")
-
-    progress = SearchProgress(1, self)
-    progress.update_progress()
-    QMessageBox.information(self, 'Инфо', 'Загрузка завершена')
+        progress = SearchProgress(1, self)
+        progress.update_progress()
+        QMessageBox.information(self, 'Инфо', 'Загрузка завершена')
+    else:
+        if self:
+            QMessageBox.information(self, 'Инфо', f'Новых стикеров не найдено')
 
 
 if __name__ == '__main__':

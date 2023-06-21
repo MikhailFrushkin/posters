@@ -50,10 +50,6 @@ async def traverse_yandex_disk(session, folder_path, target_folders, result_dict
                     result_dict[item["name"].lower()] = item["path"]
                     logger.success(f'Найден артикул {item["name"]} {item["path"]} current_folder: {progress}')
                     progress.update_progress()
-                    target_folders.remove(item["name"].lower())
-                    if not target_folders:  # If target_folders list is empty, all folders have been found
-                        return  # Terminate the function
-
                 elif item["type"] == "dir":
                     await traverse_yandex_disk(session, item["path"], target_folders, result_dict, self, progress)
                     logger.info(f'Проверена папка(файл){item["name"]} {item["path"]}')
@@ -65,7 +61,7 @@ async def traverse_yandex_disk(session, folder_path, target_folders, result_dict
 async def main_search(self=None):
     list_arts = read_codes_on_google()
     if list_arts:
-        starting_folder = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/"
+        starting_folder = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Михаил/"
         result_dict = {}
         progress = SearchProgress(len(list_arts), self)
         async with aiohttp.ClientSession() as session:

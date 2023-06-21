@@ -7,7 +7,6 @@ from reportlab.pdfgen import canvas
 from PIL import Image
 import glob
 from loguru import logger
-from config import ready_path, main_path
 
 
 def one_pdf(folder_path, filename):
@@ -64,3 +63,5 @@ if __name__ == '__main__':
             logger.info(f'Время выполнения: {datetime.datetime.now() - time_start}')
     # one_pdf(folder_path=r'E:\Новая база\Готовые\poster-maneskin-mat', filename='poster-maneskin-mat')
     # one_pdf(folder_path=r'E:\Новая база\Готовые\poster-mandalaorecmech-gloss', filename='poster-mandalaorecmech-gloss')
+else:
+    from config import ready_path, main_path

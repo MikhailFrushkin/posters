@@ -161,14 +161,13 @@ def missing_arts(new_file):
     logger.debug(f'Количество артикулов в файле {new_file}: {len(new_arts)}')
     missing_elements = list(set(new_arts) - set(folders))
     logger.debug(f'разница артикулов: {missing_elements}')
-    return new_arts
+    return missing_elements
 
 
 def new_arts(new_file, self=None):
     # получение и сохранение артикулов с гугл таблицы
     asyncio.run(main_search(self))
-    missing_elements = []
-    missing_arts(new_file)
+    missing_elements = missing_arts(new_file)
     logger.info(missing_elements)
     return missing_elements
 
