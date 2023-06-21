@@ -119,25 +119,22 @@ def queue_stikers(printer_list, file_list):
         logger.debug(f"Печать файла {file} на принтере {printer}")
         try:
             printdefaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
-            ## начинаем работу с принтером ("открываем" его)
             handle = win32print.OpenPrinter(printer, printdefaults)
-            ## Если изменить level на другое число, то не сработает
             level = 2
             ## Получаем значения принтера
             attributes = win32print.GetPrinter(handle, level)
-            ## Настройка двухсторонней печати
+            ## Настройка количества копий
             attributes['pDevMode'].Copies = file[1]
-
             ## Передаем нужные значения в принтер
             win32print.SetPrinter(handle, level, attributes, 0)
             win32print.GetPrinter(handle, level)['pDevMode'].Copies
             logger.debug(win32print.GetPrinter(handle, level)['pDevMode'].Copies)
             # Предупреждаем принтер о старте печати
-            win32print.StartDocPrinter(handle, 1, [file[0], None, "raw"])
-            ## 2 в начале для открытия pdf и его сворачивания, для открытия без сворачивания поменяйте на 1
-            win32api.ShellExecute(2, 'print', file[0], '.', '/manualstoprint', 0)
-            ## "Закрываем" принтер
-            win32print.ClosePrinter(handle)
+            # win32print.StartDocPrinter(handle, 1, [file[0], None, "raw"])
+            # ## 2 в начале для открытия pdf и его сворачивания, для открытия без сворачивания поменяйте на 1
+            # win32api.ShellExecute(2, 'print', file[0], '.', '/manualstoprint', 0)
+            # ## "Закрываем" принтер
+            # win32print.ClosePrinter(handle)
         except Exception as e:
             logger.error(f"Ошибка при печати стикеров: {e}")
             try:
