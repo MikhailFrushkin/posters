@@ -5,7 +5,7 @@ import win32con
 import win32print
 from loguru import logger
 
-from config import FilesOnPrint, ready_path
+from config import FilesOnPrint, ready_path, stiker_path
 from utils.search_file import search_file
 
 
@@ -14,8 +14,6 @@ def is_printer_ready(printer_name):
         printer_info = win32print.GetPrinter(printer_name, 2)
         status = printer_info['Status']
         ready_statuses = [
-            win32print.PRINTER_STATUS_READY,
-            win32print.PRINTER_STATUS_IDLE,
             win32print.PRINTER_STATUS_PRINTING,
             win32print.PRINTER_STATUS_PROCESSING,
         ]
@@ -116,30 +114,30 @@ def queue(printer_list, file_list, type_files):
                 win32print.ClosePrinter(printer_handle)
 
 
-
 def queue_stikers(printer_list, file_list):
-    # Циклическое распределение файлов по принтерам
-    printer_handles = []  # Список для хранения handler'ов принтеров
     for file, printer in zip(file_list, itertools.cycle(printer_list)):
         logger.debug(f"Печать файла {file} на принтере {printer}")
-        win32print.SetDefaultPrinter(printer)
-        printer_handle = None  # Инициализация handler'а принтера
         try:
-            print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
-            printer_handle = win32print.OpenPrinter(printer, print_defaults)
-            # Получаем текущую конфигурацию принтера
-            printer_info = win32print.GetPrinter(printer_handle, 2)
-            dev_mode = win32print.DEVMODE()  # Создаем новый объект DEVMODE
-            dev_mode.CopyFrom(printer_info["pDevMode"])  # Копируем текущую конфигурацию принтера
-            # Устанавливаем количество копий
-            dev_mode.Copies = file[1]
-            # Устанавливаем обновленную конфигурацию принтера
-            printer_info["pDevMode"] = dev_mode
-            win32print.SetPrinter(printer_handle, 2, printer_info, 0)
-            logger.info("Параметры печати успешно применены.")
-            win32print.StartDocPrinter(printer_handle, 1, [file[0], None, "raw"])
-            # 2 в начале для открытия pdf и его сворачивания, для открытия без сворачивания поменяйте на 1
+            printdefaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
+            ## начинаем работу с принтером ("открываем" его)
+            handle = win32print.OpenPrinter(printer, printdefaults)
+            ## Если изменить level на другое число, то не сработает
+            level = 2
+            ## Получаем значения принтера
+            attributes = win32print.GetPrinter(handle, level)
+            ## Настройка двухсторонней печати
+            attributes['pDevMode'].Copies = file[1]
+
+            ## Передаем нужные значения в принтер
+            win32print.SetPrinter(handle, level, attributes, 0)
+            win32print.GetPrinter(handle, level)['pDevMode'].Copies
+            logger.debug(win32print.GetPrinter(handle, level)['pDevMode'].Copies)
+            # Предупреждаем принтер о старте печати
+            win32print.StartDocPrinter(handle, 1, [file[0], None, "raw"])
+            ## 2 в начале для открытия pdf и его сворачивания, для открытия без сворачивания поменяйте на 1
             win32api.ShellExecute(2, 'print', file[0], '.', '/manualstoprint', 0)
+            ## "Закрываем" принтер
+            win32print.ClosePrinter(handle)
         except Exception as e:
             logger.error(f"Ошибка при печати стикеров: {e}")
             try:
@@ -149,12 +147,6 @@ def queue_stikers(printer_list, file_list):
             except Exception as ex:
                 logger.error(f'Другая ошибка {ex}')
                 break
-        finally:
-            if printer_handle is not None:
-                win32print.ClosePrinter(printer_handle)
-                printer_handles.remove(printer_handle)
-
-
 
 
 def create_file_list(orders, directory=ready_path):
@@ -166,10 +158,16 @@ def create_file_list(orders, directory=ready_path):
 
 
 if __name__ == '__main__':
-    printer_list = ['Fax', 'Отправить в OneNote 16 (матовый)']
-    order = [
-        FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'),
-        FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')
-    ]
-    file_tuple = create_file_list(order)
-    queue(printer_list, file_tuple, type_files='Матовые')
+    # printer_list = ['Fax', 'Отправить в OneNote 16 (матовый)']
+    # order = [
+    #     FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'),
+    #     FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')
+    # ]
+    # file_tuple = create_file_list(order)
+    # queue(printer_list, file_tuple, type_files='Матовые')
+
+    printer_list = ['Xprinter XP-365B']
+    order = [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=2, name='Атомик', status='✅'),
+             FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=1, name='Постер asdasdasd', status='✅')]
+    file_tuple = create_file_list(order, stiker_path)
+    queue_stikers(printer_list, file_tuple)
