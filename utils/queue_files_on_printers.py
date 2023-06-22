@@ -28,15 +28,17 @@ def is_printer_ready(handle):
     try:
         printer_info = win32print.GetPrinter(handle, 2)
         status = printer_info['Status']
+        logger.debug(f'Статуса принтера {status}')
         error_statuses = [
             win32print.PRINTER_STATUS_ERROR,
             win32print.PRINTER_STATUS_PAPER_JAM,
             win32print.PRINTER_STATUS_PAPER_OUT,
+            win32print.PRINTER_STATUS_PRINTING,
         ]
         return all((status & flag == 0) for flag in error_statuses)
     except Exception as e:
-            print(f"Ошибка при проверке статуса принтера: {e}")
-            return False
+        print(f"Ошибка при проверке статуса принтера: {e}")
+        return False
 
 
 def queue(printer_list, file_list, type_files):
@@ -83,7 +85,6 @@ def queue(printer_list, file_list, type_files):
                         break
                     else:
                         logger.error(f"Принтер '{printer}' не готов к печати или его статус неизвестен.")
-                        break
                 break
             except Exception as e:
                 logger.error(f"Ошибка при печати стикеров: {e}")
@@ -126,7 +127,6 @@ def queue_sticker(printer_list, file_list, self=None):
                         break
                     else:
                         logger.error(f"Принтер '{printer}' не готов к печати или его статус неизвестен.")
-                        break
                 break
             except Exception as e:
                 logger.error(f"Ошибка при печати стикеров: {e}")
