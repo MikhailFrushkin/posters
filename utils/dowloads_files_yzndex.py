@@ -73,12 +73,13 @@ def dowloads_files(df_new, self=None):
                     progress.update_progress()
             except Exception as ex:
                 logger.error(f'Ошибка загрузки {os.path.join(folder_path, vpr)}|{target_folder}|{ex}')
+            try:
+                count_objects_in_folders(os.path.join(main_path, vpr))
+            except Exception as ex:
+                logger.error(f'Ошибка переименовывания папки {os.path.join(main_path, vpr)} {ex}')
         else:
             logger.debug(f'Папка существует {os.path.join(folder_path, vpr)}')
-        try:
-            count_objects_in_folders(os.path.join(main_path, vpr))
-        except Exception as ex:
-            logger.error(f'Ошибка переименовывания папки {os.path.join(main_path, vpr)}')
+
 
 
 def unions_arts(self, new_arts):

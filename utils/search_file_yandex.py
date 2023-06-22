@@ -5,7 +5,7 @@ import aiohttp
 import pandas as pd
 from loguru import logger
 
-from config import token, df_in_xlsx, SearchProgress
+from config import token, df_in_xlsx, SearchProgress, path_base_y_disc
 from utils.read_google_table import read_codes_on_google
 
 
@@ -31,7 +31,7 @@ async def traverse_yandex_disk(session, folder_path, target_folders, result_dict
 async def main_search(self=None):
     list_arts = read_codes_on_google()
     if list_arts:
-        starting_folder = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Михаил/"
+        starting_folder = path_base_y_disc
         result_dict = {}
         progress = SearchProgress(len(list_arts), self)
         async with aiohttp.ClientSession() as session:
@@ -39,6 +39,13 @@ async def main_search(self=None):
 
         df = pd.DataFrame(list(result_dict.items()), columns=['Артикул', 'Путь'])
         df_in_xlsx(df, 'Пути к артикулам')
+        try:
+            df_all_arts = pd.read_excel('Артикула с гугл таблицы.xlsx')
+            df_result = df_all_arts.merge(df, on='Артикул', how='outer')
+            df_result = df_result[df_result['Путь'].isna()]
+            df_in_xlsx(df_result, 'Разница артикулов с гугл.таблицы и на я.диске')
+        except Exception as ex:
+            logger.error(f'Ошибка создания файла "Разница артикулов с гугл.таблицы и на я.диске" {ex}')
         return True
 
 if __name__ == '__main__':
