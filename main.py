@@ -8,7 +8,7 @@ from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem
     QAbstractItemView
 from loguru import logger
 
-from config import FilesOnPrint, ready_path, stiker_path
+from config import FilesOnPrint, ready_path, stiker_path, SearchProgress
 from utils.dowloads_files_yzndex import new_arts, unions_arts, dowloads_files, missing_arts
 from utils.queue_files_on_printers import queue, create_file_list, queue_sticker
 from utils.read_excel import read_excel_file
@@ -239,6 +239,7 @@ class Dialog2(QDialog):
         self.button_names = button_names
         self.files = files
         self.initUI()
+        self.dialogs = []
 
     def initUI(self):
         self.setWindowTitle("Выберите принтер для печати стикеров")
@@ -247,7 +248,7 @@ class Dialog2(QDialog):
         for button_name in self.button_names:
             button = QPushButton(button_name, self)
             button.clicked.connect(self.buttonClicked)
-            button.setStyleSheet("QPushButton { font-size: 18px; height: 50px; }")  # Установка стиля кнопки
+            button.setStyleSheet("QPushButton { font-size: 18px; height: 50px; }")
             layout.addWidget(button)
 
         self.setLayout(layout)
@@ -255,9 +256,12 @@ class Dialog2(QDialog):
     def buttonClicked(self):
         sender = self.sender()
         print(f"Нажата кнопка: {sender.text()}")
-        self.reject()
-        file_tuple = create_file_list(self.files, directory=stiker_path)
-        queue_sticker(printer_list=[sender.text()], file_list=file_tuple)
+        try:
+            file_tuple = create_file_list(orders=self.files, directory=stiker_path, self=self)
+            queue_sticker(printer_list=[sender.text()], file_list=file_tuple, self=self)
+            self.reject()
+        except Exception as ex:
+            logger.error(ex)
 
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
@@ -315,10 +319,14 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         """Ивент на кнопку загрузить файл"""
         res, _ = QFileDialog.getOpenFileName(self, 'Загрузить файл', str(self.current_dir), 'Лист XLSX (*.xlsx)')
         if res:
-            self.lineEdit.setText(res)
-            counts_art = read_excel_file(self.lineEdit.text())
-            values = [f"{item.name} - {item.art}: {item.count} шт." for item in counts_art]
-            self.update_list_view(values)
+            try:
+                self.lineEdit.setText(res)
+                counts_art = read_excel_file(self.lineEdit.text())
+                values = [f"{item.name} - {item.art}: {item.count} шт." for item in counts_art]
+                self.update_list_view(values)
+            except Exception as ex:
+                logger.error(f'ошибка чтения xlsx {ex}')
+                QMessageBox.information(self, 'Инфо', f'ошибка чтения xlsx {ex}')
 
     def evt_btn_create_queue(self):
         """Ивент на кнопку Сформировать очереди"""
@@ -355,12 +363,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 if not checked_checkboxes:
                     QMessageBox.information(self, 'Инфо', 'Не выбран ни один принтер')
                 else:
-                    dialog = QueueDialog(art_list, checked_checkboxes, 'Глянцевые')
-                    dialog2 = QueueDialog(art_list_mat, checked_checkboxes, 'Матовые')
-                    self.dialogs.append(dialog)
-                    self.dialogs.append(dialog2)
-                    dialog.show()
-                    dialog2.show()
+                    try:
+                        if len(art_list) > 0:
+                            dialog = QueueDialog(art_list, checked_checkboxes, 'Глянцевые')
+                            self.dialogs.append(dialog)
+                            dialog.show()
+                        if len(art_list_mat) > 0:
+                            dialog2 = QueueDialog(art_list_mat, checked_checkboxes, 'Матовые')
+                            self.dialogs.append(dialog2)
+                            dialog2.show()
+                    except Exception as ex:
+                        logger.error(f'Ошибка формирования списков печати (мат, глянец) {ex}')
             except Exception as ex:
                 logger.error(ex)
         else:

@@ -18,8 +18,8 @@ stiker_path = 'E:\\Новая база\\!Стикеры'
 
 
 class SearchProgress:
-    def __init__(self, total_folders, progress_bar):
-        self.current_folder = 0
+    def __init__(self, total_folders, progress_bar, current_folder=0):
+        self.current_folder = current_folder
         self.total_folders = total_folders
         self.progress_bar = progress_bar
 

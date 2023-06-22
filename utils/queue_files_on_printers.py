@@ -3,6 +3,7 @@ import itertools
 import win32api
 import win32con
 import win32print
+from PyQt5.QtWidgets import QMessageBox
 from loguru import logger
 
 from config import FilesOnPrint, ready_path, stiker_path
@@ -60,32 +61,25 @@ def queue(printer_list, file_list, type_files):
             try:
                 print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
                 printer_handle = win32print.OpenPrinter(printer, print_defaults)
-                logger.info(f"параметры принтера: {printer_handle}")
-
                 # Получаем текущую конфигурацию принтера
                 printer_info = win32print.GetPrinter(printer_handle, level)
-
                 dev_mode = printer_info["pDevMode"]
-
                 # Применяем параметры конфигурации
                 for key, value in dev_mode_parameters.items():
                     setattr(dev_mode, key, value)
-
                 # Устанавливаем количество копий
                 dev_mode.Copies = file[1]
-
                 # Устанавливаем обновленную конфигурацию принтера
                 win32print.SetPrinter(printer_handle, level, printer_info, 0)
                 logger.info("Параметры печати успешно применены.")
-
                 win32print.StartDocPrinter(printer_handle, 1, [file[0], None, "raw"])
                 # 2 в начале для открытия pdf и его сворачивания, для открытия без сворачивания поменяйте на 1
                 win32api.ShellExecute(2, 'print', file[0], '.', '/manualstoprint', 0)
                 while True:
                     ready = is_printer_ready(printer_handle)
                     if ready:
-                        logger.success(f"Принтер '{printer}' готов к печати.")
                         logger.debug(win32print.GetPrinter(printer_handle, level)['pDevMode'].Copies)
+                        logger.success(f"Принтер '{printer}' готов к печати.")
                         break
                     else:
                         logger.error(f"Принтер '{printer}' не готов к печати или его статус неизвестен.")
@@ -103,10 +97,11 @@ def queue(printer_list, file_list, type_files):
                 win32print.ClosePrinter(printer_handle)
 
 
-def queue_sticker(printer_list, file_list):
+def queue_sticker(printer_list, file_list, self=None):
     """Печать стикеров"""
     for file, printer in zip(file_list, itertools.cycle(printer_list)):
         logger.debug(f"Печать файла {file} на принтере {printer}")
+        win32print.SetDefaultPrinter(printer)
         while True:
             try:
                 printdefaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
@@ -126,8 +121,8 @@ def queue_sticker(printer_list, file_list):
                 while True:
                     ready = is_printer_ready(handle)
                     if ready:
-                        logger.success(f"Принтер '{printer}' готов к печати.")
                         logger.debug(win32print.GetPrinter(handle, level)['pDevMode'].Copies)
+                        logger.success(f"Принтер '{printer}' готов к печати.")
                         break
                     else:
                         logger.error(f"Принтер '{printer}' не готов к печати или его статус неизвестен.")
@@ -145,11 +140,18 @@ def queue_sticker(printer_list, file_list):
                 win32print.ClosePrinter(handle)
 
 
-def create_file_list(orders, directory=ready_path):
+def create_file_list(orders, directory=ready_path, self=None):
+    bad_arts = []
     file_tuple = tuple()
     for item in orders:
         path_file = search_file(f"{item.art}.pdf", directory)
-        file_tuple += ((path_file, item.count),)
+        if path_file:
+            file_tuple += ((path_file, item.count),)
+        else:
+            bad_arts.append(item.art)
+    if self and len(bad_arts) > 0:
+        QMessageBox.warning(self, 'Не найдено', f'Файлы не найденны\n{bad_arts}')
+
     return file_tuple
 
 
