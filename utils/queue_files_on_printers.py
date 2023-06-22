@@ -84,7 +84,6 @@ def queue(printer_list, file_list, type_files):
                     if ready:
                         logger.debug(win32print.GetPrinter(printer_handle, level)['pDevMode'].Copies)
                         logger.success(f"Принтер '{printer}' готов к печати.")
-                        time.sleep(2)
                         break
                     else:
                         logger.error(f"Принтер '{printer}' не готов к печати или его статус неизвестен.")
@@ -104,37 +103,41 @@ def queue(printer_list, file_list, type_files):
 
 def queue_sticker(printer_list, file_list, self=None):
     """Печать стикеров"""
+    # Создаем список флагов для отслеживания статуса принтеров
+    printer_status = [False] * len(printer_list)
+
     for file, printer in zip(file_list, itertools.cycle(printer_list)):
         logger.debug(f"Печать файла {file} на принтере {printer}")
         level = 2
-        win32print.SetDefaultPrinter(printer)
         while True:
             try:
-                print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
-                printer_handle = win32print.OpenPrinter(printer, print_defaults)
-                # Получаем текущую конфигурацию принтера
-                printer_info = win32print.GetPrinter(printer_handle, level)
-                dev_mode = printer_info["pDevMode"]
-
-                dev_mode.Copies = file[1]
-                # Устанавливаем обновленную конфигурацию принтера
-                win32print.SetPrinter(printer_handle, level, printer_info, 0)
-                logger.info("Параметры печати успешно применены.")
-                win32print.StartDocPrinter(printer_handle, 1, [file[0], None, "raw"])
-                # 2 в начале для открытия pdf и его сворачивания, для открытия без сворачивания поменяйте на 1
-                win32api.ShellExecute(2, 'print', file[0], '.', '/manualstoprint', 0)
-                while True:
-                    time.sleep(2)
-                    ready = is_printer_ready(printer_handle)
-                    if ready:
-                        logger.debug(win32print.GetPrinter(printer_handle, level)['pDevMode'].Copies)
-                        logger.success(f"Принтер '{printer}' готов к печати.")
-                        time.sleep(2)
-                        break
-                    else:
-                        logger.error(f"Принтер '{printer}' не готов к печати или его статус неизвестен.")
-                        break
-                break
+                # Проверяем статусы всех принтеров
+                for i, printer_name in enumerate(printer_list):
+                    if not printer_status[i]:
+                        win32print.SetDefaultPrinter(printer)
+                        # Если принтер не занят печатью, используем его
+                        print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
+                        printer_handle = win32print.OpenPrinter(printer_name, print_defaults)
+                        printer_info = win32print.GetPrinter(printer_handle, level)
+                        dev_mode = printer_info["pDevMode"]
+                        dev_mode.Copies = file[1]
+                        win32print.SetPrinter(printer_handle, level, printer_info, 0)
+                        logger.info("Параметры печати успешно применены.")
+                        hJob = win32print.StartDocPrinter(printer_handle, 1, [file[0], None, "raw"])
+                        job_info = win32print.GetJob(printer_handle, hJob, win32print.JOB_INFO_1)
+                        while job_info["Status"] != win32print.JOB_STATUS_COMPLETE:
+                            logger.debug(job_info["Status"])
+                            time.sleep(1)
+                            job_info = win32print.GetJob(printer_handle, hJob, win32print.JOB_INFO_1)
+                        logger.success(f"Принтер '{printer_name}' завершил печать файла.")
+                        printer_status[i] = False  # Устанавливаем флаг принтера как свободный
+                        win32print.ClosePrinter(printer_handle)
+                        break  # Выходим из цикла проверки принтеров
+                else:
+                    # Если все принтеры заняты печатью, ждем 1 секунду и повторяем цикл
+                    time.sleep(1)
+                    continue
+                break  # Выходим из основного цикла печати
             except Exception as e:
                 logger.error(f"Ошибка при печати стикеров: {e}")
                 try:
@@ -146,7 +149,6 @@ def queue_sticker(printer_list, file_list, self=None):
             finally:
                 win32print.ClosePrinter(printer_handle)
                 break
-
 
 def create_file_list(orders, directory=ready_path, self=None):
     bad_arts = []
@@ -172,7 +174,7 @@ if __name__ == '__main__':
     # file_tuple = create_file_list(order)
     # queue(printer_list, file_tuple, type_files='Матовые')
 
-    printer_list = ['Xprinter XP-365B']
+    printer_list = ['Fax']
     order = [FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-3', count=1,
                           name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='✅'),
              FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-6', count=2,
