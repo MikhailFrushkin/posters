@@ -1,4 +1,5 @@
 import itertools
+import time
 
 import win32api
 import win32con
@@ -24,6 +25,7 @@ def is_printer_ready(handle):
     PRINTER_STATUS_PRINTING: 1024
     PRINTER_STATUS_OUTPUT_BIN_FULL: 2048
     PRINTER_STATUS_USER_INTERVENTION: 1048576
+    Присоединенное к системе устройство не работает.: 31
     """
     try:
         printer_info = win32print.GetPrinter(handle, 2)
@@ -82,12 +84,14 @@ def queue(printer_list, file_list, type_files):
                     if ready:
                         logger.debug(win32print.GetPrinter(printer_handle, level)['pDevMode'].Copies)
                         logger.success(f"Принтер '{printer}' готов к печати.")
+                        time.sleep(2)
                         break
                     else:
                         logger.error(f"Принтер '{printer}' не готов к печати или его статус неизвестен.")
+                        break
                 break
             except Exception as e:
-                logger.error(f"Ошибка при печати стикеров: {e}")
+                logger.error(f"Ошибка при печати постеров: {e}")
                 try:
                     error_code = win32print.PRINTER_STATUS_ERROR
                     logger.info(f"Ошибка: {error_code}")
@@ -102,31 +106,34 @@ def queue_sticker(printer_list, file_list, self=None):
     """Печать стикеров"""
     for file, printer in zip(file_list, itertools.cycle(printer_list)):
         logger.debug(f"Печать файла {file} на принтере {printer}")
+        level = 2
         win32print.SetDefaultPrinter(printer)
         while True:
             try:
-                printdefaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
-                handle = win32print.OpenPrinter(printer, printdefaults)
-                level = 2
-                ## Получаем значения принтера
-                attributes = win32print.GetPrinter(handle, level)
-                ## Настройка количества копий
-                attributes['pDevMode'].Copies = file[1]
-                ## Передаем нужные значения в принтер
-                win32print.SetPrinter(handle, level, attributes, 0)
-                win32print.GetPrinter(handle, level)['pDevMode'].Copies
-                # Предупреждаем принтер о старте печати
-                win32print.StartDocPrinter(handle, 1, [file[0], None, "raw"])
-                ## 2 в начале для открытия pdf и его сворачивания, для открытия без сворачивания поменяйте на 1
+                print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
+                printer_handle = win32print.OpenPrinter(printer, print_defaults)
+                # Получаем текущую конфигурацию принтера
+                printer_info = win32print.GetPrinter(printer_handle, level)
+                dev_mode = printer_info["pDevMode"]
+
+                dev_mode.Copies = file[1]
+                # Устанавливаем обновленную конфигурацию принтера
+                win32print.SetPrinter(printer_handle, level, printer_info, 0)
+                logger.info("Параметры печати успешно применены.")
+                win32print.StartDocPrinter(printer_handle, 1, [file[0], None, "raw"])
+                # 2 в начале для открытия pdf и его сворачивания, для открытия без сворачивания поменяйте на 1
                 win32api.ShellExecute(2, 'print', file[0], '.', '/manualstoprint', 0)
                 while True:
-                    ready = is_printer_ready(handle)
+                    time.sleep(2)
+                    ready = is_printer_ready(printer_handle)
                     if ready:
-                        logger.debug(win32print.GetPrinter(handle, level)['pDevMode'].Copies)
+                        logger.debug(win32print.GetPrinter(printer_handle, level)['pDevMode'].Copies)
                         logger.success(f"Принтер '{printer}' готов к печати.")
+                        time.sleep(2)
                         break
                     else:
                         logger.error(f"Принтер '{printer}' не готов к печати или его статус неизвестен.")
+                        break
                 break
             except Exception as e:
                 logger.error(f"Ошибка при печати стикеров: {e}")
@@ -137,7 +144,8 @@ def queue_sticker(printer_list, file_list, self=None):
                     logger.error(f'Другая ошибка {ex}')
                     break
             finally:
-                win32print.ClosePrinter(handle)
+                win32print.ClosePrinter(printer_handle)
+                break
 
 
 def create_file_list(orders, directory=ready_path, self=None):
@@ -156,15 +164,20 @@ def create_file_list(orders, directory=ready_path, self=None):
 
 
 if __name__ == '__main__':
-    printer_list = ['Fax', 'Отправить в OneNote 16 (матовый)']
-    order = [
-        FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'),
-        FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=2, name='Постер asdasdasd', status='✅')
-    ]
-    file_tuple = create_file_list(order)
-    queue(printer_list, file_tuple, type_files='Матовые')
-    #
-    # printer_list = ['Отправить в OneNote 16']
-    # order = [FilesOnPrint(art='POSTER-ATOMICHEART-GLOSS', count=2, name='Атомик', status='✅')]
-    # file_tuple = create_file_list(order, stiker_path)
-    # queue_sticker(printer_list, file_tuple)
+    # printer_list = ['Fax', 'Отправить в OneNote 16 (матовый)']
+    # order = [
+    #     FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'),
+    #     FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=2, name='Постер asdasdasd', status='✅')
+    # ]
+    # file_tuple = create_file_list(order)
+    # queue(printer_list, file_tuple, type_files='Матовые')
+
+    printer_list = ['Xprinter XP-365B']
+    order = [FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-3', count=1,
+                          name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='✅'),
+             FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-6', count=2,
+                          name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='✅'),
+             FilesOnPrint(art='POSTER-BITVA.SHEPSOLEG-MAT-3', count=1, name='Постеры Олег Шепс постеры Интерьерные А3',
+                          status='✅')]
+    file_tuple = create_file_list(order, stiker_path)
+    queue_sticker(printer_list, file_tuple)
