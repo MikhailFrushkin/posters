@@ -183,7 +183,7 @@ def queue_sticker(printer_list, file_list, self=None):
                     if not printer_status[index]:
                         # Если принтер не занят печатью, используем его
                         filename = file[0].split('\\')[-1]
-                        self.progress_label.setText(f"Печать: {filename} на принтер: {printer}")
+                        self.progress_label.setText(f"Печать: {filename}\nНа принтер: {printer}")
                         win32print.SetDefaultPrinter(printer)
                         print_defaults = {"DesiredAccess": win32print.PRINTER_ALL_ACCESS}
                         printer_handle = win32print.OpenPrinter(printer_name, print_defaults)
