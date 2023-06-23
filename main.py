@@ -1,3 +1,4 @@
+import datetime
 from pathlib import Path
 
 import qdarkstyle
@@ -540,15 +541,19 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 if result == QMessageBox.AcceptRole:
                     if len(list_new_atrs) != 0:
                         logger.info(f'Нажата кнопка скачать. Список файлов: {list_new_atrs}')
-                        self.progress_bar.setValue(90)
                         dowloads_files(df_new='Пути к артикулам.xlsx', self=self)
                         QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
+                        self.progress_bar.setValue(100)
+
                         unions_arts(self, new_arts=list_new_atrs)
                         QMessageBox.information(self, 'Инфо', 'Файлы соединены')
+                        self.progress_bar.setValue(100)
+                    self.progress_bar.setValue(100)
 
                 elif result == QMessageBox.RejectRole:
                     logger.info(f'Нажата кнопка Пропустить. Список файлов: {list_new_atrs}')
             else:
+                self.progress_bar.setValue(100)
                 QMessageBox.information(self, 'Инфо', 'Не найдено новых артикулов')
 
         def on_no_clicked():
@@ -570,7 +575,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         def dowloads_stikers():
             print("Нажата кнопка 'Скачать стикеры'")
             dialog.reject()
+            self.progress_bar.setValue(0)
             dowload_srikers(self)
+            self.progress_bar.setValue(100)
 
         dialog = QDialog()
         dialog.setWindowTitle('Загрузка')
@@ -636,8 +643,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 if __name__ == '__main__':
     import sys
-
-    logger.add(sink="logs/logs.log", level="INFO", format="{time} {level} {message}")
+    date_logs = datetime.date.today()
+    logger.add(sink=f"logs/logs_{date_logs}.log", level="DEBUG", format="{time} {level} {message}", rotation="5 MB")
     app = QtWidgets.QApplication(sys.argv)
     app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
     w = MainWindow()
