@@ -126,6 +126,111 @@ class Ui_MainWindow(object):
         self.pushButton_4.setText(_translate("MainWindow", "Напечатать стикеры"))
 
 
+# class QueueDialog(QWidget):
+#     def __init__(self, files_on_print, printers, title, parent=None):
+#         super().__init__(parent)
+#         self.files_on_print = files_on_print
+#         self.printers = printers
+#         self.setWindowTitle(title)
+#
+#         layout = QVBoxLayout(self)
+#
+#         self.tableWidget = QTableWidget(self)
+#         self.tableWidget.setColumnCount(4)  # Добавление колонки "Название"
+#         self.tableWidget.setMinimumSize(800, 300)
+#         self.tableWidget.setHorizontalHeaderLabels(
+#             ["Название", "Артикул", "Количество", "Найден"])  # Обновленные заголовки
+#
+#         font = self.tableWidget.font()
+#         font.setPointSize(14)
+#         self.tableWidget.setFont(font)
+#
+#         self.tableWidget.setRowCount(len(self.files_on_print))
+#
+#         for row, file_on_print in enumerate(self.files_on_print):
+#             name_item = QTableWidgetItem(file_on_print.name)  # Получение названия из датакласса
+#             art_item = QTableWidgetItem(file_on_print.art)
+#             count_item = QTableWidgetItem(str(file_on_print.count))
+#             status_item = QTableWidgetItem(str(file_on_print.status))
+#             self.tableWidget.setItem(row, 0, name_item)  # Установка элемента в колонку "Название"
+#             self.tableWidget.setItem(row, 1, art_item)
+#             self.tableWidget.setItem(row, 2, count_item)
+#             self.tableWidget.setItem(row, 3, status_item)
+#
+#         layout.addWidget(self.tableWidget)
+#
+#         font = self.tableWidget.font()
+#
+#         print_button = QPushButton("Печать", self)
+#         print_button.setFont(font)
+#         print_button.clicked.connect(self.evt_btn_print_clicked)
+#         layout.addWidget(print_button)
+#
+#         print_all_button = QPushButton("Печатать все", self)
+#         print_all_button.setFont(font)
+#         print_all_button.clicked.connect(self.evt_btn_print_all_clicked)
+#         layout.addWidget(print_all_button)
+#
+#         # Установка режима выделения целых строк
+#         self.tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)
+#
+#         # Установка ширины колонки "Артикул" в 80% от ширины окна
+#         header = self.tableWidget.horizontalHeader()
+#         header.setSectionResizeMode(0, QHeaderView.Stretch)
+#         header.setSectionResizeMode(1, QHeaderView.ResizeToContents)
+#         header.setSectionResizeMode(2, QHeaderView.ResizeToContents)
+#
+#     def evt_btn_print_clicked(self):
+#         selected_data = self.get_selected_data()
+#         if selected_data:
+#             file_tuple = create_file_list(selected_data)
+#             flag = queue(self.printers, file_tuple, type_files=self.windowTitle())
+#             if flag == False:
+#                 QMessageBox.warning(self, 'Отправка на печать',
+#                                     f"Не выбран принтер для {'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
+#             else:
+#                 QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
+#                     '\n'.join([f'{item.art}, {item.count} шт.' for item in selected_data])))
+#         else:
+#             QMessageBox.information(self, 'Отправка на печать', 'Ни одна строка не выбрана')
+#
+#     def evt_btn_print_all_clicked(self):
+#         all_data = self.get_all_data()
+#
+#         if all_data:
+#             file_tuple = create_file_list(all_data)
+#             flag = queue(self.printers, file_tuple, type_files=self.windowTitle())
+#             if flag == False:
+#                 QMessageBox.warning(self, 'Отправка на печать',
+#                                     f"Не выбран принтер для {'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
+#             else:
+#                 QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
+#                     '\n'.join([f'{item.art}, {item.count} шт.' for item in all_data])))
+#         else:
+#             QMessageBox.information(self, 'Отправка на печать', 'Таблица пуста')
+#
+#     def get_selected_data(self):
+#         selected_rows = self.tableWidget.selectionModel().selectedRows()
+#         data = []
+#         for row in selected_rows:
+#             name = self.tableWidget.item(row.row(), 0).text()
+#             art = self.tableWidget.item(row.row(), 1).text()
+#             count = self.tableWidget.item(row.row(), 2).text()
+#             status = self.tableWidget.item(row.row(), 3).text()
+#             if status == '✅':
+#                 data.append(FilesOnPrint(name=name, art=art, count=int(count)))
+#         return data
+#
+#     def get_all_data(self):
+#         data = []
+#         for row in range(self.tableWidget.rowCount()):
+#             name = self.tableWidget.item(row, 0).text()
+#             art = self.tableWidget.item(row, 1).text()
+#             count = self.tableWidget.item(row, 2).text()
+#             status = self.tableWidget.item(row, 3).text()
+#             if status == '✅':
+#                 data.append(FilesOnPrint(name=name, art=art, count=int(count)))
+#         return data
 class QueueDialog(QWidget):
     def __init__(self, files_on_print, printers, title, parent=None):
         super().__init__(parent)
@@ -180,11 +285,18 @@ class QueueDialog(QWidget):
         header.setSectionResizeMode(1, QHeaderView.ResizeToContents)
         header.setSectionResizeMode(2, QHeaderView.ResizeToContents)
 
+        self.progress_label = QLabel("Прогресс:", self)
+        self.progress_label.setFont(font)
+        layout.addWidget(self.progress_label)
+
+        self.progress_bar = QProgressBar(self)
+        layout.addWidget(self.progress_bar)
+
     def evt_btn_print_clicked(self):
         selected_data = self.get_selected_data()
         if selected_data:
             file_tuple = create_file_list(selected_data)
-            flag = queue(self.printers, file_tuple, type_files=self.windowTitle())
+            flag = queue(self.printers, file_tuple, type_files=self.windowTitle(), self=self)
             if flag == False:
                 QMessageBox.warning(self, 'Отправка на печать',
                                     f"Не выбран принтер для {'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
@@ -196,7 +308,6 @@ class QueueDialog(QWidget):
 
     def evt_btn_print_all_clicked(self):
         all_data = self.get_all_data()
-
         if all_data:
             file_tuple = create_file_list(all_data)
             flag = queue(self.printers, file_tuple, type_files=self.windowTitle(), self=self)

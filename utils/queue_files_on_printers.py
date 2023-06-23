@@ -45,6 +45,11 @@ def is_printer_ready(handle):
 
 def queue(printer_list, file_list, type_files, self=None):
     """Печать постеров"""
+    if self:
+        self.progress_label.setText("Прогресс: 0%")
+        self.progress_bar.setValue(0)
+        total = len(file_list)
+        completed = 0
     dev_mode_parameters = {
         "PaperSize": win32con.DMPAPER_A3,
         "Orientation": win32con.DMORIENT_PORTRAIT,
@@ -105,8 +110,6 @@ def queue(printer_list, file_list, type_files, self=None):
     for file, printer in zip(file_list, itertools.cycle(printer_list)):
         logger.debug(f"Печать файла {file} на принтере {printer}")
         level = 2
-        if self:
-            self.progress_bar.setValue(count + 1)
         while True:
             try:
                 # Проверяем статусы всех принтеров
@@ -119,6 +122,9 @@ def queue(printer_list, file_list, type_files, self=None):
                         printer_info = win32print.GetPrinter(printer_handle, level)
                         dev_mode = printer_info["pDevMode"]
                         dev_mode.Copies = file[1]
+                        # Применяем параметры конфигурации
+                        for key, value in dev_mode_parameters.items():
+                            setattr(dev_mode, key, value)
                         win32print.SetPrinter(printer_handle, level, printer_info, 0)
                         logger.info("Параметры печати успешно применены.")
                         hJob = win32print.StartDocPrinter(printer_handle, 1, [file[0], None, "raw"])
@@ -126,14 +132,18 @@ def queue(printer_list, file_list, type_files, self=None):
                         win32api.ShellExecute(2, 'print', file[0], '.', '/manualstoprint', 0)
                         while job_info["Status"] != win32print.JOB_STATUS_COMPLETE:
                             logger.debug(job_info["Status"])
-                            time.sleep(1)
+                            time.sleep(5)
                             # job_info = win32print.GetJob(printer_handle, hJob, win32print.JOB_INFO_1)
                             job_info["Status"] = win32print.JOB_STATUS_COMPLETE
                             logger.debug(job_info["Status"])
                         logger.success(f"Принтер '{printer_name}' завершил печать файла.")
                         count += 1
                         printer_status[index] = False  # Устанавливаем флаг принтера как свободный
-                        # win32print.ClosePrinter(printer_handle)
+                        if self:
+                            completed += 1
+                            progress = int((completed / total) * 100)
+                            self.progress_label.setText(f"Прогресс: {progress}%")
+                            self.progress_bar.setValue(progress)
                         break  # Выходим из цикла проверки принтеров
                 else:
                     # Если все принтеры заняты печатью, ждем 1 секунду и повторяем цикл
@@ -149,8 +159,12 @@ def queue(printer_list, file_list, type_files, self=None):
                     logger.error(f'Другая ошибка {ex}')
                     break
             finally:
-                win32print.ClosePrinter(printer_handle)
+                try:
+                    win32print.ClosePrinter(printer_handle)
+                except Exception as ex:
+                    logger.error(ex)
                 break
+
 
 def queue_sticker(printer_list, file_list, self=None):
     """Печать стикеров"""
