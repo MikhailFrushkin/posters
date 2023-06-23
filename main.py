@@ -199,7 +199,7 @@ class QueueDialog(QWidget):
 
         if all_data:
             file_tuple = create_file_list(all_data)
-            flag = queue(self.printers, file_tuple, type_files=self.windowTitle())
+            flag = queue(self.printers, file_tuple, type_files=self.windowTitle(), self=self)
             if flag == False:
                 QMessageBox.warning(self, 'Отправка на печать',
                                     f"Не выбран принтер для {'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
@@ -243,7 +243,10 @@ class Dialog2(QDialog):
 
     def initUI(self):
         self.setWindowTitle("Выберите принтер для печати стикеров")
-        layout = QVBoxLayout()
+
+        # Создаем контейнер и устанавливаем для него компоновку
+        container = QWidget(self)
+        layout = QVBoxLayout(container)
 
         for button_name in self.button_names:
             button = QPushButton(button_name, self)
@@ -251,15 +254,28 @@ class Dialog2(QDialog):
             button.setStyleSheet("QPushButton { font-size: 18px; height: 50px; }")
             layout.addWidget(button)
 
+        # Добавляем прогресс бар и надпись в контейнер
+        self.progress_label = QLabel(self)
+        self.progress_bar = QProgressBar(self)
+        layout.addWidget(self.progress_label)
+        layout.addWidget(self.progress_bar)
+
+        # Устанавливаем контейнер как главный виджет диалогового окна
         self.setLayout(layout)
+        self.setFixedWidth(400)
 
     def buttonClicked(self):
         sender = self.sender()
         print(f"Нажата кнопка: {sender.text()}")
         try:
             file_tuple = create_file_list(orders=self.files, directory=stiker_path, self=self)
+            self.progress_label.setText("Выполняется печать...")
+            self.progress_bar.setValue(0)
+            self.progress_bar.setMaximum(len(file_tuple))
+            self.show()
             queue_sticker(printer_list=[sender.text()], file_list=file_tuple, self=self)
             self.reject()
+
         except Exception as ex:
             logger.error(ex)
 
