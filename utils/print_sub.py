@@ -25,7 +25,12 @@ def print_pdf(file_path, num_copies, printer_name):
         with open(file_path, "rb") as f:
             # Формирование команды для печати файла
             print_command = f'"{acrobat_path}" /N /T "{file_path}" "{printer_name}"'
-
+            # print_command = (
+            #     f'"{acrobat_path}" /N /T '
+            #     f'/O "ориентация" '  # Замените "ориентация" на "Landscape" для горизонтальной ориентации или "Portrait" для вертикальной ориентации
+            #     f'/P "без полей" '  # Замените "без полей" на "No" для печати с полями или "Yes" для печати без полей
+            #     f'"{file_path}" "{printer_name}"'
+            # )
             # Печать указанного числа копий
             for _ in range(num_copies):
                 # Запуск процесса печати
