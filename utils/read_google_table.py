@@ -1,5 +1,7 @@
 import os
 import re
+from pprint import pprint
+
 import pandas as pd
 from loguru import logger
 
@@ -33,7 +35,7 @@ def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
         # Пример чтения файла
         values = service.spreadsheets().values().get(
             spreadsheetId=spreadsheet_id,
-            range='A1:L30000',
+            range='A1:N30000',
 
         ).execute()
     except Exception as ex:
@@ -43,6 +45,10 @@ def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
     rows = data[1:]
     # Проверка количества столбцов и создание DataFrame
     if len(headers) != len(rows[0]):
+        pprint(headers)
+        print(len(headers), len(rows[0]))
+
+        pprint(rows[0])
         print("Ошибка: количество столбцов не совпадает с количеством значений.")
     else:
         df = pd.DataFrame(rows, columns=headers)
