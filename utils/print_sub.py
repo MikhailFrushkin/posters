@@ -20,15 +20,17 @@ def print_pdf(file_path, num_copies, printer_name):
         print("Adobe Acrobat Reader не найден.")
         return
     try:
+        print_processes = []
         # Открытие PDF-файла с использованием PyPDF2
         with open(file_path, "rb") as f:
-            pdf = PdfReader(f)
             # Формирование команды для печати файла
             print_command = f'"{acrobat_path}" /N /T "{file_path}" "{printer_name}"'
+
             # Печать указанного числа копий
             for _ in range(num_copies):
                 # Запуск процесса печати
-                subprocess.run(print_command, shell=True)
+                print_process = subprocess.Popen(print_command, shell=True)
+                print_processes.append(print_process)
         logger.success(f'Файл {file_path} отправлен на печать ({num_copies} копий). на принтер {printer_name}')
     except Exception as e:
         logger.error(f'Возникла ошибка при печати файла: {e}')
@@ -71,7 +73,6 @@ def queue(printer_list, file_list, type_files, self=None):
         print_pdf(file_path, num_copies, printer_name)
         if self:
             completed += 1
-            print(completed)
             progress = int((completed / total) * 100)
             self.progress_label.setText(f"Прогресс: {progress}%")
             self.progress_bar.setValue(progress)
@@ -85,7 +86,7 @@ def queue_sticker(printer_list, file_list, self=None):
         tuple_printing += ((file[0], file[1], printer),)
     for item in tuple_printing:
         file_path, num_copies, printer_name = item
-        print_pdf(file_path, num_copies, printer_name, self)
+        print_pdf(file_path, num_copies, printer_name)
         count += 1
         if self:
             self.progress_bar.setValue(count + 1)
