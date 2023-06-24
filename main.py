@@ -11,7 +11,7 @@ from loguru import logger
 
 from config import FilesOnPrint, ready_path, stiker_path, SearchProgress
 from utils.dowloads_files_yzndex import new_arts, unions_arts, dowloads_files, missing_arts
-from utils.queue_files_on_printers import queue, create_file_list, queue_sticker
+from utils.print_sub import create_file_list, queue_sticker, queue
 from utils.read_excel import read_excel_file
 from utils.read_printers import enum_printers
 from utils.search_file import search_file

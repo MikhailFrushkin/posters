@@ -16,6 +16,8 @@ main_path = 'E:\\Новая база\\Готовые'
 ready_path = 'E:\\Новая база\\Готовые pdf'
 stiker_path = 'E:\\Новая база\\!Стикеры'
 path_base_y_disc = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Михаил"
+acrobat_path = r"C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe"
+
 
 class SearchProgress:
     def __init__(self, total_folders, progress_bar, current_folder=0):
