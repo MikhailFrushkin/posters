@@ -51,6 +51,8 @@ def dowloads_files(df_new, self=None):
                         with open(file_path, 'wb') as file:
                             file.write(download_response.content)
                             logger.success(f'Загружен файл {item["name"]}')
+                            if self:
+                                self.textEdit.append(f'Загружен файл {item["name"]}')
                 elif item['type'] == 'dir':
                     logger.info(f"Переход в папку {item['path']}")
                     download_files(source_folder, target_folder + "/" + item['name'], token)
@@ -89,8 +91,12 @@ def unions_arts(self, new_arts):
         time_start = datetime.datetime.now()
         try:
             logger.info(f'{art} ... соединение!')
+            if self:
+                self.textEdit.append(f'{art} ... соединение!')
             one_pdf(folder_path=full_path, filename=art)
             logger.info(f'{art}|Время выполнения: {datetime.datetime.now() - time_start}')
+            if self:
+                self.textEdit.append(f'{art}|Время выполнения: {datetime.datetime.now() - time_start}')
             if self:
                 progress.update_progress()
         except Exception as ex:
@@ -120,6 +126,8 @@ def missing_arts(new_file):
 
 def new_arts(new_file, self=None):
     # получение и сохранение артикулов с гугл таблицы
+    if self:
+        self.textEdit.append("Чтение гугл таблицы с постерами...")
     asyncio.run(main_search(self))
     missing_elements = missing_arts(new_file)
     logger.info(missing_elements)

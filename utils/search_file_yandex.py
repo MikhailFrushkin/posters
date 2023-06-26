@@ -19,9 +19,11 @@ async def traverse_yandex_disk(session, folder_path, target_folders, result_dict
                 if item["type"] == "dir" and item["name"].lower() in target_folders:
                     result_dict[item["name"].lower()] = item["path"]
                     logger.success(f'Найден артикул {item["name"]} {item["path"]} current_folder: {progress}')
+                    self.textEdit.append(f'Найден артикул {item["name"]} {item["path"]}')
                     progress.update_progress()
                 elif item["type"] == "dir":
                     await traverse_yandex_disk(session, item["path"], target_folders, result_dict, self, progress)
+                    self.textEdit.append(f'Проверена папка(файл){item["name"]} {item["path"]}')
                     logger.info(f'Проверена папка(файл){item["name"]} {item["path"]}')
 
         except Exception as ex:
@@ -38,11 +40,15 @@ async def main_search(self=None):
             await traverse_yandex_disk(session, starting_folder, list_arts, result_dict, self, progress)
 
         df = pd.DataFrame(list(result_dict.items()), columns=['Артикул', 'Путь'])
+        if self:
+            self.textEdit.append('Создан документ Пути к артикулам.xlsx')
         df_in_xlsx(df, 'Пути к артикулам')
         try:
             df_all_arts = pd.read_excel('files/Артикула с гугл таблицы.xlsx')
             df_result = df_all_arts.merge(df, on='Артикул', how='outer')
             df_result = df_result[df_result['Путь'].isna()]
+            if self:
+                self.textEdit.append('Создан документ Разница артикулов с гугл.таблицы и на я.диске.xlsx')
             df_in_xlsx(df_result, 'Разница артикулов с гугл.таблицы и на я.диске')
         except Exception as ex:
             logger.error(f'Ошибка создания файла "Разница артикулов с гугл.таблицы и на я.диске" {ex}')

@@ -3,7 +3,7 @@ from pathlib import Path
 
 import qdarkstyle
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtGui import QFont
+from PyQt5.QtGui import QFont, QTextCursor, QTextCharFormat
 from PyQt5.QtWidgets import QFileDialog, QCheckBox, QApplication, QProgressBar, QDialog, QLabel, QBoxLayout, QHBoxLayout
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem, QPushButton, QMessageBox, QHeaderView, \
     QAbstractItemView
@@ -16,7 +16,8 @@ from utils.read_excel import read_excel_file
 from utils.read_printers import enum_printers
 from utils.search_file import search_file
 from utils.search_stikers import dowload_srikers
-
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTextEdit
+from PyQt5.QtGui import QTextCursor, QTextCharFormat, QColor
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -102,6 +103,11 @@ class Ui_MainWindow(object):
         self.pushButton_4.setFont(font)
         self.pushButton_4.setObjectName("pushButton_2")
         self.verticalLayout_3.addWidget(self.pushButton_4)
+
+        self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
+        self.textEdit.setReadOnly(True)
+        self.textEdit.setFontPointSize(10)
+        self.verticalLayout_3.addWidget(self.textEdit)
 
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
@@ -304,7 +310,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton_2.clicked.connect(self.evt_btn_create_queue)
         self.pushButton_3.clicked.connect(self.evt_btn_update_db)
         self.pushButton_4.clicked.connect(self.evt_btn_print_stikers)
-
+        self.default_color = QColor("white")
+        self.current_color = self.default_color
         try:
             printers_list = enum_printers()
             for printer in printers_list:
@@ -316,6 +323,15 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             logger.debug(ex)
 
         self.dialogs = []
+
+    def append_text(self, text):
+        self.textEdit.append(text)
+        QApplication.processEvents()
+
+    def set_text_color(self, cursor, color):
+        format = QTextCharFormat()
+        format.setForeground(color)
+        cursor.setCharFormat(format)
 
     def update_progress(self, current_value, total_value):
         progress = int(current_value / total_value * 100)
@@ -413,6 +429,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         def on_yes_clicked():
             print("Нажата кнопка 'Да'")
             dialog.reject()
+            self.textEdit.append("Сканирование...")
 
             list_new_atrs = new_arts('files/Пути к артикулам.xlsx', self)
             msg_box = QMessageBox()
@@ -546,6 +563,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 if __name__ == '__main__':
     import sys
+
     date_logs = datetime.date.today()
 
     logger.add(sink=f"/logs/logs_{date_logs}.log", level="DEBUG", format="{time} {level} {message}", rotation="5 MB")

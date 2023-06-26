@@ -30,8 +30,7 @@ def one_pdf(folder_path, filename):
 if __name__ == '__main__':
     count = 0
     main_path = 'E:\\Новая база\\Готовые'
-    ready_path = 'E:\\Новая база\\Готовые pdf'
-    stiker_path = 'E:\\Новая база\\!Стикеры'
+
     for address, dirs, files in os.walk(main_path):
         for dir in dirs:
             count += 1
