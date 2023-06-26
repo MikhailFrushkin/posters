@@ -5,13 +5,13 @@ from pprint import pprint
 import pandas as pd
 from loguru import logger
 
-from config import df_in_xlsx
+from config import df_in_xlsx, path_root, id_google_table
 import httplib2
 import apiclient
 from oauth2client.service_account import ServiceAccountCredentials
 
 
-def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
+def read_codes_on_google(CREDENTIALS_FILE=f'{path_root}/google_acc.json'):
     logger.debug('Читаю гугл таблицу')
     file_path = 'files/Артикула с гугл таблицы.xlsx'
     old_file_path = 'files/Старые артикула с гугл таблицы.xlsx'
@@ -22,7 +22,7 @@ def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
     # Файл, полученный в Google Developer Console
     # ID Google Sheets документа (можно взять из его URL)
     # spreadsheet_id = '1CGN9T4E5RjK1MCEDCVpYz-sRp8udtA9RZ13Uc52xVsk'
-    spreadsheet_id = '1IaXufU8CYTQsMDxEvynBzlRAFm_G43Kll0PO3lvQDxA'
+    spreadsheet_id = f'{id_google_table}'
     try:
         # Авторизуемся и получаем service — экземпляр доступа к API
         credentials = ServiceAccountCredentials.from_json_keyfile_name(

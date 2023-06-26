@@ -8,11 +8,11 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
 from loguru import logger
 
-from config import main_path, stiker_path, SearchProgress
+from config import main_path, stiker_path, SearchProgress, google_sticker_path
 
 credentials = service_account.Credentials.from_service_account_file('google_acc.json')
-service = build('drive', 'v3', credentials=credentials)
-folder_url = "https://drive.google.com/drive/folders/18UcnBXbN5q7yrF898CjW0m-iXFs1pws4"
+service = build('drive', 'v3', credentials=credentials,  static_discovery=False)
+folder_url = f"https://drive.google.com/drive/folders/{google_sticker_path}"
 local_directory = f"{stiker_path}"
 
 

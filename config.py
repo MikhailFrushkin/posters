@@ -6,7 +6,7 @@ from environs import Env
 from openpyxl import Workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
 
-path_root = Path(__file__).resolve().parent.parent
+path_root = Path(__file__).resolve().parent
 
 env = Env()
 env.read_env()
@@ -17,6 +17,9 @@ ready_path = env.str('ready_path')
 stiker_path = env.str('stiker_path')
 path_base_y_disc = env.str('path_base_y_disc')
 acrobat_path = env.str('acrobat_path')
+google_sticker_path = env.str('google_sticker_path')
+id_google_table = env.str('id_google_table')
+
 
 
 class SearchProgress:
