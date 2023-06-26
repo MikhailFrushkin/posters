@@ -40,7 +40,7 @@ async def main_search(self=None):
         df = pd.DataFrame(list(result_dict.items()), columns=['Артикул', 'Путь'])
         df_in_xlsx(df, 'Пути к артикулам')
         try:
-            df_all_arts = pd.read_excel('Артикула с гугл таблицы.xlsx')
+            df_all_arts = pd.read_excel('files/Артикула с гугл таблицы.xlsx')
             df_result = df_all_arts.merge(df, on='Артикул', how='outer')
             df_result = df_result[df_result['Путь'].isna()]
             df_in_xlsx(df_result, 'Разница артикулов с гугл.таблицы и на я.диске')

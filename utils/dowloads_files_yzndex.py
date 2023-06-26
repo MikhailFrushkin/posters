@@ -13,7 +13,6 @@ from utils.rename_files import count_objects_in_folders
 from utils.search_file_yandex import main_search
 
 
-
 def count_files(directory):
     file_count = 0
     for root, dirs, files in os.walk(directory):
@@ -81,7 +80,6 @@ def dowloads_files(df_new, self=None):
             logger.debug(f'Папка существует {os.path.join(folder_path, vpr)}')
 
 
-
 def unions_arts(self, new_arts):
     print(new_arts)
     if self:
@@ -101,21 +99,23 @@ def unions_arts(self, new_arts):
                 f.write(f'{art}\n')
 
 
-
 def missing_arts(new_file):
-    new_df = pd.read_excel(new_file)
-    new_arts = new_df['Артикул'].str.lower().unique().tolist()
+    try:
+        new_df = pd.read_excel(new_file)
+        new_arts = new_df['Артикул'].str.lower().unique().tolist()
+        directory = main_path
+        excluded_folder = "Готовые постеры по 3 шт"  # Исключаемая папка
+        folders = [folder.lower() for folder in os.listdir(directory) if
+                   os.path.isdir(os.path.join(directory, folder)) and folder != excluded_folder]
+        logger.debug(f'Количество артикулов в директории {main_path}: {len(folders)}')
+        logger.debug(f'Количество артикулов в файле {new_file}: {len(new_arts)}')
+        missing_elements = list(set(new_arts) - set(folders))
+        logger.debug(f'разница артикулов: {missing_elements}')
+        return missing_elements
 
-    directory = main_path
-    excluded_folder = "Готовые постеры по 3 шт"  # Исключаемая папка
-
-    folders = [folder.lower() for folder in os.listdir(directory) if
-               os.path.isdir(os.path.join(directory, folder)) and folder != excluded_folder]
-    logger.debug(f'Количество артикулов в директории {main_path}: {len(folders)}')
-    logger.debug(f'Количество артикулов в файле {new_file}: {len(new_arts)}')
-    missing_elements = list(set(new_arts) - set(folders))
-    logger.debug(f'разница артикулов: {missing_elements}')
-    return missing_elements
+    except Exception as ex:
+        logger.error(ex)
+    return None
 
 
 def new_arts(new_file, self=None):
@@ -129,7 +129,7 @@ def new_arts(new_file, self=None):
 if __name__ == '__main__':
     # Проверка что в папке папки с 3мя файлами
     # find_folders_with_incorrect_file_count(main_path')
-    new_arts('Пути к артикулам.xlsx')
+    new_arts('files/Пути к артикулам.xlsx')
 
     # dowloads_files('Пути к артикулам.xlsx')
     # unions_arts()

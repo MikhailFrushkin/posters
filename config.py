@@ -6,17 +6,17 @@ from environs import Env
 from openpyxl import Workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
 
-path = Path(__file__).resolve().parent.parent
+path_root = Path(__file__).resolve().parent.parent
 
 env = Env()
 env.read_env()
 
 token = env.str('token')
-main_path = 'E:\\Новая база\\Готовые'
-ready_path = 'E:\\Новая база\\Готовые pdf'
-stiker_path = 'E:\\Новая база\\!Стикеры'
-path_base_y_disc = "/Значки ANIKOYA  02 23/03 - POSUTA (плакаты)/Михаил"
-acrobat_path = r"C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe"
+main_path = env.str('main_path')
+ready_path = env.str('ready_path')
+stiker_path = env.str('stiker_path')
+path_base_y_disc = env.str('path_base_y_disc')
+acrobat_path = env.str('acrobat_path')
 
 
 class SearchProgress:
@@ -57,4 +57,4 @@ def df_in_xlsx(df, filename, max_width=50):
         adjusted_width = min(max_length + 2, max_width)
         sheet.column_dimensions[column_letter].width = adjusted_width
     # Сохранение рабочей книги в файл
-    workbook.save(f"{filename}.xlsx")
+    workbook.save(f"files/{filename}.xlsx")

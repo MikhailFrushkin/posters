@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem
     QAbstractItemView
 from loguru import logger
 
-from config import FilesOnPrint, ready_path, stiker_path, SearchProgress
+from config import FilesOnPrint, ready_path, stiker_path, SearchProgress, path_root
 from utils.dowloads_files_yzndex import new_arts, unions_arts, dowloads_files, missing_arts
 from utils.print_sub import create_file_list, queue_sticker, queue
 from utils.read_excel import read_excel_file
@@ -127,111 +127,6 @@ class Ui_MainWindow(object):
         self.pushButton_4.setText(_translate("MainWindow", "Напечатать стикеры"))
 
 
-# class QueueDialog(QWidget):
-#     def __init__(self, files_on_print, printers, title, parent=None):
-#         super().__init__(parent)
-#         self.files_on_print = files_on_print
-#         self.printers = printers
-#         self.setWindowTitle(title)
-#
-#         layout = QVBoxLayout(self)
-#
-#         self.tableWidget = QTableWidget(self)
-#         self.tableWidget.setColumnCount(4)  # Добавление колонки "Название"
-#         self.tableWidget.setMinimumSize(800, 300)
-#         self.tableWidget.setHorizontalHeaderLabels(
-#             ["Название", "Артикул", "Количество", "Найден"])  # Обновленные заголовки
-#
-#         font = self.tableWidget.font()
-#         font.setPointSize(14)
-#         self.tableWidget.setFont(font)
-#
-#         self.tableWidget.setRowCount(len(self.files_on_print))
-#
-#         for row, file_on_print in enumerate(self.files_on_print):
-#             name_item = QTableWidgetItem(file_on_print.name)  # Получение названия из датакласса
-#             art_item = QTableWidgetItem(file_on_print.art)
-#             count_item = QTableWidgetItem(str(file_on_print.count))
-#             status_item = QTableWidgetItem(str(file_on_print.status))
-#             self.tableWidget.setItem(row, 0, name_item)  # Установка элемента в колонку "Название"
-#             self.tableWidget.setItem(row, 1, art_item)
-#             self.tableWidget.setItem(row, 2, count_item)
-#             self.tableWidget.setItem(row, 3, status_item)
-#
-#         layout.addWidget(self.tableWidget)
-#
-#         font = self.tableWidget.font()
-#
-#         print_button = QPushButton("Печать", self)
-#         print_button.setFont(font)
-#         print_button.clicked.connect(self.evt_btn_print_clicked)
-#         layout.addWidget(print_button)
-#
-#         print_all_button = QPushButton("Печатать все", self)
-#         print_all_button.setFont(font)
-#         print_all_button.clicked.connect(self.evt_btn_print_all_clicked)
-#         layout.addWidget(print_all_button)
-#
-#         # Установка режима выделения целых строк
-#         self.tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)
-#
-#         # Установка ширины колонки "Артикул" в 80% от ширины окна
-#         header = self.tableWidget.horizontalHeader()
-#         header.setSectionResizeMode(0, QHeaderView.Stretch)
-#         header.setSectionResizeMode(1, QHeaderView.ResizeToContents)
-#         header.setSectionResizeMode(2, QHeaderView.ResizeToContents)
-#
-#     def evt_btn_print_clicked(self):
-#         selected_data = self.get_selected_data()
-#         if selected_data:
-#             file_tuple = create_file_list(selected_data)
-#             flag = queue(self.printers, file_tuple, type_files=self.windowTitle())
-#             if flag == False:
-#                 QMessageBox.warning(self, 'Отправка на печать',
-#                                     f"Не выбран принтер для {'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
-#             else:
-#                 QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
-#                     '\n'.join([f'{item.art}, {item.count} шт.' for item in selected_data])))
-#         else:
-#             QMessageBox.information(self, 'Отправка на печать', 'Ни одна строка не выбрана')
-#
-#     def evt_btn_print_all_clicked(self):
-#         all_data = self.get_all_data()
-#
-#         if all_data:
-#             file_tuple = create_file_list(all_data)
-#             flag = queue(self.printers, file_tuple, type_files=self.windowTitle())
-#             if flag == False:
-#                 QMessageBox.warning(self, 'Отправка на печать',
-#                                     f"Не выбран принтер для {'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
-#             else:
-#                 QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
-#                     '\n'.join([f'{item.art}, {item.count} шт.' for item in all_data])))
-#         else:
-#             QMessageBox.information(self, 'Отправка на печать', 'Таблица пуста')
-#
-#     def get_selected_data(self):
-#         selected_rows = self.tableWidget.selectionModel().selectedRows()
-#         data = []
-#         for row in selected_rows:
-#             name = self.tableWidget.item(row.row(), 0).text()
-#             art = self.tableWidget.item(row.row(), 1).text()
-#             count = self.tableWidget.item(row.row(), 2).text()
-#             status = self.tableWidget.item(row.row(), 3).text()
-#             if status == '✅':
-#                 data.append(FilesOnPrint(name=name, art=art, count=int(count)))
-#         return data
-#
-#     def get_all_data(self):
-#         data = []
-#         for row in range(self.tableWidget.rowCount()):
-#             name = self.tableWidget.item(row, 0).text()
-#             art = self.tableWidget.item(row, 1).text()
-#             count = self.tableWidget.item(row, 2).text()
-#             status = self.tableWidget.item(row, 3).text()
-#             if status == '✅':
-#                 data.append(FilesOnPrint(name=name, art=art, count=int(count)))
-#         return data
 class QueueDialog(QWidget):
     def __init__(self, files_on_print, printers, title, parent=None):
         super().__init__(parent)
@@ -345,9 +240,9 @@ class QueueDialog(QWidget):
         return data
 
 
-class Dialog2(QDialog):
+class Dialog(QDialog):
     def __init__(self, button_names, files):
-        super(Dialog2, self).__init__()
+        super().__init__()
         self.button_names = button_names
         self.files = files
         self.initUI()
@@ -412,6 +307,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             printers_list = enum_printers()
             for printer in printers_list:
                 self.addPrinterCheckbox(printer)
+            for printer in printers_list:
                 self.addPrinterCheckbox(printer, is_matte=True)
 
         except Exception as ex:
@@ -439,9 +335,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def formatPrinterName(self, printer_name, is_matte):
         if is_matte:
-            return printer_name + " (матовый)"
+            return printer_name + " (Матовая бумага)"
         else:
-            return printer_name
+            return printer_name + " (Глянцевая бумага)"
 
     def evt_btn_open_file_clicked(self):
         """Ивент на кнопку загрузить файл"""
@@ -492,6 +388,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     QMessageBox.information(self, 'Инфо', 'Не выбран ни один принтер')
                 else:
                     try:
+                        logger.success(art_list)
+                        logger.success(art_list_mat)
                         if len(art_list) > 0:
                             dialog = QueueDialog(art_list, checked_checkboxes, 'Глянцевые')
                             self.dialogs.append(dialog)
@@ -514,7 +412,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             print("Нажата кнопка 'Да'")
             dialog.reject()
 
-            list_new_atrs = new_arts('Пути к артикулам.xlsx', self)
+            list_new_atrs = new_arts('files/Пути к артикулам.xlsx', self)
             msg_box = QMessageBox()
             msg_box.setWindowTitle('Загрузка')
             msg_box.setText('Найдены новые артикула: \n{}'.format('\n'.join(list_new_atrs)))
@@ -541,7 +439,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 if result == QMessageBox.AcceptRole:
                     if len(list_new_atrs) != 0:
                         logger.info(f'Нажата кнопка скачать. Список файлов: {list_new_atrs}')
-                        dowloads_files(df_new='Пути к артикулам.xlsx', self=self)
+                        dowloads_files(df_new='files/Пути к артикулам.xlsx', self=self)
                         QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
                         self.progress_bar.setValue(100)
 
@@ -564,13 +462,16 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             print("Нажата кнопка 'Пропустить сканирование Я.диска'")
             dialog.reject()
 
-            list_new_atrs = missing_arts('Пути к артикулам.xlsx')
-            dowloads_files(df_new='Пути к артикулам.xlsx', self=self)
-            self.progress_bar.setValue(100)
-            QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
-            unions_arts(self, new_arts=list_new_atrs)
-            QMessageBox.information(self, 'Инфо', 'Файлы соединены')
-            self.progress_bar.setValue(100)
+            list_new_atrs = missing_arts('files/Пути к артикулам.xlsx')
+            if not list_new_atrs:
+                QMessageBox.warning(self, 'Ошибка', 'Не предыдущего сканирования, запустите полное сканирование')
+            else:
+                dowloads_files(df_new='files/Пути к артикулам.xlsx', self=self)
+                self.progress_bar.setValue(100)
+                QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
+                unions_arts(self, new_arts=list_new_atrs)
+                QMessageBox.information(self, 'Инфо', 'Файлы соединены')
+                self.progress_bar.setValue(100)
 
         def dowloads_stikers():
             print("Нажата кнопка 'Скачать стикеры'")
@@ -635,7 +536,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                     item.status = '✅'
             logger.debug(counts_art)
             button_names = enum_printers('стикеры')
-            dialog = Dialog2(button_names=button_names, files=counts_art)
+            dialog = Dialog(button_names=button_names, files=counts_art)
             dialog.exec_()
         else:
             QMessageBox.information(self, 'Инфо', 'Загрузите заказ')
@@ -644,7 +545,8 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 if __name__ == '__main__':
     import sys
     date_logs = datetime.date.today()
-    logger.add(sink=f"logs/logs_{date_logs}.log", level="DEBUG", format="{time} {level} {message}", rotation="5 MB")
+
+    logger.add(sink=f"/logs/logs_{date_logs}.log", level="DEBUG", format="{time} {level} {message}", rotation="5 MB")
     app = QtWidgets.QApplication(sys.argv)
     app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
     w = MainWindow()

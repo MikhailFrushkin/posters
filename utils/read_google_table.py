@@ -13,8 +13,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
     logger.debug('Читаю гугл таблицу')
-    file_path = 'Артикула с гугл таблицы.xlsx'
-    old_file_path = 'Старые артикула с гугл таблицы.xlsx'
+    file_path = 'files/Артикула с гугл таблицы.xlsx'
+    old_file_path = 'files/Старые артикула с гугл таблицы.xlsx'
     if os.path.exists(file_path):
         if os.path.exists(old_file_path):
             os.remove(old_file_path)
@@ -55,7 +55,7 @@ def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
         df_in_xlsx(df, 'Таблица гугл')
 
     list_art = []
-    df = pd.read_excel('Таблица гугл.xlsx', usecols=['Наименование', 'Артикул на ВБ'],
+    df = pd.read_excel('files/Таблица гугл.xlsx', usecols=['Наименование', 'Артикул на ВБ'],
                        dtype=str)
     df = df[~df['Артикул на ВБ'].isna() &
             df['Наименование'].apply(lambda x: isinstance(x, str) and not x.startswith('https'))
@@ -67,12 +67,12 @@ def read_codes_on_google(CREDENTIALS_FILE='google_acc.json'):
     df = pd.DataFrame({'Артикул': list_art})
     df_in_xlsx(df, 'Артикула с гугл таблицы')
     if os.path.exists(old_file_path):
-        df1 = pd.read_excel('Старые артикула с гугл таблицы.xlsx')
+        df1 = pd.read_excel('files/Старые артикула с гугл таблицы.xlsx')
         df1 = df1.reindex(columns=df.columns)
         df1 = df1.reindex(index=df.index)
         merged = df1.merge(df, indicator=True, how='outer')
         diff = merged[merged['_merge'] != 'both']
-        diff.to_excel("отличия.xlsx", index=True)
+        diff.to_excel("files/отличия.xlsx", index=True)
         diff = diff[~diff['Артикул'].isna()]
         list_art = diff['Артикул'].unique().tolist()
     if len(list_art) != 0:
