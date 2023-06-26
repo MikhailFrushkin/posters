@@ -62,11 +62,11 @@ def queue(printer_list, file_list, type_files, self=None):
         self.progress_bar.setValue(0)
         total = len(file_list)
         completed = 0
-
     if type_files == 'Матовые':
-        printer_list = [i.split('(')[0].strip() for i in printer_list if 'мат' in i]
+        printer_list = [i.split('(')[0].strip() for i in printer_list if 'мат' in i.lower()]
     else:
-        printer_list = [i.split('(')[0].strip() for i in printer_list if 'мат' not in i]
+        printer_list = [i.split('(')[0].strip() for i in printer_list if 'мат' not in i.lower()]
+
     if len(printer_list) == 0:
         return False
     tuple_printing = tuple()

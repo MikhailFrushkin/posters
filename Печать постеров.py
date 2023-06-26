@@ -195,7 +195,8 @@ class QueueDialog(QWidget):
             flag = queue(self.printers, file_tuple, type_files=self.windowTitle(), self=self)
             if flag == False:
                 QMessageBox.warning(self, 'Отправка на печать',
-                                    f"Не выбран принтер для {'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
+                                    f"Не выбран принтер для "
+                                    f"{'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
             else:
                 QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
                     '\n'.join([f'{item.art}, {item.count} шт.' for item in selected_data])))
@@ -209,7 +210,8 @@ class QueueDialog(QWidget):
             flag = queue(self.printers, file_tuple, type_files=self.windowTitle(), self=self)
             if flag == False:
                 QMessageBox.warning(self, 'Отправка на печать',
-                                    f"Не выбран принтер для {'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
+                                    f"Не выбран принтер для "
+                                    f"{'Глянцевой' if self.windowTitle() == 'Глянцевые' else 'Матовой'} печати")
             else:
                 QMessageBox.information(self, 'Отправка на печать', "Отправлено на печать:\n{}".format(
                     '\n'.join([f'{item.art}, {item.count} шт.' for item in all_data])))

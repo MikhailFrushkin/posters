@@ -30,7 +30,7 @@ def read_codes_on_google(CREDENTIALS_FILE=f'{path_root}/google_acc.json'):
             ['https://www.googleapis.com/auth/spreadsheets',
              'https://www.googleapis.com/auth/drive'])
         httpAuth = credentials.authorize(httplib2.Http())
-        service = apiclient.discovery.build('sheets', 'v4', http=httpAuth)
+        service = apiclient.discovery.build('sheets', 'v4', http=httpAuth, static_discovery=False)
 
         # Пример чтения файла
         values = service.spreadsheets().values().get(
