@@ -6,7 +6,7 @@ import sys
 from PyQt5.QtWidgets import QMessageBox
 from loguru import logger
 
-from config import FilesOnPrint, ready_path, acrobat_path
+from config import FilesOnPrint, ready_path, acrobat_path, stiker_path
 from utils.search_file import search_file
 
 
@@ -86,9 +86,14 @@ def queue_sticker(printer_list, file_list, self=None):
     tuple_printing = tuple()
     count = 0
 
+
     for file, printer in zip(file_list, itertools.cycle(printer_list)):
         tuple_printing += ((file[0], file[1], printer),)
-    for item in tuple_printing:
+    sorted_data = sorted(tuple_printing, key=lambda x: ('-MAT' not in x[0], x[0]), reverse=True)
+
+    for item in sorted_data:
+        logger.success(item)
+    for item in sorted_data:
         file_path, num_copies, printer_name = item
         print_pdf(file_path, num_copies, printer_name)
         count += 1
@@ -100,10 +105,15 @@ def queue_sticker(printer_list, file_list, self=None):
 
 if __name__ == '__main__':
     printer_list = ['Fax', 'Отправить в OneNote 16']
-    order = [
-        FilesOnPrint(art='POSTER-BLACKPINK-GLOSS', count=1, name='Постеры OG Buda картина А3 набор', status='✅'),
-        FilesOnPrint(art='POSTER-BLACKPINK-MAT', count=2, name='Постер asdasdasd', status='✅')
-    ]
-    file_tuple = create_file_list(order)
+    order = [FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-3', count=1,
+                          name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='✅'),
+             FilesOnPrint(art='POSTER-BITVA.MATVEEVD-GLOSS-6', count=2,
+                          name='Постеры Дмитрий Матвеев Чернокнижник постеры Интерьерные', status='✅'),
+             FilesOnPrint(art='POSTER-BITVA.SHEPSOLEG-MAT-3', count=1, name='Постеры Олег Шепс постеры Интерьерные А3',
+                          status='✅'), FilesOnPrint(art='POSTER-BITVA.VRAIDOS.CB2-MAT-3', count=1,
+                                                    name='Постеры Виктория Райдос постеры Интерьерные А3', status='✅'),
+             FilesOnPrint(art='POSTER-DEEPINS-GLOSS', count=1, name='Постеры Тиктокер Дипинс  постеры Интерьерные',
+                          status='✅')]
 
+    file_tuple = create_file_list(order, directory=stiker_path)
     tuple_printing = queue_sticker(printer_list, file_tuple)
