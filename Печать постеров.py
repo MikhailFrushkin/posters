@@ -1,4 +1,6 @@
 import datetime
+import os
+import shutil
 from pathlib import Path
 
 import qdarkstyle
@@ -18,6 +20,7 @@ from utils.search_file import search_file
 from utils.search_stikers import dowload_srikers
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTextEdit
 from PyQt5.QtGui import QTextCursor, QTextCharFormat, QColor
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -429,9 +432,11 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         def on_yes_clicked():
             print("Нажата кнопка 'Да'")
             dialog.reject()
+            shutil.rmtree('files')
+            os.makedirs('files', exist_ok=True)
             self.textEdit.append("Сканирование...")
 
-            list_new_atrs = new_arts('files/Пути к артикулам.xlsx', self)
+            list_new_atrs = new_arts(self)
             msg_box = QMessageBox()
             msg_box.setWindowTitle('Загрузка')
             msg_box.setText('Найдены новые артикула: \n{}'.format('\n'.join(list_new_atrs)))
@@ -457,14 +462,17 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 # Обработка результата
                 if result == QMessageBox.AcceptRole:
                     if len(list_new_atrs) != 0:
-                        logger.info(f'Нажата кнопка скачать. Список файлов: {list_new_atrs}')
-                        dowloads_files(df_new='files/Пути к артикулам.xlsx', self=self)
-                        QMessageBox.information(self, 'Инфо', 'Все файлы скачены')
-                        self.progress_bar.setValue(100)
-
-                        unions_arts(self, new_arts=list_new_atrs)
-                        QMessageBox.information(self, 'Инфо', 'Файлы соединены')
-                        self.progress_bar.setValue(100)
+                        try:
+                            logger.info(f'Нажата кнопка скачать. Список файлов: {list_new_atrs}')
+                            dowloads_files(df_new='files/Разница артикулов с гугл.таблицы и на я.диске.xlsx', self=self)
+                            self.progress_bar.setValue(100)
+                        except:
+                            pass
+                        try:
+                            unions_arts(new_arts=list_new_atrs, self=self)
+                            QMessageBox.information(self, 'Инфо', 'Файлы соединены')
+                        except:
+                            pass
                     self.progress_bar.setValue(100)
 
                 elif result == QMessageBox.RejectRole:
@@ -563,10 +571,6 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 if __name__ == '__main__':
     import sys
-
-    date_logs = datetime.date.today()
-
-    logger.add(sink=f"/logs/logs_{date_logs}.log", level="DEBUG", format="{time} {level} {message}", rotation="5 MB")
     app = QtWidgets.QApplication(sys.argv)
     app.setStyleSheet(qdarkstyle.load_stylesheet_pyqt5())
     w = MainWindow()

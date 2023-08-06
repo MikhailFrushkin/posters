@@ -82,7 +82,7 @@ def dowloads_files(df_new, self=None):
             logger.debug(f'Папка существует {os.path.join(folder_path, vpr)}')
 
 
-def unions_arts(self, new_arts):
+def unions_arts(new_arts, self=None):
     print(new_arts)
     if self:
         progress = SearchProgress(len(new_arts), self)
@@ -97,7 +97,6 @@ def unions_arts(self, new_arts):
             logger.info(f'{art}|Время выполнения: {datetime.datetime.now() - time_start}')
             if self:
                 self.textEdit.append(f'{art}|Время выполнения: {datetime.datetime.now() - time_start}')
-            if self:
                 progress.update_progress()
         except Exception as ex:
             logger.error(f'{art} ошибка соединения файлов {ex}')
@@ -124,12 +123,13 @@ def missing_arts(new_file):
     return None
 
 
-def new_arts(new_file, self=None):
+def new_arts(self=None):
     # получение и сохранение артикулов с гугл таблицы
     if self:
         self.textEdit.append("Чтение гугл таблицы с постерами...")
     asyncio.run(main_search(self))
-    missing_elements = missing_arts(new_file)
+    df = pd.read_excel('files/Разница артикулов с гугл.таблицы и на я.диске.xlsx')
+    missing_elements = df['Артикул'].tolist()
     logger.info(missing_elements)
     return missing_elements
 
@@ -137,7 +137,9 @@ def new_arts(new_file, self=None):
 if __name__ == '__main__':
     # Проверка что в папке папки с 3мя файлами
     # find_folders_with_incorrect_file_count(main_path')
-    new_arts('files/Пути к артикулам.xlsx')
-
+    # new_arts = new_arts('files/Пути к артикулам.xlsx')
     # dowloads_files('Пути к артикулам.xlsx')
-    # unions_arts()
+
+    df = pd.read_excel('../files/Артикула с гугл таблицы.xlsx')
+    new_arts = df['Артикул'].tolist()
+    unions_arts(new_arts)

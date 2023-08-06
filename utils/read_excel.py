@@ -7,7 +7,6 @@ from config import FilesOnPrint
 
 def read_excel_file(file: str) -> List[FilesOnPrint]:
     df = pd.read_excel(file)
-    counts = df['Артикул продавца'].value_counts().to_dict()
     df = df.groupby('Артикул продавца').agg({
         'Название товара': 'first',
         'Стикер': 'count',
