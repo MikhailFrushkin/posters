@@ -62,7 +62,7 @@ def count_objects_in_folders(directory, self=None):
                 count = 6
             elif value.endswith('10'):
                 count = 10
-        logger.error(f"Папка: {folder}, Количество объектов: {num_objects} Из {count} постеров")
+        logger.debug(f"Папка: {folder}, Количество объектов: {num_objects} Из {count} постеров")
         try:
             rename_files(count_files_posters(folder, count, self))
         except Exception as ex:

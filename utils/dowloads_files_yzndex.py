@@ -38,7 +38,7 @@ def dowloads_files(df_new, self=None):
             'limit': 1000,  # Максимальное количество элементов в одном запросе
         }
         response = requests.get(url, headers=headers, params=params)
-        logger.debug(f'Получен ответ: {response.status_code}')
+        # logger.debug(f'Получен ответ: {response.status_code}')
 
         if response.status_code == 200:
             resource_data = response.json()
